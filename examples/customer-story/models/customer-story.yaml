@@ -1,0 +1,66 @@
+id: customer-story
+name: Customer Story
+kind: entry
+description: Evidence of a customer outcome, told through a specific challenge, response and result.
+fields:
+  - id: title
+    name: Title
+    type: string
+    required: true
+    validations:
+      minLength: 5
+      maxLength: 100
+    editorial:
+      helpText: Lead with the outcome rather than the name of a product.
+
+  - id: slug
+    name: Slug
+    type: slug
+    required: true
+    editorial:
+      helpText: A readable identifier for this story's URL. Agree uniqueness rules with the implementation.
+
+  - id: summary
+    name: Summary
+    type: text
+    validations:
+      maxLength: 250
+    editorial:
+      helpText: Explain the result in a sentence or two for listings and previews.
+
+  - id: story
+    name: Story
+    type: richText
+    required: true
+    richTextConfig:
+      marks: [bold, italic, link]
+      blocks: [paragraph, heading-2, unordered-list, quote]
+    editorial:
+      helpText: Describe the challenge, the response and the evidence for the outcome.
+
+  - id: customer
+    name: Customer
+    type: reference
+    required: true
+    list: false
+    targets: [customer]
+    relation:
+      ownership: linked
+    editorial:
+      helpText: Choose the reusable customer profile behind this story.
+
+  - id: quote
+    name: Quote
+    type: object
+    objectType: quote
+    editorial:
+      helpText: Include an approved quote in its original context. Omit the quote when none is available.
+
+editorial:
+  labelField: title
+  preview:
+    title: title
+    description: summary
+governance:
+  owner: content-team
+  maturity: proposed

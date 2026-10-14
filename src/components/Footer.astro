@@ -1,0 +1,22 @@
+---
+import DefaultFooter from '@astrojs/starlight/components/Footer.astro';
+const home = Astro.url.pathname === '/';
+const upstream = String(Astro.locals.starlightRoute.entry.data.editUrl).includes('content-model-master-format/');
+const reportUrl = new URL(`https://github.com/headless-company/${upstream ? 'content-model-master-format' : 'cmmf-docs-web'}/issues/new`);
+reportUrl.searchParams.set('body', `Page: https://cmmf.dev${Astro.url.pathname}\n\nExpected behaviour:\n\nObserved behaviour:\n`);
+---
+{!home && <DefaultFooter />}
+<footer class="site-footer" data-pagefind-ignore><span>CMMF · Content Model Master Format</span><div><a href="/contributing/">Contribute</a><a href={reportUrl.href}>Report an issue</a><a href="https://github.com/headless-company/content-model-master-format">Format source ↗</a><a href="https://github.com/headless-company/cmmf-docs-web">Website source ↗</a><a href="/project/format-licence/">Format licence</a></div></footer>
+<script>
+  for (const table of document.querySelectorAll<HTMLTableElement>('.sl-markdown-content table')) {
+    table.tabIndex = 0;
+    table.setAttribute('aria-label', 'Reference table. Scroll horizontally to read all columns on small screens.');
+  }
+  for (const frame of document.querySelectorAll<HTMLElement>('.sl-markdown-content table, .diagram-viewport')) {
+    frame.addEventListener('keydown', event => {
+      if (event.target !== frame || !['ArrowLeft', 'ArrowRight'].includes(event.key) || frame.scrollWidth <= frame.clientWidth) return;
+      event.preventDefault();
+      frame.scrollLeft += event.key === 'ArrowRight' ? 80 : -80;
+    });
+  }
+</script>

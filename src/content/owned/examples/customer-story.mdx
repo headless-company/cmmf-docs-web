@@ -1,0 +1,61 @@
+---
+title: Customer Story
+description: A reusable customer profile and an embedded quote express two distinct relationships in a small, complete model set.
+editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/examples/customer-story.mdx
+---
+
+A team wants to explain how its work helped a customer. The customer may appear in several stories. A quotation should retain the attribution and context approved for a particular story.
+
+Those needs give us three models: **Customer Story**, **Customer** and **Quote**. The story is an independently managed entry. Its customer has a reusable identity. Its quote is an optional embedded structure.
+
+## See the relationships
+
+<!-- example-diagram: customer-story -->
+
+<!-- example-relationships: customer-story -->
+
+The `customer` field requires one Customer reference. This does not limit the number of stories that can refer to that same customer. The `quote` field is optional; when a quote is present, its `text` and `attribution` are required by the Quote model.
+
+## Why these boundaries?
+
+**Link the customer.** A customer profile has its own identity and can be updated independently. Changing a logo or website should not require editing every story.
+
+**Embed the quote.** Its wording and attribution belong to the context of this story. Reuse the Quote structure across stories while keeping each story's values separate. If quotations need an independent approval process, reuse or lifecycle, revisit that decision and consider a reference instead.
+
+**Keep the story focused.** The fields capture a title, URL identifier, listing summary, narrative, customer and optional quote. Publication workflows, consent records and permissions still need decisions in the implementation; this example does not claim to model those processes.
+
+## Download and work with the set
+
+<a href="/downloads/examples/1.2.0/customer-story.zip" download>Download the complete Customer Story project</a> · <a href="/downloads/examples/1.2.0/customer-story/customer-story.models.json" download>Download the Studio import JSON</a>
+
+The ZIP contains model YAML, a manifest, the pinned schema, a dependency lockfile, a local validator and the same JSON bundle. Use Node 22.12+ to run `npm ci` and `npm run validate` from the extracted folder. The first dependency installation needs an internet connection; validation then runs locally.
+
+[Build your first model step by step](/docs/get-started/first-model/) or [inspect and edit it in Studio](/tools/studio/).
+
+## Complete source files
+
+These are complete model definitions generated into this page from the downloadable source files. They describe the structure of future content, rather than actual customer entries or a finished story.
+
+### Manifest
+
+<!-- example-file: customer-story manifest.yaml -->
+
+### Customer Story
+
+<!-- example-file: customer-story models/customer-story.yaml -->
+
+### Customer
+
+<!-- example-file: customer-story models/customer.yaml -->
+
+### Quote
+
+<!-- example-file: customer-story models/quote.yaml -->
+
+## Implementation decisions still to make
+
+Agree how the target CMS represents an embedded Quote, enforces a single required customer link and supports the declared rich-text capabilities. Record URL uniqueness, quote approval and any unsupported constraints in the implementation decisions log.
+
+The build validates these three models together against the pinned CMMF 1.2.0 schema, IDs, targets, editorial fields and constraint bounds. It does not validate the factual accuracy of a story, approval to publish a quotation or any particular CMS mapping.
+
+<div class="source-note">Website-owned tutorial example. Format and schema: CMMF 1.2.0 at canonical revision 32604441. The supplied schema's source and licence are recorded in the project download.</div>

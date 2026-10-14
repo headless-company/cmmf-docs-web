@@ -1,0 +1,6 @@
+specVersion: "1.2.0"
+namespace: example.customer-story
+modelsPath: ./models
+defaults:
+  required: false
+  localisation: false

@@ -1,0 +1,5 @@
+/raw/*
+  Content-Type: text/plain; charset=utf-8
+
+/downloads/diagrams/1.2.0/*.mmd
+  Content-Type: text/plain; charset=utf-8

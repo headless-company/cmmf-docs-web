@@ -1,0 +1,193 @@
+{
+  "status": "proposed-routing-not-implemented",
+  "pages": [
+    {
+      "source": "vendor/cmmf/docs/index.md",
+      "route": "/docs/",
+      "title": "Documentation",
+      "role": "imported-explanation",
+      "notes": "Replace the upstream index with the site navigation once implemented.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/index.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/why-cmmf.md",
+      "route": "/learn/why-cmmf/",
+      "title": "Why CMMF",
+      "role": "imported-explanation",
+      "notes": "Adapt to a plain-language site-owned introduction when ready.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/why-cmmf.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/repository-structure.md",
+      "route": "/docs/get-started/project-structure/",
+      "title": "Project structure",
+      "role": "imported-explanation",
+      "notes": "Separate user model projects from the canonical format repository.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/repository-structure.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/model-kinds.md",
+      "route": "/docs/concepts/model-kinds/",
+      "title": "Model kinds",
+      "role": "imported-explanation",
+      "notes": "Add concrete decisions and examples.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/model-kinds.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/canonical-types.md",
+      "route": "/docs/reference/canonical-types/",
+      "title": "Canonical types",
+      "role": "imported-explanation",
+      "notes": "Retain exact identifiers; add links to worked examples.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/canonical-types.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/relationships.md",
+      "route": "/docs/concepts/relationships/",
+      "title": "Relationships and composition",
+      "role": "imported-explanation",
+      "notes": "Show embedded versus linked and singular versus repeatable visually.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/relationships.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/validations.md",
+      "route": "/docs/guides/validation/",
+      "title": "Validation",
+      "role": "imported-explanation",
+      "notes": "Distinguish model structure, graph semantics and content-instance validation.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/validations.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/translation-concepts.md",
+      "route": "/docs/concepts/translation/",
+      "title": "Translation",
+      "role": "imported-explanation",
+      "notes": "Add a decisions-log example; no invented CMS adapter support.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/translation-concepts.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/visualisation.md",
+      "route": "/docs/guides/visualisation/",
+      "title": "Visualisation",
+      "role": "imported-explanation",
+      "notes": "Replace future-editor language in a site-owned adaptation; Studio already exists.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/visualisation.md"
+    },
+    {
+      "source": "vendor/cmmf/spec/cmmf-v1.2.0.md",
+      "route": "/spec/1.2.0/",
+      "title": "CMMF 1.2.0 specification",
+      "role": "normative",
+      "notes": "Keep the source text authoritative.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/cmmf-v1.2.0.md"
+    },
+    {
+      "source": "vendor/cmmf/spec/translation-contract-v1.2.0.md",
+      "route": "/spec/1.2.0/translation-contract/",
+      "title": "Translation contract 1.2.0",
+      "role": "normative",
+      "notes": "Keep version paired with the format spec.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/translation-contract-v1.2.0.md"
+    },
+    {
+      "source": "vendor/cmmf/spec/cmmf-v1.1.0.md",
+      "route": "/spec/1.1.0/",
+      "title": "CMMF 1.1.0 specification",
+      "role": "normative-archive",
+      "notes": "Archive banner; exclude from default current-version search.",
+      "sourceVersion": "1.1.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/cmmf-v1.1.0.md"
+    },
+    {
+      "source": "vendor/cmmf/spec/translation-contract-v1.1.0.md",
+      "route": "/spec/1.1.0/translation-contract/",
+      "title": "Translation contract 1.1.0",
+      "role": "normative-archive",
+      "notes": "Do not pair with the current schema for validation.",
+      "sourceVersion": "1.1.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/translation-contract-v1.1.0.md"
+    },
+    {
+      "source": "vendor/cmmf/schemas/model.schema.json",
+      "route": "/schemas/1.2.0/model.schema.json",
+      "title": "CMMF 1.2.0 model schema",
+      "role": "machine-readable",
+      "notes": "Serve the exact raw JSON; do not add a historical label.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/schemas/model.schema.json"
+    },
+    {
+      "source": "vendor/cmmf/CHANGELOG.md",
+      "route": "/changelog/",
+      "title": "Changelog",
+      "role": "upstream-history",
+      "notes": "Render release changes and link to site-authored migration guidance.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/CHANGELOG.md"
+    },
+    {
+      "source": "vendor/cmmf/LICENSE.md",
+      "route": "/project/format-licence/",
+      "title": "Format licence",
+      "role": "upstream-licence",
+      "notes": "Apache-2.0 applies to these upstream files, not all bundled materials.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/LICENSE.md"
+    },
+    {
+      "source": "vendor/cmmf/README.md",
+      "route": null,
+      "title": "Upstream README",
+      "role": "source-context",
+      "notes": "Reference material; no duplicate website homepage.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/README.md"
+    },
+    {
+      "source": "vendor/cmmf/examples/manifest.yaml",
+      "route": "/downloads/examples/1.2.0/manifest.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together."
+    },
+    {
+      "source": "vendor/cmmf/examples/models/article.yaml",
+      "route": "/downloads/examples/1.2.0/models/article.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together."
+    },
+    {
+      "source": "vendor/cmmf/examples/models/page.yaml",
+      "route": "/downloads/examples/1.2.0/models/page.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together."
+    },
+    {
+      "source": "vendor/cmmf/examples/models/person.yaml",
+      "route": "/downloads/examples/1.2.0/models/person.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together."
+    },
+    {
+      "source": "vendor/cmmf/examples/models/seo-metadata.yaml",
+      "route": "/downloads/examples/1.2.0/models/seo-metadata.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+---
+interface Props { variant: 'article' | 'customer-story'; }
+import articleDiagram from '../../public/downloads/diagrams/1.2.0/article-light.svg?raw';
+import storyDiagram from '../../public/downloads/diagrams/1.2.0/customer-story-light.svg?raw';
+const { variant } = Astro.props;
+const base = `/downloads/diagrams/1.2.0/${variant}`;
+const svg = variant === 'article' ? articleDiagram : storyDiagram;
+const [, width, height] = svg.match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/)!;
+const description = variant === 'customer-story'
+  ? 'Customer Story links to a reusable Customer entry and embeds a Quote object.'
+  : 'Article links to Person, allows Person references inside its rich text, and embeds SEO Metadata. Page also embeds SEO Metadata.';
+---
+<figure class="download-diagram">
+  <div class="diagram-viewport" tabindex="0" role="region" aria-label="Model relationship diagram. Scroll horizontally on small screens." style={`--diagram-min-width: ${width}px`}>
+  <img class="diagram-light" src={`${base}-light.svg`} alt={description} width={width} height={height} />
+  <img class="diagram-dark" src={`${base}-dark.svg`} alt={description} width={width} height={height} />
+  </div>
+  <figcaption>{description} <a href={`${base}-light.svg`} download>Download SVG</a> · <a href={`${base}.mmd`} download>Mermaid source</a></figcaption>
+</figure>

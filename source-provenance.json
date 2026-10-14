@@ -1,0 +1,1613 @@
+{
+  "generatedAt": "2026-10-14T15:03:41.944799+00:00",
+  "sources": [
+    {
+      "name": "cmmf-branding",
+      "baseGitRevision": "029fa851a47ee8929b721b5ea3fc42ad457768df",
+      "snapshotKind": "working-tree",
+      "note": "Includes the current identity v1.2 working-tree assets. The base commit alone cannot recreate uncommitted changes. Logos/fonts/runtime are byte-identical; two guide files and one study footer have local-link adjustments. No new artwork licence is assigned.",
+      "files": [
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-compact-black.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-compact-black.svg",
+          "sourceSha256": "429fa04c7f063051426a16de3f6f034bfcb7ef5645bac5aa3fe4678183f85866",
+          "bundledSha256": "429fa04c7f063051426a16de3f6f034bfcb7ef5645bac5aa3fe4678183f85866",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-compact-gradient-dark.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-compact-gradient-dark.svg",
+          "sourceSha256": "78b5736809bc9007ceec8f472a4531003e5fe50d8594b3730c52e44d6ac11e5f",
+          "bundledSha256": "78b5736809bc9007ceec8f472a4531003e5fe50d8594b3730c52e44d6ac11e5f",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-compact-gradient-light.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-compact-gradient-light.svg",
+          "sourceSha256": "5c169d351a9174fe70ff9176d858438ca4af6d841279a5ef68f89fe26fb185f3",
+          "bundledSha256": "5c169d351a9174fe70ff9176d858438ca4af6d841279a5ef68f89fe26fb185f3",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-compact-ink.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-compact-ink.svg",
+          "sourceSha256": "2ec76437182484f765ea6ee24da6118ce24a5572545281904b8f49b4d501ec17",
+          "bundledSha256": "2ec76437182484f765ea6ee24da6118ce24a5572545281904b8f49b4d501ec17",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-compact-white.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-compact-white.svg",
+          "sourceSha256": "8417f65833f40ea0d07dbedfae7d1ce2939958de2b62c11b0bf671da1d916866",
+          "bundledSha256": "8417f65833f40ea0d07dbedfae7d1ce2939958de2b62c11b0bf671da1d916866",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-expanded-black.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-expanded-black.svg",
+          "sourceSha256": "8bf2a176d4f2edc1aaee3ef975bc4cc9a653cfd76689fcd295b434803dedd9d5",
+          "bundledSha256": "8bf2a176d4f2edc1aaee3ef975bc4cc9a653cfd76689fcd295b434803dedd9d5",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-expanded-gradient-dark.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-expanded-gradient-dark.svg",
+          "sourceSha256": "63356115bae8ec0175931283216fe5751f93a3acc30df14965ebb83ad59da7a5",
+          "bundledSha256": "63356115bae8ec0175931283216fe5751f93a3acc30df14965ebb83ad59da7a5",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-expanded-gradient-light.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-expanded-gradient-light.svg",
+          "sourceSha256": "ff1f0271651d86558fd6579c622aa1ad67e110e433c3bf7d206ca2ee9ee36ae4",
+          "bundledSha256": "ff1f0271651d86558fd6579c622aa1ad67e110e433c3bf7d206ca2ee9ee36ae4",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-expanded-ink.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-expanded-ink.svg",
+          "sourceSha256": "f3260f578efe3daf68011ef0601053c888bd363fde8a9a7d4f3a7043dedc1b04",
+          "bundledSha256": "f3260f578efe3daf68011ef0601053c888bd363fde8a9a7d4f3a7043dedc1b04",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-expanded-white.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-expanded-white.svg",
+          "sourceSha256": "abee27ace2596575a46abf9360dffce38436f02f66eb2cbbc1c909dd9fb0d038",
+          "bundledSha256": "abee27ace2596575a46abf9360dffce38436f02f66eb2cbbc1c909dd9fb0d038",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-horizontal-black.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-horizontal-black.svg",
+          "sourceSha256": "1627e093e99b6a0792c83f3df9eead18c97696bee744814a02b278586e084e66",
+          "bundledSha256": "1627e093e99b6a0792c83f3df9eead18c97696bee744814a02b278586e084e66",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-horizontal-gradient-dark.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-horizontal-gradient-dark.svg",
+          "sourceSha256": "54e787b2cd8d7f6c2659ad2572389d54c9b9d4db2147025f6357a2ee051cd770",
+          "bundledSha256": "54e787b2cd8d7f6c2659ad2572389d54c9b9d4db2147025f6357a2ee051cd770",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-horizontal-gradient-light.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-horizontal-gradient-light.svg",
+          "sourceSha256": "284534cf0ccb0e7052dc89831d0a4d64b2f77f16dfbc928055c1c16c5d44e08c",
+          "bundledSha256": "284534cf0ccb0e7052dc89831d0a4d64b2f77f16dfbc928055c1c16c5d44e08c",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-horizontal-ink.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-horizontal-ink.svg",
+          "sourceSha256": "613b3f33863849f3b49f45357cc7a12f7d4fd76a98f79b679f57229773028558",
+          "bundledSha256": "613b3f33863849f3b49f45357cc7a12f7d4fd76a98f79b679f57229773028558",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-horizontal-white.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-horizontal-white.svg",
+          "sourceSha256": "71b4d8a8bf8036533d43232956ab78913868ba8a2875a4e5ddd25096fe8dabc1",
+          "bundledSha256": "71b4d8a8bf8036533d43232956ab78913868ba8a2875a4e5ddd25096fe8dabc1",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-stacked-black.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-stacked-black.svg",
+          "sourceSha256": "537d21a477a57087bd2bceda55992ab8ffa9a81c1d813150c6fc29a05cc15028",
+          "bundledSha256": "537d21a477a57087bd2bceda55992ab8ffa9a81c1d813150c6fc29a05cc15028",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-stacked-gradient-dark.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-stacked-gradient-dark.svg",
+          "sourceSha256": "728939afc4a4da0fea43de334f6cb11aa4728578a49d146007f221f0f281f308",
+          "bundledSha256": "728939afc4a4da0fea43de334f6cb11aa4728578a49d146007f221f0f281f308",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-stacked-gradient-light.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-stacked-gradient-light.svg",
+          "sourceSha256": "9d177561695a0fff77589210a25d553035ed04861948a55697ef34f17c494ac8",
+          "bundledSha256": "9d177561695a0fff77589210a25d553035ed04861948a55697ef34f17c494ac8",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-stacked-ink.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-stacked-ink.svg",
+          "sourceSha256": "8986422c6763656bc1a786b9f44b38330ea7d48dd2c30b935894476459edd25e",
+          "bundledSha256": "8986422c6763656bc1a786b9f44b38330ea7d48dd2c30b935894476459edd25e",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-stacked-white.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-stacked-white.svg",
+          "sourceSha256": "85a165ccc06013687f43ca078a3f7cc3a460678746b89ab1aa13d6230f1e678b",
+          "bundledSha256": "85a165ccc06013687f43ca078a3f7cc3a460678746b89ab1aa13d6230f1e678b",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-symbol-black.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-symbol-black.svg",
+          "sourceSha256": "7dc459be3ecd041c0eb7317fd4a3baf1b4d0ebee3e635c377a07f71e799ee31f",
+          "bundledSha256": "7dc459be3ecd041c0eb7317fd4a3baf1b4d0ebee3e635c377a07f71e799ee31f",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-symbol-gradient-dark.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-symbol-gradient-dark.svg",
+          "sourceSha256": "c60773245d6510a300daa0e3b9b6b144ba6ca9a06085e6bf1f9b5a9116a1eaf3",
+          "bundledSha256": "c60773245d6510a300daa0e3b9b6b144ba6ca9a06085e6bf1f9b5a9116a1eaf3",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-symbol-gradient-light.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-symbol-gradient-light.svg",
+          "sourceSha256": "8daf56833d0b7a6f477d282496e6729137d84c83b44c10466eee22306395227a",
+          "bundledSha256": "8daf56833d0b7a6f477d282496e6729137d84c83b44c10466eee22306395227a",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-symbol-ink.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-symbol-ink.svg",
+          "sourceSha256": "0f981e250071960f48e9786fb81bf087f2afadf94fc902bad75f24263ec2159e",
+          "bundledSha256": "0f981e250071960f48e9786fb81bf087f2afadf94fc902bad75f24263ec2159e",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-symbol-white.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-symbol-white.svg",
+          "sourceSha256": "2f0f85a9bf9f7ef6382057aef8d85098e15e73481433ab623dc9638e4c01b262",
+          "bundledSha256": "2f0f85a9bf9f7ef6382057aef8d85098e15e73481433ab623dc9638e4c01b262",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-wordmark-black.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-wordmark-black.svg",
+          "sourceSha256": "5e07d1ced1d79dea89f2715802c7886b0fc5d9b069586669883872c7e48aae89",
+          "bundledSha256": "5e07d1ced1d79dea89f2715802c7886b0fc5d9b069586669883872c7e48aae89",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-wordmark-gradient-dark.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-wordmark-gradient-dark.svg",
+          "sourceSha256": "90f833284add01564cca52454d9e194c26eac13b37ae80882d0a427e6aa28dea",
+          "bundledSha256": "90f833284add01564cca52454d9e194c26eac13b37ae80882d0a427e6aa28dea",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-wordmark-gradient-light.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-wordmark-gradient-light.svg",
+          "sourceSha256": "366ca1bb03d2d777d75c8a82dd6d30a4a7ffa7c1947b9f2e78dd1297daa1d1cd",
+          "bundledSha256": "366ca1bb03d2d777d75c8a82dd6d30a4a7ffa7c1947b9f2e78dd1297daa1d1cd",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-wordmark-ink.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-wordmark-ink.svg",
+          "sourceSha256": "e0349a9ccee32af79011c97b2315218f82d0d6e728c69a4e9e1858851169094e",
+          "bundledSha256": "e0349a9ccee32af79011c97b2315218f82d0d6e728c69a4e9e1858851169094e",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/cmmf/cmmf-wordmark-white.svg",
+          "bundledPath": "brand/logos/cmmf/cmmf-wordmark-white.svg",
+          "sourceSha256": "1de65fbaec61255c83d529ae533533143b32d8fc2c031c149f8bca718e7a04bf",
+          "bundledSha256": "1de65fbaec61255c83d529ae533533143b32d8fc2c031c149f8bca718e7a04bf",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-compact-black.svg",
+          "bundledPath": "brand/logos/generator/generator-compact-black.svg",
+          "sourceSha256": "f92ed369a54c54278a5ce5b2ea600a3771c82d3c5f98f4a74abad5e00d5acabb",
+          "bundledSha256": "f92ed369a54c54278a5ce5b2ea600a3771c82d3c5f98f4a74abad5e00d5acabb",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-compact-black.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-compact-gradient-dark.svg",
+          "bundledPath": "brand/logos/generator/generator-compact-gradient-dark.svg",
+          "sourceSha256": "218d9df13130437cc2863a5a96e563dcd7762fd362b6baa825ae25050ff6fa54",
+          "bundledSha256": "218d9df13130437cc2863a5a96e563dcd7762fd362b6baa825ae25050ff6fa54",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-compact-gradient-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-compact-gradient-light.svg",
+          "bundledPath": "brand/logos/generator/generator-compact-gradient-light.svg",
+          "sourceSha256": "e54438f1701703f52cfcefadb0d1960bfa0666fcda2c5a148b4f66ede78cf2a4",
+          "bundledSha256": "e54438f1701703f52cfcefadb0d1960bfa0666fcda2c5a148b4f66ede78cf2a4",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-compact-gradient-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-compact-ink.svg",
+          "bundledPath": "brand/logos/generator/generator-compact-ink.svg",
+          "sourceSha256": "837bf183c33fcba8ff34ca42a4681be9143cde7067c661d94d37ef60cae9d12d",
+          "bundledSha256": "837bf183c33fcba8ff34ca42a4681be9143cde7067c661d94d37ef60cae9d12d",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-compact-ink.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-compact-white.svg",
+          "bundledPath": "brand/logos/generator/generator-compact-white.svg",
+          "sourceSha256": "560e82c5f5ca547d049fc98f79104ff9b1a80c339558268db6fced57aca60e48",
+          "bundledSha256": "560e82c5f5ca547d049fc98f79104ff9b1a80c339558268db6fced57aca60e48",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-compact-white.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-horizontal-black.svg",
+          "bundledPath": "brand/logos/generator/generator-horizontal-black.svg",
+          "sourceSha256": "91bc08f9b954fdc9638c132a256041bfd4d845e04aaf3ed344dea21a72881a0a",
+          "bundledSha256": "91bc08f9b954fdc9638c132a256041bfd4d845e04aaf3ed344dea21a72881a0a",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-horizontal-gradient-dark.svg",
+          "bundledPath": "brand/logos/generator/generator-horizontal-gradient-dark.svg",
+          "sourceSha256": "054dc7a72f2293741fee1bc04d346e98f63808eb1d5e23536fc13b804b7f461d",
+          "bundledSha256": "054dc7a72f2293741fee1bc04d346e98f63808eb1d5e23536fc13b804b7f461d",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-horizontal-gradient-light.svg",
+          "bundledPath": "brand/logos/generator/generator-horizontal-gradient-light.svg",
+          "sourceSha256": "400b8a05254773ca57ccc874fb79ff108ca288ed8eba22234a36d1aafcf67be3",
+          "bundledSha256": "400b8a05254773ca57ccc874fb79ff108ca288ed8eba22234a36d1aafcf67be3",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-horizontal-ink.svg",
+          "bundledPath": "brand/logos/generator/generator-horizontal-ink.svg",
+          "sourceSha256": "407e9ddc562cb0a5f92928dbb90992189244dcaadffb4098932af2d5dd12b2f8",
+          "bundledSha256": "407e9ddc562cb0a5f92928dbb90992189244dcaadffb4098932af2d5dd12b2f8",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-horizontal-white.svg",
+          "bundledPath": "brand/logos/generator/generator-horizontal-white.svg",
+          "sourceSha256": "4fb2313ae0e76332231dce08d20c4702ca1a6642f80dfb7ef5e20309d947661c",
+          "bundledSha256": "4fb2313ae0e76332231dce08d20c4702ca1a6642f80dfb7ef5e20309d947661c",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-stacked-black.svg",
+          "bundledPath": "brand/logos/generator/generator-stacked-black.svg",
+          "sourceSha256": "0e739918854ca1511004f497897c15dd45aa58f38377065e60be22275a7514e2",
+          "bundledSha256": "0e739918854ca1511004f497897c15dd45aa58f38377065e60be22275a7514e2",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-stacked-black.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-stacked-gradient-dark.svg",
+          "bundledPath": "brand/logos/generator/generator-stacked-gradient-dark.svg",
+          "sourceSha256": "7a7630aff14a8ab4dcd7c4702e29feacb6ae419041362e8f19609374764f4e1d",
+          "bundledSha256": "7a7630aff14a8ab4dcd7c4702e29feacb6ae419041362e8f19609374764f4e1d",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-stacked-gradient-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-stacked-gradient-light.svg",
+          "bundledPath": "brand/logos/generator/generator-stacked-gradient-light.svg",
+          "sourceSha256": "07f1ed4ae42b521b36ab36dad760a17b1dbc5db27d7b841044c6e19e39985479",
+          "bundledSha256": "07f1ed4ae42b521b36ab36dad760a17b1dbc5db27d7b841044c6e19e39985479",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-stacked-gradient-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-stacked-ink.svg",
+          "bundledPath": "brand/logos/generator/generator-stacked-ink.svg",
+          "sourceSha256": "9b22ad9c8cc3fc97cfe423b3b886592a4b0f1fbc8ecd1c0eaca4bb5e73db8e6e",
+          "bundledSha256": "9b22ad9c8cc3fc97cfe423b3b886592a4b0f1fbc8ecd1c0eaca4bb5e73db8e6e",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-stacked-ink.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-stacked-white.svg",
+          "bundledPath": "brand/logos/generator/generator-stacked-white.svg",
+          "sourceSha256": "b2f703122b53b24d4a58fdb696f1c5718ddf48aa7b8eedd743a4d14209e03e9f",
+          "bundledSha256": "b2f703122b53b24d4a58fdb696f1c5718ddf48aa7b8eedd743a4d14209e03e9f",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/generator/generator-stacked-white.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-symbol-black.svg",
+          "bundledPath": "brand/logos/generator/generator-symbol-black.svg",
+          "sourceSha256": "5b561f3a6efc5d4586ac8b010fbfd47ae3ab8a75b4fc4f308f4fe9ad9252c8c3",
+          "bundledSha256": "5b561f3a6efc5d4586ac8b010fbfd47ae3ab8a75b4fc4f308f4fe9ad9252c8c3",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-symbol-gradient-dark.svg",
+          "bundledPath": "brand/logos/generator/generator-symbol-gradient-dark.svg",
+          "sourceSha256": "03b9f7f96cd0fa6f8c5ae5c98148c5a428ee1e356f172754c2cb026e280fda28",
+          "bundledSha256": "03b9f7f96cd0fa6f8c5ae5c98148c5a428ee1e356f172754c2cb026e280fda28",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-symbol-gradient-light.svg",
+          "bundledPath": "brand/logos/generator/generator-symbol-gradient-light.svg",
+          "sourceSha256": "305911ba4d5d78b6cda1fef0ac616248fde7648b00c42a9570f3dac7a3fbdb2e",
+          "bundledSha256": "305911ba4d5d78b6cda1fef0ac616248fde7648b00c42a9570f3dac7a3fbdb2e",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-symbol-ink.svg",
+          "bundledPath": "brand/logos/generator/generator-symbol-ink.svg",
+          "sourceSha256": "2384e18e233cc7b7f0b173eeb9d77ff41e54295685431115e6bde951774cff93",
+          "bundledSha256": "2384e18e233cc7b7f0b173eeb9d77ff41e54295685431115e6bde951774cff93",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-symbol-white.svg",
+          "bundledPath": "brand/logos/generator/generator-symbol-white.svg",
+          "sourceSha256": "97bd879325b33d589f97b2e86342a12cd0cf345bde510accbd88a8e5c54b5bfa",
+          "bundledSha256": "97bd879325b33d589f97b2e86342a12cd0cf345bde510accbd88a8e5c54b5bfa",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-wordmark-black.svg",
+          "bundledPath": "brand/logos/generator/generator-wordmark-black.svg",
+          "sourceSha256": "234cf1cdb5dea182eb3d941883c3ad431cc485fe93b120a5562f032976c3080c",
+          "bundledSha256": "234cf1cdb5dea182eb3d941883c3ad431cc485fe93b120a5562f032976c3080c",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-wordmark-gradient-dark.svg",
+          "bundledPath": "brand/logos/generator/generator-wordmark-gradient-dark.svg",
+          "sourceSha256": "ac43c4a78dd5dc1844469f2363dc36ccb619f18053a74ef2b61ac2fcf1d0b5e5",
+          "bundledSha256": "ac43c4a78dd5dc1844469f2363dc36ccb619f18053a74ef2b61ac2fcf1d0b5e5",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-wordmark-gradient-light.svg",
+          "bundledPath": "brand/logos/generator/generator-wordmark-gradient-light.svg",
+          "sourceSha256": "82c78a584ed7f9d86f4bd413736ada9daa38e7f5998f44416d79adf6aae32198",
+          "bundledSha256": "82c78a584ed7f9d86f4bd413736ada9daa38e7f5998f44416d79adf6aae32198",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-wordmark-ink.svg",
+          "bundledPath": "brand/logos/generator/generator-wordmark-ink.svg",
+          "sourceSha256": "98a90b691efc4a0526b68d6ebe08c84958f875361f6e09ccb5de1299db27ec5b",
+          "bundledSha256": "98a90b691efc4a0526b68d6ebe08c84958f875361f6e09ccb5de1299db27ec5b",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/generator/generator-wordmark-white.svg",
+          "bundledPath": "brand/logos/generator/generator-wordmark-white.svg",
+          "sourceSha256": "0331bfc4b89589f268d7511fe63230e882fa39078353bb744586c01946e5b5c8",
+          "bundledSha256": "0331bfc4b89589f268d7511fe63230e882fa39078353bb744586c01946e5b5c8",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-compact-black.svg",
+          "bundledPath": "brand/logos/studio/studio-compact-black.svg",
+          "sourceSha256": "ffd3274b92c53d4f0ba39ec9f7c340718fca2a1d5452b55ed5164124a2865f97",
+          "bundledSha256": "ffd3274b92c53d4f0ba39ec9f7c340718fca2a1d5452b55ed5164124a2865f97",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-compact-black.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-compact-gradient-dark.svg",
+          "bundledPath": "brand/logos/studio/studio-compact-gradient-dark.svg",
+          "sourceSha256": "03e5784e11cfcf36b4a13417800bcbe563c51524bf9d056ab0c7ab59106f84c5",
+          "bundledSha256": "03e5784e11cfcf36b4a13417800bcbe563c51524bf9d056ab0c7ab59106f84c5",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-compact-gradient-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-compact-gradient-light.svg",
+          "bundledPath": "brand/logos/studio/studio-compact-gradient-light.svg",
+          "sourceSha256": "d9501fe760c4b2198670f0f36e645da19fa12de423a462d71bd73a85554adba4",
+          "bundledSha256": "d9501fe760c4b2198670f0f36e645da19fa12de423a462d71bd73a85554adba4",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-compact-gradient-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-compact-ink.svg",
+          "bundledPath": "brand/logos/studio/studio-compact-ink.svg",
+          "sourceSha256": "6a6d93c10780aace7ac3a631936b1b446ef123ad2eb8c6e0669c93f733139702",
+          "bundledSha256": "6a6d93c10780aace7ac3a631936b1b446ef123ad2eb8c6e0669c93f733139702",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-compact-ink.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-compact-white.svg",
+          "bundledPath": "brand/logos/studio/studio-compact-white.svg",
+          "sourceSha256": "b0af69c0d0af7743e6d2cc85b13e479446f715bda230b6cf2f5274e22a1c4efe",
+          "bundledSha256": "b0af69c0d0af7743e6d2cc85b13e479446f715bda230b6cf2f5274e22a1c4efe",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-compact-white.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-horizontal-black.svg",
+          "bundledPath": "brand/logos/studio/studio-horizontal-black.svg",
+          "sourceSha256": "83306c584a609f83362495531e1df026ab3d662f55d80174dba4947dd516311c",
+          "bundledSha256": "83306c584a609f83362495531e1df026ab3d662f55d80174dba4947dd516311c",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-horizontal-gradient-dark.svg",
+          "bundledPath": "brand/logos/studio/studio-horizontal-gradient-dark.svg",
+          "sourceSha256": "93a4bb7c51a3eb43ad1ebc8abf6954ffc82be0a06299125821ffdf732cf08351",
+          "bundledSha256": "93a4bb7c51a3eb43ad1ebc8abf6954ffc82be0a06299125821ffdf732cf08351",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-horizontal-gradient-light.svg",
+          "bundledPath": "brand/logos/studio/studio-horizontal-gradient-light.svg",
+          "sourceSha256": "d6d4512f816277ba64810bb1c5f55da1a61d45e0a6d1ea3fa739a6483cbadd36",
+          "bundledSha256": "d6d4512f816277ba64810bb1c5f55da1a61d45e0a6d1ea3fa739a6483cbadd36",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-horizontal-ink.svg",
+          "bundledPath": "brand/logos/studio/studio-horizontal-ink.svg",
+          "sourceSha256": "83681fdedbace0af74b3f5e9368e5d32383509be4f8e548096e3ce0430201792",
+          "bundledSha256": "83681fdedbace0af74b3f5e9368e5d32383509be4f8e548096e3ce0430201792",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-horizontal-white.svg",
+          "bundledPath": "brand/logos/studio/studio-horizontal-white.svg",
+          "sourceSha256": "f3e05f7195dba999e0c1bb088ce91dae2204cbc8ba429456ef1bd8121c4e2e91",
+          "bundledSha256": "f3e05f7195dba999e0c1bb088ce91dae2204cbc8ba429456ef1bd8121c4e2e91",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-stacked-black.svg",
+          "bundledPath": "brand/logos/studio/studio-stacked-black.svg",
+          "sourceSha256": "a0766864077aa1b068d87646eda7df78eb4977e107bce7f7cd39ca2275bf72d3",
+          "bundledSha256": "a0766864077aa1b068d87646eda7df78eb4977e107bce7f7cd39ca2275bf72d3",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-stacked-black.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-stacked-gradient-dark.svg",
+          "bundledPath": "brand/logos/studio/studio-stacked-gradient-dark.svg",
+          "sourceSha256": "109cb8574ac0c866b1c92ccec62f5d87cf0bf3b82747d222b7abede4f0a60f1b",
+          "bundledSha256": "109cb8574ac0c866b1c92ccec62f5d87cf0bf3b82747d222b7abede4f0a60f1b",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-stacked-gradient-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-stacked-gradient-light.svg",
+          "bundledPath": "brand/logos/studio/studio-stacked-gradient-light.svg",
+          "sourceSha256": "8c61edcd96b3e92b152d0a6d281e8e061e1e30336168f519a2521582f9abdae4",
+          "bundledSha256": "8c61edcd96b3e92b152d0a6d281e8e061e1e30336168f519a2521582f9abdae4",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-stacked-gradient-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-stacked-ink.svg",
+          "bundledPath": "brand/logos/studio/studio-stacked-ink.svg",
+          "sourceSha256": "a72b981a19c2ed1d85c50efe49d7f7cf704055d9686cd3aa88368ddde52b9f72",
+          "bundledSha256": "a72b981a19c2ed1d85c50efe49d7f7cf704055d9686cd3aa88368ddde52b9f72",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-stacked-ink.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-stacked-white.svg",
+          "bundledPath": "brand/logos/studio/studio-stacked-white.svg",
+          "sourceSha256": "32df64c7cede3e0cfe9e9a8310f15c3d70d40e46b171d7c6dbfe3be7d1e9d239",
+          "bundledSha256": "32df64c7cede3e0cfe9e9a8310f15c3d70d40e46b171d7c6dbfe3be7d1e9d239",
+          "gitStatus": "M artifacts/cmmf-brand-kit/logos/studio/studio-stacked-white.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-symbol-black.svg",
+          "bundledPath": "brand/logos/studio/studio-symbol-black.svg",
+          "sourceSha256": "7183ed8cf6b1e9285ceb0b15aeea1324dc32478c799c2be9f32d8e2a1a1a5fd0",
+          "bundledSha256": "7183ed8cf6b1e9285ceb0b15aeea1324dc32478c799c2be9f32d8e2a1a1a5fd0",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-symbol-gradient-dark.svg",
+          "bundledPath": "brand/logos/studio/studio-symbol-gradient-dark.svg",
+          "sourceSha256": "1f8f55e67085c30576d515a1a9237718fec844b390417ec80c1d193d1d3f9ef6",
+          "bundledSha256": "1f8f55e67085c30576d515a1a9237718fec844b390417ec80c1d193d1d3f9ef6",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-symbol-gradient-light.svg",
+          "bundledPath": "brand/logos/studio/studio-symbol-gradient-light.svg",
+          "sourceSha256": "4140275050bf43a96a13b8e60dcfa2aa6bf71f56b9ab8c3c612097dd2fc82bbd",
+          "bundledSha256": "4140275050bf43a96a13b8e60dcfa2aa6bf71f56b9ab8c3c612097dd2fc82bbd",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-symbol-ink.svg",
+          "bundledPath": "brand/logos/studio/studio-symbol-ink.svg",
+          "sourceSha256": "f154480d09012a240c217ae17b88b0dcb9336bc181fd00a77a7899c796182ee2",
+          "bundledSha256": "f154480d09012a240c217ae17b88b0dcb9336bc181fd00a77a7899c796182ee2",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-symbol-white.svg",
+          "bundledPath": "brand/logos/studio/studio-symbol-white.svg",
+          "sourceSha256": "cdcfe4490f5d8a095cfe99c91cda76e96f4371ac3f650bfd0b19914c068f8fd4",
+          "bundledSha256": "cdcfe4490f5d8a095cfe99c91cda76e96f4371ac3f650bfd0b19914c068f8fd4",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-wordmark-black.svg",
+          "bundledPath": "brand/logos/studio/studio-wordmark-black.svg",
+          "sourceSha256": "4e2861275d7142311b8e41c5946c7deba9687e22eb559ca7ef97df213bafe216",
+          "bundledSha256": "4e2861275d7142311b8e41c5946c7deba9687e22eb559ca7ef97df213bafe216",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-wordmark-gradient-dark.svg",
+          "bundledPath": "brand/logos/studio/studio-wordmark-gradient-dark.svg",
+          "sourceSha256": "34b56f8a8cfc024e6988161998e551cf02c104391e88acf52cba1be6053e537e",
+          "bundledSha256": "34b56f8a8cfc024e6988161998e551cf02c104391e88acf52cba1be6053e537e",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-wordmark-gradient-light.svg",
+          "bundledPath": "brand/logos/studio/studio-wordmark-gradient-light.svg",
+          "sourceSha256": "0bc5a178aeb5ce506707fd7bf67c56d1fbfbe4c6248918ecf79d1f455c7dff12",
+          "bundledSha256": "0bc5a178aeb5ce506707fd7bf67c56d1fbfbe4c6248918ecf79d1f455c7dff12",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-wordmark-ink.svg",
+          "bundledPath": "brand/logos/studio/studio-wordmark-ink.svg",
+          "sourceSha256": "7ffa0e9c30e148aa11fe6fdef8e9a271e3490f825ea9b1db5965dde61e1b0ee9",
+          "bundledSha256": "7ffa0e9c30e148aa11fe6fdef8e9a271e3490f825ea9b1db5965dde61e1b0ee9",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/logos/studio/studio-wordmark-white.svg",
+          "bundledPath": "brand/logos/studio/studio-wordmark-white.svg",
+          "sourceSha256": "82e297bfa3235be3242a93ae5476ac5f8fb229424e584bdd3628578169c4efa6",
+          "bundledSha256": "82e297bfa3235be3242a93ae5476ac5f8fb229424e584bdd3628578169c4efa6",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/Quattrocento-OFL.txt",
+          "bundledPath": "brand/fonts/Quattrocento-OFL.txt",
+          "sourceSha256": "3f5c1d84eebadf1c321b8d206c7fb6dd4a458029fb8aa690388767c1355160ce",
+          "bundledSha256": "3f5c1d84eebadf1c321b8d206c7fb6dd4a458029fb8aa690388767c1355160ce",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/Reem-Kufi-OFL.txt",
+          "bundledPath": "brand/fonts/Reem-Kufi-OFL.txt",
+          "sourceSha256": "4acf8b5c574cab02c3e270d18ede94b72e66928024ea9ee072b05eb03fe01c6e",
+          "bundledSha256": "4acf8b5c574cab02c3e270d18ede94b72e66928024ea9ee072b05eb03fe01c6e",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/Source-Sans-3-OFL.txt",
+          "bundledPath": "brand/fonts/Source-Sans-3-OFL.txt",
+          "sourceSha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+          "bundledSha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/quattrocento-latin-400-normal.woff",
+          "bundledPath": "brand/fonts/quattrocento-latin-400-normal.woff",
+          "sourceSha256": "020e2a3b2877edd64ef7567aefcb2f09254075373c8585a63965c3d4d2b0057d",
+          "bundledSha256": "020e2a3b2877edd64ef7567aefcb2f09254075373c8585a63965c3d4d2b0057d",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/quattrocento-latin-400-normal.woff2",
+          "bundledPath": "brand/fonts/quattrocento-latin-400-normal.woff2",
+          "sourceSha256": "54b83dd2f9e82637d8aa5d4b7b75ac6f5a3b7af836ee05113cac634211bf51b3",
+          "bundledSha256": "54b83dd2f9e82637d8aa5d4b7b75ac6f5a3b7af836ee05113cac634211bf51b3",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/quattrocento-latin-700-normal.woff",
+          "bundledPath": "brand/fonts/quattrocento-latin-700-normal.woff",
+          "sourceSha256": "34c2c81a739d0248c786c36ea4672f2d1696ad178d0237cdbd5815688e94c261",
+          "bundledSha256": "34c2c81a739d0248c786c36ea4672f2d1696ad178d0237cdbd5815688e94c261",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/quattrocento-latin-700-normal.woff2",
+          "bundledPath": "brand/fonts/quattrocento-latin-700-normal.woff2",
+          "sourceSha256": "f71000f0e9157888653489c1eefb6750a257ae7ced7dd208053fd1094919ee39",
+          "bundledSha256": "f71000f0e9157888653489c1eefb6750a257ae7ced7dd208053fd1094919ee39",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/reem-kufi-latin-400-normal.woff",
+          "bundledPath": "brand/fonts/reem-kufi-latin-400-normal.woff",
+          "sourceSha256": "341706204b24cd5fccf48b459d62c8c7089b32073fc8904b22332e6261c505e2",
+          "bundledSha256": "341706204b24cd5fccf48b459d62c8c7089b32073fc8904b22332e6261c505e2",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/reem-kufi-latin-400-normal.woff2",
+          "bundledPath": "brand/fonts/reem-kufi-latin-400-normal.woff2",
+          "sourceSha256": "289b5fb554af190c8f7ace7dabff4c54d4e88a51a92f798ee30f8c1e25fc68e2",
+          "bundledSha256": "289b5fb554af190c8f7ace7dabff4c54d4e88a51a92f798ee30f8c1e25fc68e2",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/reem-kufi-latin-500-normal.woff",
+          "bundledPath": "brand/fonts/reem-kufi-latin-500-normal.woff",
+          "sourceSha256": "6f3b6eb9577c993fb7c5965a73153c61c9271d47a522fe4a8fd8b0020b133b64",
+          "bundledSha256": "6f3b6eb9577c993fb7c5965a73153c61c9271d47a522fe4a8fd8b0020b133b64",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/reem-kufi-latin-500-normal.woff2",
+          "bundledPath": "brand/fonts/reem-kufi-latin-500-normal.woff2",
+          "sourceSha256": "4520efa2ccae45e6afea97dafbbc832d16237c6f424abf7a775c20913c60f383",
+          "bundledSha256": "4520efa2ccae45e6afea97dafbbc832d16237c6f424abf7a775c20913c60f383",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/reem-kufi-latin-600-normal.woff",
+          "bundledPath": "brand/fonts/reem-kufi-latin-600-normal.woff",
+          "sourceSha256": "c4d77c04fb99762b6b871349f7b74f83f72e5e07fc7ad4ef6978d4b5d96954c7",
+          "bundledSha256": "c4d77c04fb99762b6b871349f7b74f83f72e5e07fc7ad4ef6978d4b5d96954c7",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/reem-kufi-latin-600-normal.woff2",
+          "bundledPath": "brand/fonts/reem-kufi-latin-600-normal.woff2",
+          "sourceSha256": "ed76b6795d8a246daac5f410c95942e2aceb84ac4cfc1dfc36be1e83f4207383",
+          "bundledSha256": "ed76b6795d8a246daac5f410c95942e2aceb84ac4cfc1dfc36be1e83f4207383",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/reem-kufi-latin-700-normal.woff",
+          "bundledPath": "brand/fonts/reem-kufi-latin-700-normal.woff",
+          "sourceSha256": "b7086c00b8b6471da1a495d87bccb3cb6d95648d6185c01d961eb1eec38674e6",
+          "bundledSha256": "b7086c00b8b6471da1a495d87bccb3cb6d95648d6185c01d961eb1eec38674e6",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/reem-kufi-latin-700-normal.woff2",
+          "bundledPath": "brand/fonts/reem-kufi-latin-700-normal.woff2",
+          "sourceSha256": "ac8ec5e8f22704ec3d441440bc00b5ee7cc3b6ac39d5d433df9b434d66e08533",
+          "bundledSha256": "ac8ec5e8f22704ec3d441440bc00b5ee7cc3b6ac39d5d433df9b434d66e08533",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-400-italic.woff",
+          "bundledPath": "brand/fonts/source-sans-3-latin-400-italic.woff",
+          "sourceSha256": "dd217f6b58d7f587b837999cb7c58250810674fb6562bbc7cce87f4e6c71d607",
+          "bundledSha256": "dd217f6b58d7f587b837999cb7c58250810674fb6562bbc7cce87f4e6c71d607",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-400-italic.woff2",
+          "bundledPath": "brand/fonts/source-sans-3-latin-400-italic.woff2",
+          "sourceSha256": "3c230c03425a2866e4b57954f3173fc149dba2634e9ee32c681b41d96c7f06fe",
+          "bundledSha256": "3c230c03425a2866e4b57954f3173fc149dba2634e9ee32c681b41d96c7f06fe",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-400-normal.woff",
+          "bundledPath": "brand/fonts/source-sans-3-latin-400-normal.woff",
+          "sourceSha256": "8969d8c55bd5d6aebf95b2603612503cd6424a4d3b8e9606a38a831bda1cd5c2",
+          "bundledSha256": "8969d8c55bd5d6aebf95b2603612503cd6424a4d3b8e9606a38a831bda1cd5c2",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-400-normal.woff2",
+          "bundledPath": "brand/fonts/source-sans-3-latin-400-normal.woff2",
+          "sourceSha256": "0f73f35e08cde0a2f10c109c6e01d71459d97e4099ecd9a50f1b6c0209e4de2b",
+          "bundledSha256": "0f73f35e08cde0a2f10c109c6e01d71459d97e4099ecd9a50f1b6c0209e4de2b",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-500-normal.woff",
+          "bundledPath": "brand/fonts/source-sans-3-latin-500-normal.woff",
+          "sourceSha256": "6eda935312b6409e6ec9667d2355423cc556c3be679e402a0db66de845777d67",
+          "bundledSha256": "6eda935312b6409e6ec9667d2355423cc556c3be679e402a0db66de845777d67",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-500-normal.woff2",
+          "bundledPath": "brand/fonts/source-sans-3-latin-500-normal.woff2",
+          "sourceSha256": "3b3a8b8e4a422ff71c9ffb0836a4d48ff337a4419b878214f65d6ebe0f59fa51",
+          "bundledSha256": "3b3a8b8e4a422ff71c9ffb0836a4d48ff337a4419b878214f65d6ebe0f59fa51",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-600-normal.woff",
+          "bundledPath": "brand/fonts/source-sans-3-latin-600-normal.woff",
+          "sourceSha256": "b41e0cd2be7d4261cfc5facc50cf02ea1ecf97dd92ff1169f019c236e3c32ef6",
+          "bundledSha256": "b41e0cd2be7d4261cfc5facc50cf02ea1ecf97dd92ff1169f019c236e3c32ef6",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-600-normal.woff2",
+          "bundledPath": "brand/fonts/source-sans-3-latin-600-normal.woff2",
+          "sourceSha256": "14527d193b0e30bc32ef931549a246cdfd286573bb12869b7e052b8101a39d38",
+          "bundledSha256": "14527d193b0e30bc32ef931549a246cdfd286573bb12869b7e052b8101a39d38",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-700-normal.woff",
+          "bundledPath": "brand/fonts/source-sans-3-latin-700-normal.woff",
+          "sourceSha256": "dfdfe9a92eb014666e44bb90f5eb375888295839f2f17ebd1163a097c07b25f7",
+          "bundledSha256": "dfdfe9a92eb014666e44bb90f5eb375888295839f2f17ebd1163a097c07b25f7",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/fonts/source-sans-3-latin-700-normal.woff2",
+          "bundledPath": "brand/fonts/source-sans-3-latin-700-normal.woff2",
+          "sourceSha256": "ae35266f2ab0d5314ff9a04127931eb26c793e4f1269bb240046d4d2db4b7bb1",
+          "bundledSha256": "ae35266f2ab0d5314ff9a04127931eb26c793e4f1269bb240046d4d2db4b7bb1",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/tokens/brand.css",
+          "bundledPath": "brand/tokens/brand.css",
+          "sourceSha256": "1042f77966b32ee4347a5e6a8b13e1b2bbf285706555ae084bb8897be616154a",
+          "bundledSha256": "1042f77966b32ee4347a5e6a8b13e1b2bbf285706555ae084bb8897be616154a",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/tokens/cmmf.tokens.json",
+          "bundledPath": "brand/tokens/cmmf.tokens.json",
+          "sourceSha256": "cc7e20c16954c7404f215d4bd39ab4643c7ab4847c2c8a97fb741c48b21972e2",
+          "bundledSha256": "cc7e20c16954c7404f215d4bd39ab4643c7ab4847c2c8a97fb741c48b21972e2",
+          "gitStatus": "M artifacts/cmmf-brand-kit/tokens/cmmf.tokens.json",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/icons/document.svg",
+          "bundledPath": "brand/icons/document.svg",
+          "sourceSha256": "b2e2b802314c16fd971323dcf43d0db9d4933488d1fa1c1a1122b7da74b4ba93",
+          "bundledSha256": "b2e2b802314c16fd971323dcf43d0db9d4933488d1fa1c1a1122b7da74b4ba93",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/icons/export.svg",
+          "bundledPath": "brand/icons/export.svg",
+          "sourceSha256": "470d720b22e09ad64c88204cc0410c02872050f32b6ca66c4c2e43043df18421",
+          "bundledSha256": "470d720b22e09ad64c88204cc0410c02872050f32b6ca66c4c2e43043df18421",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/icons/field.svg",
+          "bundledPath": "brand/icons/field.svg",
+          "sourceSha256": "9d2639e459945caaa7791c71782d6e168043b7614e4f31b31acfc36227159824",
+          "bundledSha256": "9d2639e459945caaa7791c71782d6e168043b7614e4f31b31acfc36227159824",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/icons/model.svg",
+          "bundledPath": "brand/icons/model.svg",
+          "sourceSha256": "8eb3b841b1b4abbbcc98f5f76b8cbf7b694e799c2257a8e20859d5f2a3db4c14",
+          "bundledSha256": "8eb3b841b1b4abbbcc98f5f76b8cbf7b694e799c2257a8e20859d5f2a3db4c14",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/icons/relationship.svg",
+          "bundledPath": "brand/icons/relationship.svg",
+          "sourceSha256": "fdc5a6de6c4c379a21ef6d2633c54a43749981b2936175c8a960e470227b4632",
+          "bundledSha256": "fdc5a6de6c4c379a21ef6d2633c54a43749981b2936175c8a960e470227b4632",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/icons/validate.svg",
+          "bundledPath": "brand/icons/validate.svg",
+          "sourceSha256": "82c4c1950927e5b519e20f94725c217143cab7a5f8db66df701cc6f51de04e86",
+          "bundledSha256": "82c4c1950927e5b519e20f94725c217143cab7a5f8db66df701cc6f51de04e86",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/README.md",
+          "bundledPath": "brand/motion/README.md",
+          "sourceSha256": "a7d77a6dc450aacb74d58b25f0cfc4cf5f2853703fc6ff278d259f465773d979",
+          "bundledSha256": "a7d77a6dc450aacb74d58b25f0cfc4cf5f2853703fc6ff278d259f465773d979",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/README.md",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-compact-dark.svg",
+          "bundledPath": "brand/motion/assets/cmmf-compact-dark.svg",
+          "sourceSha256": "98ed46fcf96b617d8c25324c1391e1301d2db8c39eb4575a6e0436a58456a212",
+          "bundledSha256": "98ed46fcf96b617d8c25324c1391e1301d2db8c39eb4575a6e0436a58456a212",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-compact-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-compact-light.svg",
+          "bundledPath": "brand/motion/assets/cmmf-compact-light.svg",
+          "sourceSha256": "03408a17e15670dfaaaf4ffff1c535462966aae1a15c274b78ce89ec60409606",
+          "bundledSha256": "03408a17e15670dfaaaf4ffff1c535462966aae1a15c274b78ce89ec60409606",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-compact-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-expanded-dark.svg",
+          "bundledPath": "brand/motion/assets/cmmf-expanded-dark.svg",
+          "sourceSha256": "accb274eda6b661cbc43a709b13fc9beb328daffd74645e8114498b2aa5b89fa",
+          "bundledSha256": "accb274eda6b661cbc43a709b13fc9beb328daffd74645e8114498b2aa5b89fa",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-expanded-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-expanded-light.svg",
+          "bundledPath": "brand/motion/assets/cmmf-expanded-light.svg",
+          "sourceSha256": "3c98d45f9975e99becc38a8f78b93c6af94339577fb7eed25d4d8f612217b5a2",
+          "bundledSha256": "3c98d45f9975e99becc38a8f78b93c6af94339577fb7eed25d4d8f612217b5a2",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-expanded-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-horizontal-dark.svg",
+          "bundledPath": "brand/motion/assets/cmmf-horizontal-dark.svg",
+          "sourceSha256": "69d78c3b172db2cc67f75cec3003d80a4f4783195f1a87c9a761109bdf2f82b2",
+          "bundledSha256": "69d78c3b172db2cc67f75cec3003d80a4f4783195f1a87c9a761109bdf2f82b2",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-horizontal-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-horizontal-light.svg",
+          "bundledPath": "brand/motion/assets/cmmf-horizontal-light.svg",
+          "sourceSha256": "6b0ac7a301b9cca84d1ed4e05857ae956f87973a7fec3288636a0fd49b7dfecf",
+          "bundledSha256": "6b0ac7a301b9cca84d1ed4e05857ae956f87973a7fec3288636a0fd49b7dfecf",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-horizontal-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-stacked-dark.svg",
+          "bundledPath": "brand/motion/assets/cmmf-stacked-dark.svg",
+          "sourceSha256": "0272900dd66e3203fc8d07a543308f0f4dc45533db9e87b583214df28ee87e04",
+          "bundledSha256": "0272900dd66e3203fc8d07a543308f0f4dc45533db9e87b583214df28ee87e04",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-stacked-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-stacked-light.svg",
+          "bundledPath": "brand/motion/assets/cmmf-stacked-light.svg",
+          "sourceSha256": "06e475f01d016de81470b99c31c7486ee7e8886fc2538e82304b3d35c37ae16b",
+          "bundledSha256": "06e475f01d016de81470b99c31c7486ee7e8886fc2538e82304b3d35c37ae16b",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-stacked-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-symbol-dark.svg",
+          "bundledPath": "brand/motion/assets/cmmf-symbol-dark.svg",
+          "sourceSha256": "f15ca9527017ead63e552b262d1740bdb5296cabd86d577d8b6d59eb050cf428",
+          "bundledSha256": "f15ca9527017ead63e552b262d1740bdb5296cabd86d577d8b6d59eb050cf428",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-symbol-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/cmmf-symbol-light.svg",
+          "bundledPath": "brand/motion/assets/cmmf-symbol-light.svg",
+          "sourceSha256": "cfc804e27e2a575119119183b1744733153823d687288ca51d4005ceb266d550",
+          "bundledSha256": "cfc804e27e2a575119119183b1744733153823d687288ca51d4005ceb266d550",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/cmmf-symbol-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/generator-compact-dark.svg",
+          "bundledPath": "brand/motion/assets/generator-compact-dark.svg",
+          "sourceSha256": "c9fb3ebb5d15bc2e5b5ed4df670503e5a845e4a5e34d5a092c5a255738d2a73e",
+          "bundledSha256": "c9fb3ebb5d15bc2e5b5ed4df670503e5a845e4a5e34d5a092c5a255738d2a73e",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/generator-compact-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/generator-compact-light.svg",
+          "bundledPath": "brand/motion/assets/generator-compact-light.svg",
+          "sourceSha256": "d3c9508acb5f87ffcf0a1fa3aa4f3289ff64a9196abd16ed2bb926d4b7dbc4e0",
+          "bundledSha256": "d3c9508acb5f87ffcf0a1fa3aa4f3289ff64a9196abd16ed2bb926d4b7dbc4e0",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/generator-compact-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/generator-horizontal-dark.svg",
+          "bundledPath": "brand/motion/assets/generator-horizontal-dark.svg",
+          "sourceSha256": "5e8a2e7b2f36f9c90b81d34258bfc392576f9bdcd1bcd996b2ee59e4935dfd67",
+          "bundledSha256": "5e8a2e7b2f36f9c90b81d34258bfc392576f9bdcd1bcd996b2ee59e4935dfd67",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/generator-horizontal-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/generator-horizontal-light.svg",
+          "bundledPath": "brand/motion/assets/generator-horizontal-light.svg",
+          "sourceSha256": "ac73c7599b1264fae5c0d1fbddb90db28c5051af300b3043e415aaf0a303a390",
+          "bundledSha256": "ac73c7599b1264fae5c0d1fbddb90db28c5051af300b3043e415aaf0a303a390",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/generator-horizontal-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/generator-stacked-dark.svg",
+          "bundledPath": "brand/motion/assets/generator-stacked-dark.svg",
+          "sourceSha256": "df0dbd12470c540d85e6a3dede128644187e7c0743ddd18f78f4c4f69c3b37aa",
+          "bundledSha256": "df0dbd12470c540d85e6a3dede128644187e7c0743ddd18f78f4c4f69c3b37aa",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/generator-stacked-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/generator-stacked-light.svg",
+          "bundledPath": "brand/motion/assets/generator-stacked-light.svg",
+          "sourceSha256": "04b664c0479726dff0230108e57feb2e56cfa866c6783ec2b473ce2c1ef3568a",
+          "bundledSha256": "04b664c0479726dff0230108e57feb2e56cfa866c6783ec2b473ce2c1ef3568a",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/generator-stacked-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/generator-symbol-dark.svg",
+          "bundledPath": "brand/motion/assets/generator-symbol-dark.svg",
+          "sourceSha256": "4fe18eb4fbc77e60aa5369c33ec085ccdcfb2ed27fe1da85a391e89eee1fdc63",
+          "bundledSha256": "4fe18eb4fbc77e60aa5369c33ec085ccdcfb2ed27fe1da85a391e89eee1fdc63",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/generator-symbol-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/generator-symbol-light.svg",
+          "bundledPath": "brand/motion/assets/generator-symbol-light.svg",
+          "sourceSha256": "83aa18e30ac728b736b90c6151dc232098cbd9d9d21815b168e1738a89b53b07",
+          "bundledSha256": "83aa18e30ac728b736b90c6151dc232098cbd9d9d21815b168e1738a89b53b07",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/generator-symbol-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/studio-compact-dark.svg",
+          "bundledPath": "brand/motion/assets/studio-compact-dark.svg",
+          "sourceSha256": "7ad93578fa2d8d1c2ef34a76541f59ecc4637cb0249610afde65a587c04f66d6",
+          "bundledSha256": "7ad93578fa2d8d1c2ef34a76541f59ecc4637cb0249610afde65a587c04f66d6",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/studio-compact-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/studio-compact-light.svg",
+          "bundledPath": "brand/motion/assets/studio-compact-light.svg",
+          "sourceSha256": "36880c7f31949425a8619e51cf26c48c7896a53e7e3d4ec4cbce0dcca23a0189",
+          "bundledSha256": "36880c7f31949425a8619e51cf26c48c7896a53e7e3d4ec4cbce0dcca23a0189",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/studio-compact-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/studio-horizontal-dark.svg",
+          "bundledPath": "brand/motion/assets/studio-horizontal-dark.svg",
+          "sourceSha256": "9771fcc92dd7c271d6a00b54323cef57f9a201798a7b5d596567f274f9111646",
+          "bundledSha256": "9771fcc92dd7c271d6a00b54323cef57f9a201798a7b5d596567f274f9111646",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/studio-horizontal-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/studio-horizontal-light.svg",
+          "bundledPath": "brand/motion/assets/studio-horizontal-light.svg",
+          "sourceSha256": "a62b6e627e00049c5eaba1eeb9927dc78dd7d708a53ea79601e3c0da9f310fbe",
+          "bundledSha256": "a62b6e627e00049c5eaba1eeb9927dc78dd7d708a53ea79601e3c0da9f310fbe",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/studio-horizontal-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/studio-stacked-dark.svg",
+          "bundledPath": "brand/motion/assets/studio-stacked-dark.svg",
+          "sourceSha256": "6a129e78940da9b0f49cbadbc974c705e4a41d1549232c3de272cd9a9941ca61",
+          "bundledSha256": "6a129e78940da9b0f49cbadbc974c705e4a41d1549232c3de272cd9a9941ca61",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/studio-stacked-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/studio-stacked-light.svg",
+          "bundledPath": "brand/motion/assets/studio-stacked-light.svg",
+          "sourceSha256": "1de27bd8de5b25643ae17c093795944181b9800c171fd7dea672fb087d28f89f",
+          "bundledSha256": "1de27bd8de5b25643ae17c093795944181b9800c171fd7dea672fb087d28f89f",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/studio-stacked-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/studio-symbol-dark.svg",
+          "bundledPath": "brand/motion/assets/studio-symbol-dark.svg",
+          "sourceSha256": "5268f2d4e047050110b990aec8628c046496a3e2cbb230bc42b3dedc5ec096f5",
+          "bundledSha256": "5268f2d4e047050110b990aec8628c046496a3e2cbb230bc42b3dedc5ec096f5",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/studio-symbol-dark.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/assets/studio-symbol-light.svg",
+          "bundledPath": "brand/motion/assets/studio-symbol-light.svg",
+          "sourceSha256": "8ec19433ca1ab9e3edd4807be6b81681936882bddaa06fcd0042f40d4eb2d131",
+          "bundledSha256": "8ec19433ca1ab9e3edd4807be6b81681936882bddaa06fcd0042f40d4eb2d131",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/assets/studio-symbol-light.svg",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/logo-intro.html",
+          "bundledPath": "brand/motion/logo-intro.html",
+          "sourceSha256": "d0beca3632f539d3be81f4375db35a3a7953474732aba177a8eb438f29cdbe9b",
+          "bundledSha256": "1b926f5dfcdd36047019bba655d0cb2562012c11682fbe86405aaf6c17fa04d4",
+          "gitStatus": "M artifacts/cmmf-brand-kit/motion/logo-intro.html",
+          "transformation": "relative reference links adjusted for bundled layout"
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/motion-tokens.json",
+          "bundledPath": "brand/motion/motion-tokens.json",
+          "sourceSha256": "985810b2a448e311f4032beadc7ed33917d5e7d36ffbc1ac66c747e6666563a9",
+          "bundledSha256": "985810b2a448e311f4032beadc7ed33917d5e7d36ffbc1ac66c747e6666563a9",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/motion-tokens.json",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/motion/motion.js",
+          "bundledPath": "brand/motion/motion.js",
+          "sourceSha256": "5b283afa7870a206bbd73b94a4051b4d07e4da673eb17b5ce3c88d8adca5714b",
+          "bundledSha256": "5b283afa7870a206bbd73b94a4051b4d07e4da673eb17b5ce3c88d8adca5714b",
+          "gitStatus": "?? artifacts/cmmf-brand-kit/motion/motion.js",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/apple-touch-icon.png",
+          "bundledPath": "brand/web/cmmf/apple-touch-icon.png",
+          "sourceSha256": "81102a80a14fc38728297037c81a93fb11d81a5829b770ed054074334a94ed8e",
+          "bundledSha256": "81102a80a14fc38728297037c81a93fb11d81a5829b770ed054074334a94ed8e",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/favicon.ico",
+          "bundledPath": "brand/web/cmmf/favicon.ico",
+          "sourceSha256": "02eccfbb981317f4ca6c73c417c97208ca28584a15a6e499d5290c9597f48351",
+          "bundledSha256": "02eccfbb981317f4ca6c73c417c97208ca28584a15a6e499d5290c9597f48351",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/favicon.svg",
+          "bundledPath": "brand/web/cmmf/favicon.svg",
+          "sourceSha256": "8daf56833d0b7a6f477d282496e6729137d84c83b44c10466eee22306395227a",
+          "bundledSha256": "8daf56833d0b7a6f477d282496e6729137d84c83b44c10466eee22306395227a",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/head.html",
+          "bundledPath": "brand/web/cmmf/head.html",
+          "sourceSha256": "7d20d4c4cd35b8dd70af969460e771ded0c15badab64a19069bd5944621e2efb",
+          "bundledSha256": "7d20d4c4cd35b8dd70af969460e771ded0c15badab64a19069bd5944621e2efb",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/icon-16.png",
+          "bundledPath": "brand/web/cmmf/icon-16.png",
+          "sourceSha256": "8bea74f98fb401dd31a55bf0f0828341d81abf4f1b0362ce79f9ef78a20c1aff",
+          "bundledSha256": "8bea74f98fb401dd31a55bf0f0828341d81abf4f1b0362ce79f9ef78a20c1aff",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/icon-180.png",
+          "bundledPath": "brand/web/cmmf/icon-180.png",
+          "sourceSha256": "26c89c0c708446f7db002fda0146de9c445887cc1d3b8d4b36c147132424063a",
+          "bundledSha256": "26c89c0c708446f7db002fda0146de9c445887cc1d3b8d4b36c147132424063a",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/icon-192.png",
+          "bundledPath": "brand/web/cmmf/icon-192.png",
+          "sourceSha256": "799f63b55f6ae6f55382a86ea044c2f31ae006a2e64340bfc836641e3f7cd734",
+          "bundledSha256": "799f63b55f6ae6f55382a86ea044c2f31ae006a2e64340bfc836641e3f7cd734",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/icon-24.png",
+          "bundledPath": "brand/web/cmmf/icon-24.png",
+          "sourceSha256": "ef72a04c7d32fb2a1da541a79555793e551271b58cfeb8686177a9574e9614d0",
+          "bundledSha256": "ef72a04c7d32fb2a1da541a79555793e551271b58cfeb8686177a9574e9614d0",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/icon-32.png",
+          "bundledPath": "brand/web/cmmf/icon-32.png",
+          "sourceSha256": "ee7829d73ed6357c3a172558f37e4da2a119f532fa4a742df66f05f75586e493",
+          "bundledSha256": "ee7829d73ed6357c3a172558f37e4da2a119f532fa4a742df66f05f75586e493",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/icon-48.png",
+          "bundledPath": "brand/web/cmmf/icon-48.png",
+          "sourceSha256": "d2ddffb5110d785159f1f28b83d2b2112d86504ca8b93f1e8b0a2d9899c1988d",
+          "bundledSha256": "d2ddffb5110d785159f1f28b83d2b2112d86504ca8b93f1e8b0a2d9899c1988d",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/icon-512.png",
+          "bundledPath": "brand/web/cmmf/icon-512.png",
+          "sourceSha256": "eefa0c3ef94269ee5d089e74abfefee9449b885bcb9003201c30b2bc2f9656e8",
+          "bundledSha256": "eefa0c3ef94269ee5d089e74abfefee9449b885bcb9003201c30b2bc2f9656e8",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/icon-64.png",
+          "bundledPath": "brand/web/cmmf/icon-64.png",
+          "sourceSha256": "9b31103fbd3fe6184f8f1539bc04b156e466f01baabb8015358649274655f24b",
+          "bundledSha256": "9b31103fbd3fe6184f8f1539bc04b156e466f01baabb8015358649274655f24b",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/manifest.webmanifest",
+          "bundledPath": "brand/web/cmmf/manifest.webmanifest",
+          "sourceSha256": "24e88fc10772c866c8c2f4a30cea98409a6cdc07db95623f54b1b4381a116bdd",
+          "bundledSha256": "24e88fc10772c866c8c2f4a30cea98409a6cdc07db95623f54b1b4381a116bdd",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/cmmf/maskable-512.png",
+          "bundledPath": "brand/web/cmmf/maskable-512.png",
+          "sourceSha256": "c64efbc3e147da92ac7d3480bcd68923d725d5b344cab9d9bfe0275a37a8554a",
+          "bundledSha256": "c64efbc3e147da92ac7d3480bcd68923d725d5b344cab9d9bfe0275a37a8554a",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/apple-touch-icon.png",
+          "bundledPath": "brand/web/studio/apple-touch-icon.png",
+          "sourceSha256": "f42f3ded343dae54d31f82db9faa9a0a2b71359904163762afe7513a4490e212",
+          "bundledSha256": "f42f3ded343dae54d31f82db9faa9a0a2b71359904163762afe7513a4490e212",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/favicon.ico",
+          "bundledPath": "brand/web/studio/favicon.ico",
+          "sourceSha256": "78bdc21688a045e687c7d7c2ee91b011e577e279daedf2404fc7b51824fcb5ae",
+          "bundledSha256": "78bdc21688a045e687c7d7c2ee91b011e577e279daedf2404fc7b51824fcb5ae",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/favicon.svg",
+          "bundledPath": "brand/web/studio/favicon.svg",
+          "sourceSha256": "4140275050bf43a96a13b8e60dcfa2aa6bf71f56b9ab8c3c612097dd2fc82bbd",
+          "bundledSha256": "4140275050bf43a96a13b8e60dcfa2aa6bf71f56b9ab8c3c612097dd2fc82bbd",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/head.html",
+          "bundledPath": "brand/web/studio/head.html",
+          "sourceSha256": "7d20d4c4cd35b8dd70af969460e771ded0c15badab64a19069bd5944621e2efb",
+          "bundledSha256": "7d20d4c4cd35b8dd70af969460e771ded0c15badab64a19069bd5944621e2efb",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/icon-16.png",
+          "bundledPath": "brand/web/studio/icon-16.png",
+          "sourceSha256": "d5996b46126d09ff99796841e03cef5bac03d6d79317198e8dcbb085235d2420",
+          "bundledSha256": "d5996b46126d09ff99796841e03cef5bac03d6d79317198e8dcbb085235d2420",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/icon-180.png",
+          "bundledPath": "brand/web/studio/icon-180.png",
+          "sourceSha256": "4ceb5e47a89f3f21c7a03d41257a46628f49d303fe7329290ea4bdc40c5bd76d",
+          "bundledSha256": "4ceb5e47a89f3f21c7a03d41257a46628f49d303fe7329290ea4bdc40c5bd76d",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/icon-192.png",
+          "bundledPath": "brand/web/studio/icon-192.png",
+          "sourceSha256": "07e3c067271acf10b4ca1cc4eee800b36d32f6d1b3c24e643c8ed7af6b7eb597",
+          "bundledSha256": "07e3c067271acf10b4ca1cc4eee800b36d32f6d1b3c24e643c8ed7af6b7eb597",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/icon-24.png",
+          "bundledPath": "brand/web/studio/icon-24.png",
+          "sourceSha256": "96778a5ee119d779c9d766de1916f42e5a9dcd321fa7d0129c5835948ce54381",
+          "bundledSha256": "96778a5ee119d779c9d766de1916f42e5a9dcd321fa7d0129c5835948ce54381",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/icon-32.png",
+          "bundledPath": "brand/web/studio/icon-32.png",
+          "sourceSha256": "f18dbba96d21649ba06a79c96fe7221c312657bd32fc1fc3c361250a2d3f62ed",
+          "bundledSha256": "f18dbba96d21649ba06a79c96fe7221c312657bd32fc1fc3c361250a2d3f62ed",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/icon-48.png",
+          "bundledPath": "brand/web/studio/icon-48.png",
+          "sourceSha256": "88b8332441199caaf3193505820751ec80573ce9bf7c511db7bad0a466d101da",
+          "bundledSha256": "88b8332441199caaf3193505820751ec80573ce9bf7c511db7bad0a466d101da",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/icon-512.png",
+          "bundledPath": "brand/web/studio/icon-512.png",
+          "sourceSha256": "96c480aa98a6587630575f79c06ca463b341b9a743b94f6fd027a7c3a9d3c68f",
+          "bundledSha256": "96c480aa98a6587630575f79c06ca463b341b9a743b94f6fd027a7c3a9d3c68f",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/icon-64.png",
+          "bundledPath": "brand/web/studio/icon-64.png",
+          "sourceSha256": "1528778db0e83d8054046fa888990d1f0d4bf4516e3a0923cda0805d755e497c",
+          "bundledSha256": "1528778db0e83d8054046fa888990d1f0d4bf4516e3a0923cda0805d755e497c",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/manifest.webmanifest",
+          "bundledPath": "brand/web/studio/manifest.webmanifest",
+          "sourceSha256": "496d387b0506583a1c4f24cc32e1e6d3af630a681d7e3fbf857cb93b7f62adf2",
+          "bundledSha256": "496d387b0506583a1c4f24cc32e1e6d3af630a681d7e3fbf857cb93b7f62adf2",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/studio/maskable-512.png",
+          "bundledPath": "brand/web/studio/maskable-512.png",
+          "sourceSha256": "e2aa4e65dfe3839838699513820bada0083eb86f7e16b4c9802162a8af7b3a98",
+          "bundledSha256": "e2aa4e65dfe3839838699513820bada0083eb86f7e16b4c9802162a8af7b3a98",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/apple-touch-icon.png",
+          "bundledPath": "brand/web/generator/apple-touch-icon.png",
+          "sourceSha256": "9d2ce8fbf3ddba050ee3280abf77c252417af5e2971e23d73ed5b8185cf3b8e4",
+          "bundledSha256": "9d2ce8fbf3ddba050ee3280abf77c252417af5e2971e23d73ed5b8185cf3b8e4",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/favicon.ico",
+          "bundledPath": "brand/web/generator/favicon.ico",
+          "sourceSha256": "b5e3276553dc43d418228d485e2c3f035d8a61bc90d4771d01c2ba6214de77b5",
+          "bundledSha256": "b5e3276553dc43d418228d485e2c3f035d8a61bc90d4771d01c2ba6214de77b5",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/favicon.svg",
+          "bundledPath": "brand/web/generator/favicon.svg",
+          "sourceSha256": "305911ba4d5d78b6cda1fef0ac616248fde7648b00c42a9570f3dac7a3fbdb2e",
+          "bundledSha256": "305911ba4d5d78b6cda1fef0ac616248fde7648b00c42a9570f3dac7a3fbdb2e",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/head.html",
+          "bundledPath": "brand/web/generator/head.html",
+          "sourceSha256": "7d20d4c4cd35b8dd70af969460e771ded0c15badab64a19069bd5944621e2efb",
+          "bundledSha256": "7d20d4c4cd35b8dd70af969460e771ded0c15badab64a19069bd5944621e2efb",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/icon-16.png",
+          "bundledPath": "brand/web/generator/icon-16.png",
+          "sourceSha256": "ea8dbafbc125c3357b7be271dfc717b3a0dfbd837f9a054b38d5aee5d7d72e2a",
+          "bundledSha256": "ea8dbafbc125c3357b7be271dfc717b3a0dfbd837f9a054b38d5aee5d7d72e2a",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/icon-180.png",
+          "bundledPath": "brand/web/generator/icon-180.png",
+          "sourceSha256": "c9a278272e88a756a6f183c10371534a237b043f1f1cf10b08ed2e40d8d4ad8f",
+          "bundledSha256": "c9a278272e88a756a6f183c10371534a237b043f1f1cf10b08ed2e40d8d4ad8f",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/icon-192.png",
+          "bundledPath": "brand/web/generator/icon-192.png",
+          "sourceSha256": "2f36ec61c0284f09428902ac1b7a1fed9a1b260dc143c85dfb31c9cc8d022e38",
+          "bundledSha256": "2f36ec61c0284f09428902ac1b7a1fed9a1b260dc143c85dfb31c9cc8d022e38",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/icon-24.png",
+          "bundledPath": "brand/web/generator/icon-24.png",
+          "sourceSha256": "ac53f6ded45b52b2f409949ac88dacfb29355dab69ad7e5d9055bc0dd1f92a74",
+          "bundledSha256": "ac53f6ded45b52b2f409949ac88dacfb29355dab69ad7e5d9055bc0dd1f92a74",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/icon-32.png",
+          "bundledPath": "brand/web/generator/icon-32.png",
+          "sourceSha256": "bb28f5ce50d52705cd2e9d2847d80649b7f0f233b7d47aef838203e330b8eb3d",
+          "bundledSha256": "bb28f5ce50d52705cd2e9d2847d80649b7f0f233b7d47aef838203e330b8eb3d",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/icon-48.png",
+          "bundledPath": "brand/web/generator/icon-48.png",
+          "sourceSha256": "a5e5b99847c121978703d9c9156b21a108957a30d6a5adb53ed53118aa652535",
+          "bundledSha256": "a5e5b99847c121978703d9c9156b21a108957a30d6a5adb53ed53118aa652535",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/icon-512.png",
+          "bundledPath": "brand/web/generator/icon-512.png",
+          "sourceSha256": "55e56585863675ad0b2f51d77a1c50735eea70b82753ca64495a0858ddda2fde",
+          "bundledSha256": "55e56585863675ad0b2f51d77a1c50735eea70b82753ca64495a0858ddda2fde",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/icon-64.png",
+          "bundledPath": "brand/web/generator/icon-64.png",
+          "sourceSha256": "d238055c8aeb6920edd223d11dd6459c9a44c3a71f17eef84d0ca7e5c46a537c",
+          "bundledSha256": "d238055c8aeb6920edd223d11dd6459c9a44c3a71f17eef84d0ca7e5c46a537c",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/manifest.webmanifest",
+          "bundledPath": "brand/web/generator/manifest.webmanifest",
+          "sourceSha256": "13b204f2d5edd9f3f463676c6e16cdecf6ac2241ad5e227b8f37ca01ac2c99d7",
+          "bundledSha256": "13b204f2d5edd9f3f463676c6e16cdecf6ac2241ad5e227b8f37ca01ac2c99d7",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/web/generator/maskable-512.png",
+          "bundledPath": "brand/web/generator/maskable-512.png",
+          "sourceSha256": "703435ab953398265f8c30c6dc9c4b5796f433705c9d99aa8a4a0185e338292a",
+          "bundledSha256": "703435ab953398265f8c30c6dc9c4b5796f433705c9d99aa8a4a0185e338292a",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/graphics/cmmf-diagonal.svg",
+          "bundledPath": "brand/graphics/cmmf-diagonal.svg",
+          "sourceSha256": "42da8444165a358b6d9decd3c69921aeeee23e54bf2684d60741e24259e7019f",
+          "bundledSha256": "42da8444165a358b6d9decd3c69921aeeee23e54bf2684d60741e24259e7019f",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/graphics/studio-diagonal.svg",
+          "bundledPath": "brand/graphics/studio-diagonal.svg",
+          "sourceSha256": "0c6ef6961c6b177e7be6291881b7f6a0dc3d5a394fbb96b7206a59617a6e734b",
+          "bundledSha256": "0c6ef6961c6b177e7be6291881b7f6a0dc3d5a394fbb96b7206a59617a6e734b",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/graphics/generator-diagonal.svg",
+          "bundledPath": "brand/graphics/generator-diagonal.svg",
+          "sourceSha256": "a8de40247c9618c86e471d2592dc2ce12a7bba911c6a96c3e513f0f90e527a9a",
+          "bundledSha256": "a8de40247c9618c86e471d2592dc2ce12a7bba911c6a96c3e513f0f90e527a9a",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/applications/01-documentation.svg",
+          "bundledPath": "brand/applications/01-documentation.svg",
+          "sourceSha256": "0b2164887ba5f46ba222680939f714aa3af0376891f2ff548dfc8ba4314f17bd",
+          "bundledSha256": "0b2164887ba5f46ba222680939f714aa3af0376891f2ff548dfc8ba4314f17bd",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "artifacts/cmmf-brand-kit/applications/01-documentation.png",
+          "bundledPath": "brand/applications/01-documentation.png",
+          "sourceSha256": "32611f6cc568568e0027e204f66b07622f3ba5566607811b1bac05ce9f608d8e",
+          "bundledSha256": "32611f6cc568568e0027e204f66b07622f3ba5566607811b1bac05ce9f608d8e",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "docs/brand/usage.md",
+          "bundledPath": "brand/guide/usage.md",
+          "sourceSha256": "9ed83533df76af7b620a2b2940bc588299db82b1c690be343357083ad42521c8",
+          "bundledSha256": "d0b5ef364836cf6f1fad95b92ac529480357eaf3cd982c570ee8faca18f18877",
+          "gitStatus": "M docs/brand/usage.md",
+          "transformation": "relative reference links adjusted for bundled layout"
+        },
+        {
+          "sourcePath": "docs/brand/motion.md",
+          "bundledPath": "brand/guide/motion.md",
+          "sourceSha256": "1149a69fed7ce09a7a7cbdc41ff0fbbd3d7519674cd499bc6c47dd95c8e7d082",
+          "bundledSha256": "7c789fa91c9b37d9dbe4c49a00c4184968136b5d990bd884ddb06413ace2641b",
+          "gitStatus": "?? docs/brand/motion.md",
+          "transformation": "relative reference links adjusted for bundled layout"
+        },
+        {
+          "sourcePath": "docs/brand/cmmf-brand-guide.pdf",
+          "bundledPath": "brand/guide/cmmf-brand-guide.pdf",
+          "sourceSha256": "37ccce7e86aaf2b499bfca25f065b8a9cda79416d9a6d640330f9b429497ff40",
+          "bundledSha256": "37ccce7e86aaf2b499bfca25f065b8a9cda79416d9a6d640330f9b429497ff40",
+          "gitStatus": "M docs/brand/cmmf-brand-guide.pdf",
+          "transformation": null
+        }
+      ]
+    },
+    {
+      "name": "cmmf-visual-editor",
+      "baseGitRevision": "5cbbe0eb4f88db479c0d451c9ad77adff17172ff",
+      "snapshotKind": "git-commit-files",
+      "note": "Documentation snapshot only. No editor code or demo-video assets are included.",
+      "files": [
+        {
+          "sourcePath": "readme.md",
+          "bundledPath": "reference/tools/studio-readme.md",
+          "sourceSha256": "9b1bc762e0b88b0b8905ebbb0731175e9b9bbbf56c4e069d67ce4fac40bc5ab0",
+          "bundledSha256": "9b1bc762e0b88b0b8905ebbb0731175e9b9bbbf56c4e069d67ce4fac40bc5ab0",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "docs/cmmf-coverage.md",
+          "bundledPath": "reference/tools/studio-cmmf-coverage.md",
+          "sourceSha256": "1b7ddedd4ed252381bcf39168460a7df682c285256ba5f5a6f66478877380813",
+          "bundledSha256": "1b7ddedd4ed252381bcf39168460a7df682c285256ba5f5a6f66478877380813",
+          "gitStatus": "clean",
+          "transformation": null
+        }
+      ]
+    },
+    {
+      "name": "cmmf-creation-agent",
+      "baseGitRevision": "53cf3928e1a08c724dab0cf58098485c5d7de2bb",
+      "snapshotKind": "working-tree",
+      "note": "Includes uncommitted skills-first development guidance. This is evidence for writing accurate site content, not a packaged skills release or host-support certification.",
+      "files": [
+        {
+          "sourcePath": "README.md",
+          "bundledPath": "reference/tools/skills-repository-readme.md",
+          "sourceSha256": "ccbd6db909d623e7c02a7a3530ece8943cf3ee0e81f9f5e8c3b2a8c35e38305b",
+          "bundledSha256": "ccbd6db909d623e7c02a7a3530ece8943cf3ee0e81f9f5e8c3b2a8c35e38305b",
+          "gitStatus": "M README.md",
+          "transformation": null
+        },
+        {
+          "sourcePath": "docs/skills-quickstart.md",
+          "bundledPath": "reference/tools/skills-quickstart.md",
+          "sourceSha256": "1ea3157cef56c69bf0ec5369605cf3b8a3c83d0c7e4d3abd1f5be63c06318f06",
+          "bundledSha256": "1ea3157cef56c69bf0ec5369605cf3b8a3c83d0c7e4d3abd1f5be63c06318f06",
+          "gitStatus": "?? docs/skills-quickstart.md",
+          "transformation": null
+        },
+        {
+          "sourcePath": "docs/implementation-progress.md",
+          "bundledPath": "reference/tools/skills-implementation-progress.md",
+          "sourceSha256": "395b880c2a18f6eb8fdd7a91ac731e1c9b850437aeb68e28488e8e79a04cd394",
+          "bundledSha256": "395b880c2a18f6eb8fdd7a91ac731e1c9b850437aeb68e28488e8e79a04cd394",
+          "gitStatus": "?? docs/implementation-progress.md",
+          "transformation": null
+        }
+      ]
+    }
+  ]
+}

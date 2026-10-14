@@ -1,0 +1,29 @@
+id: customer
+name: Customer
+kind: entry
+description: A reusable organisation profile that can be linked from more than one customer story.
+fields:
+  - id: name
+    name: Name
+    type: string
+    required: true
+    validations:
+      maxLength: 100
+
+  - id: website
+    name: Website
+    type: string
+    editorial:
+      helpText: The customer's public website. URL validation is an implementation decision.
+
+  - id: logo
+    name: Logo
+    type: asset
+    validations:
+      mimeTypes: [image/png, image/svg+xml]
+
+editorial:
+  labelField: name
+  preview:
+    title: name
+    image: logo

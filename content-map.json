@@ -1,0 +1,441 @@
+{
+  "status": "launch-content-implemented",
+  "pages": [
+    {
+      "source": "vendor/cmmf/docs/index.md",
+      "route": "/docs/",
+      "title": "Documentation",
+      "role": "site-adaptation",
+      "notes": "Replace the upstream index with the site navigation once implemented.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/index.md",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "siteSource": "src/content/owned/docs/index.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/why-cmmf.md",
+      "route": "/learn/why-cmmf/",
+      "title": "Why CMMF",
+      "role": "site-adaptation",
+      "notes": "Adapt to a plain-language site-owned introduction when ready.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/why-cmmf.md",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "siteSource": "src/content/owned/learn/why-cmmf.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/repository-structure.md",
+      "route": "/docs/get-started/project-structure/",
+      "title": "Project structure",
+      "role": "site-adaptation",
+      "notes": "Separate user model projects from the canonical format repository.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/repository-structure.md",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "siteSource": "src/content/owned/docs/get-started/project-structure.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/model-kinds.md",
+      "route": "/docs/concepts/model-kinds/",
+      "title": "Model kinds",
+      "role": "imported-explanation",
+      "notes": "Add concrete decisions and examples.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/model-kinds.md",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/docs/canonical-types.md",
+      "route": "/docs/reference/canonical-types/",
+      "title": "Canonical types",
+      "role": "site-adaptation",
+      "notes": "Retain exact identifiers; add links to worked examples.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/canonical-types.md",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "siteSource": "src/content/owned/docs/reference/canonical-types.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/relationships.md",
+      "route": "/docs/concepts/relationships/",
+      "title": "Relationships and composition",
+      "role": "imported-explanation",
+      "notes": "Show embedded versus linked and singular versus repeatable visually.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/relationships.md",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/docs/validations.md",
+      "route": "/docs/guides/validation/",
+      "title": "Validation",
+      "role": "site-adaptation",
+      "notes": "Distinguish model structure, graph semantics and content-instance validation.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/validations.md",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "siteSource": "src/content/owned/docs/guides/validation.md"
+    },
+    {
+      "source": "vendor/cmmf/docs/translation-concepts.md",
+      "route": "/docs/concepts/translation/",
+      "title": "Translation",
+      "role": "imported-explanation",
+      "notes": "Add a decisions-log example; no invented CMS adapter support.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/translation-concepts.md",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/docs/visualisation.md",
+      "route": "/docs/guides/visualisation/",
+      "title": "Visualisation",
+      "role": "site-adaptation",
+      "notes": "Replace future-editor language in a site-owned adaptation; Studio already exists.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/visualisation.md",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "siteSource": "src/content/owned/docs/guides/visualisation.mdx"
+    },
+    {
+      "source": "vendor/cmmf/spec/cmmf-v1.2.0.md",
+      "route": "/spec/1.2.0/",
+      "title": "CMMF 1.2.0 specification",
+      "role": "normative",
+      "notes": "Keep the source text authoritative.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/cmmf-v1.2.0.md",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/spec/translation-contract-v1.2.0.md",
+      "route": "/spec/1.2.0/translation-contract/",
+      "title": "Translation contract 1.2.0",
+      "role": "normative",
+      "notes": "Keep version paired with the format spec.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/translation-contract-v1.2.0.md",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/spec/cmmf-v1.1.0.md",
+      "route": "/spec/1.1.0/",
+      "title": "CMMF 1.1.0 specification",
+      "role": "normative-archive",
+      "notes": "Archive banner; exclude from default current-version search.",
+      "sourceVersion": "1.1.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/cmmf-v1.1.0.md",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/spec/translation-contract-v1.1.0.md",
+      "route": "/spec/1.1.0/translation-contract/",
+      "title": "Translation contract 1.1.0",
+      "role": "normative-archive",
+      "notes": "Do not pair with the current schema for validation.",
+      "sourceVersion": "1.1.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/translation-contract-v1.1.0.md",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/schemas/model.schema.json",
+      "route": "/schemas/1.2.0/model.schema.json",
+      "title": "CMMF 1.2.0 model schema",
+      "role": "machine-readable",
+      "notes": "Serve the exact raw JSON; do not add a historical label.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/schemas/model.schema.json",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/CHANGELOG.md",
+      "route": "/changelog/",
+      "title": "Changelog",
+      "role": "upstream-history",
+      "notes": "Render release changes and link to site-authored migration guidance.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/CHANGELOG.md",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/LICENSE.md",
+      "route": "/project/format-licence/",
+      "title": "Format licence",
+      "role": "upstream-licence",
+      "notes": "Apache-2.0 applies to these upstream files, not all bundled materials.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/LICENSE.md",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/README.md",
+      "route": null,
+      "title": "Upstream README",
+      "role": "source-context",
+      "notes": "Reference material; no duplicate website homepage.",
+      "sourceVersion": "1.2.0",
+      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/README.md",
+      "owner": "upstream",
+      "status": "context-only"
+    },
+    {
+      "source": "vendor/cmmf/examples/manifest.yaml",
+      "route": "/downloads/examples/1.2.0/manifest.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together.",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/examples/models/article.yaml",
+      "route": "/downloads/examples/1.2.0/models/article.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together.",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/examples/models/page.yaml",
+      "route": "/downloads/examples/1.2.0/models/page.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together.",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/examples/models/person.yaml",
+      "route": "/downloads/examples/1.2.0/models/person.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together.",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "source": "vendor/cmmf/examples/models/seo-metadata.yaml",
+      "route": "/downloads/examples/1.2.0/models/seo-metadata.yaml",
+      "role": "raw-example",
+      "sourceVersion": "1.2.0",
+      "notes": "Download exact bytes; keep all referenced models together.",
+      "owner": "upstream",
+      "status": "implemented-prototype"
+    },
+    {
+      "route": "/",
+      "title": "Home",
+      "source": "src/pages/index.astro",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0"
+    },
+    {
+      "route": "/examples/",
+      "title": "Example model sets",
+      "source": "src/content/owned/examples/index.md",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0"
+    },
+    {
+      "route": "/tools/",
+      "title": "Studio and Skills",
+      "source": "src/content/owned/tools/index.md",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0"
+    },
+    {
+      "route": "/learn/glossary/",
+      "title": "Glossary",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/learn/glossary.md"
+    },
+    {
+      "route": "/docs/get-started/first-model/",
+      "title": "Create your first model set",
+      "owner": "site",
+      "status": "implemented-tutorial",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/docs/get-started/first-model.md"
+    },
+    {
+      "route": "/docs/get-started/visual-modelling/",
+      "title": "Follow the model visually",
+      "owner": "site",
+      "status": "implemented-tutorial",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/docs/get-started/visual-modelling.md"
+    },
+    {
+      "route": "/docs/guides/embed-or-reference/",
+      "title": "Choosing embeddings and references",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/docs/guides/embed-or-reference.md"
+    },
+    {
+      "route": "/docs/guides/rich-text/",
+      "title": "Rich-text capabilities",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/docs/guides/rich-text.md"
+    },
+    {
+      "route": "/docs/guides/localisation/",
+      "title": "Localisation and defaults",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/docs/guides/localisation.md"
+    },
+    {
+      "route": "/docs/guides/editorial-intent/",
+      "title": "Editorial and governance metadata",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/docs/guides/editorial-intent.md"
+    },
+    {
+      "route": "/docs/guides/errors/",
+      "title": "Validation errors and fixes",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/docs/guides/errors.md"
+    },
+    {
+      "route": "/docs/guides/migrate-to-1-2/",
+      "title": "Migration to 1.2.0",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/docs/guides/migrate-to-1-2.md"
+    },
+    {
+      "route": "/tools/studio/",
+      "title": "Studio walkthrough",
+      "owner": "site",
+      "status": "implemented-tutorial",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/tools/studio.md"
+    },
+    {
+      "route": "/tools/skills/",
+      "title": "Skills development-release installation",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/tools/skills.md"
+    },
+    {
+      "route": "/examples/customer-story/",
+      "title": "Customer Story",
+      "owner": "site",
+      "status": "implemented-tutorial",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/examples/customer-story.mdx"
+    },
+    {
+      "route": "/contributing/",
+      "title": "Contribution and publishing guidance",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0",
+      "source": "src/content/owned/contributing.md"
+    },
+    {
+      "route": "/404.html",
+      "title": "Not found",
+      "source": "src/content/owned/404.md",
+      "owner": "site",
+      "status": "implemented-prototype",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0"
+    },
+    {
+      "route": "/examples/article/",
+      "title": "Article model set",
+      "source": "src/content/owned/examples/article.md",
+      "owner": "site",
+      "status": "implemented-tutorial",
+      "role": "site-authored",
+      "sourceVersion": "1.2.0"
+    },
+    {
+      "route": "/downloads/examples/1.2.0/customer-story.zip",
+      "title": "Customer Story project ZIP",
+      "owner": "site",
+      "status": "implemented-tutorial",
+      "role": "generated-example-download",
+      "sourceVersion": "1.2.0",
+      "source": "examples/customer-story/"
+    },
+    {
+      "route": "/downloads/examples/1.2.0/customer-story/customer-story.models.json",
+      "title": "Customer Story Studio import",
+      "owner": "site",
+      "status": "implemented-tutorial",
+      "role": "generated-example-download",
+      "sourceVersion": "1.2.0",
+      "source": "examples/customer-story/"
+    },
+    {
+      "route": "/downloads/examples/1.2.0/article.zip",
+      "title": "Article project ZIP",
+      "owner": "site",
+      "status": "implemented-tutorial",
+      "role": "generated-example-download",
+      "sourceVersion": "1.2.0",
+      "source": "vendor/cmmf/examples/"
+    },
+    {
+      "route": "/downloads/examples/1.2.0/article.models.json",
+      "title": "Article Studio import",
+      "owner": "site",
+      "status": "implemented-tutorial",
+      "role": "generated-example-download",
+      "sourceVersion": "1.2.0",
+      "source": "vendor/cmmf/examples/"
+    }
+  ]
+}

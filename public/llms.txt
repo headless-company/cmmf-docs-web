@@ -1,0 +1,47 @@
+# CMMF
+
+> A portable format for content models and the intent behind them.
+
+This website documents CMMF 1.2.0, pinned at 32604441aff09a6dbfe2361e97078af5263fd321. Specifications are normative; site-owned explanations are interpretations. Tool evidence may include development working-tree snapshots and is not a release claim.
+
+## Current documentation
+
+- [Documentation](https://cmmf.dev/docs/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/index.md
+- [Why CMMF](https://cmmf.dev/learn/why-cmmf/): Website explanation. Markdown: https://cmmf.dev/raw/site/learn/why-cmmf.md
+- [Project structure](https://cmmf.dev/docs/get-started/project-structure/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/get-started/project-structure.md
+- [Model kinds](https://cmmf.dev/docs/concepts/model-kinds/): Pinned upstream material. Markdown: https://cmmf.dev/raw/docs/model-kinds.md
+- [Canonical types](https://cmmf.dev/docs/reference/canonical-types/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/reference/canonical-types.md
+- [Relationships and composition](https://cmmf.dev/docs/concepts/relationships/): Pinned upstream material. Markdown: https://cmmf.dev/raw/docs/relationships.md
+- [Validation](https://cmmf.dev/docs/guides/validation/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/validation.md
+- [Translation](https://cmmf.dev/docs/concepts/translation/): Pinned upstream material. Markdown: https://cmmf.dev/raw/docs/translation-concepts.md
+- [Visualisation](https://cmmf.dev/docs/guides/visualisation/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/visualisation.md
+- [CMMF 1.2.0 specification](https://cmmf.dev/spec/1.2.0/): Pinned upstream material. Markdown: https://cmmf.dev/raw/spec/cmmf-v1.2.0.md
+- [Translation contract 1.2.0](https://cmmf.dev/spec/1.2.0/translation-contract/): Pinned upstream material. Markdown: https://cmmf.dev/raw/spec/translation-contract-v1.2.0.md
+- [Changelog](https://cmmf.dev/changelog/): Pinned upstream material. Markdown: https://cmmf.dev/raw/CHANGELOG.md
+- [Format licence](https://cmmf.dev/project/format-licence/): Pinned upstream material. Markdown: https://cmmf.dev/raw/LICENSE.md
+- [Example model sets](https://cmmf.dev/examples/): Website explanation. Markdown: https://cmmf.dev/raw/site/examples/index.md
+- [Studio and Skills](https://cmmf.dev/tools/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/index.md
+- [Glossary](https://cmmf.dev/learn/glossary/): Website explanation. Markdown: https://cmmf.dev/raw/site/learn/glossary.md
+- [Create your first model set](https://cmmf.dev/docs/get-started/first-model/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/get-started/first-model.md
+- [Follow the model visually](https://cmmf.dev/docs/get-started/visual-modelling/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/get-started/visual-modelling.md
+- [Choosing embeddings and references](https://cmmf.dev/docs/guides/embed-or-reference/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/embed-or-reference.md
+- [Rich-text capabilities](https://cmmf.dev/docs/guides/rich-text/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/rich-text.md
+- [Localisation and defaults](https://cmmf.dev/docs/guides/localisation/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/localisation.md
+- [Editorial and governance metadata](https://cmmf.dev/docs/guides/editorial-intent/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/editorial-intent.md
+- [Validation errors and fixes](https://cmmf.dev/docs/guides/errors/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/errors.md
+- [Migration to 1.2.0](https://cmmf.dev/docs/guides/migrate-to-1-2/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/migrate-to-1-2.md
+- [Studio walkthrough](https://cmmf.dev/tools/studio/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/studio.md
+- [Skills development-release installation](https://cmmf.dev/tools/skills/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills.md
+- [Customer Story](https://cmmf.dev/examples/customer-story/): Website explanation. Markdown: https://cmmf.dev/raw/site/examples/customer-story.md
+- [Contribution and publishing guidance](https://cmmf.dev/contributing/): Website explanation. Markdown: https://cmmf.dev/raw/site/contributing.md
+- [Article model set](https://cmmf.dev/examples/article/): Website explanation. Markdown: https://cmmf.dev/raw/site/examples/article.md
+
+## Machine-readable assets
+
+- [1.2.0 model schema](https://cmmf.dev/schemas/1.2.0/model.schema.json)
+- [Customer Story complete project](https://cmmf.dev/downloads/examples/1.2.0/customer-story.zip)
+- [Article complete project](https://cmmf.dev/downloads/examples/1.2.0/article.zip)
+
+## Historical material
+
+- [1.1.0 specification](https://cmmf.dev/spec/1.1.0/): archived; matching historical schema is not bundled.

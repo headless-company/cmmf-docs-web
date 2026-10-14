@@ -1,0 +1,27 @@
+id: quote
+name: Quote
+kind: object
+description: A quotation and attribution embedded in one customer story, rather than a separately maintained content item.
+fields:
+  - id: text
+    name: Text
+    type: text
+    required: true
+    validations:
+      maxLength: 500
+
+  - id: attribution
+    name: Attribution
+    type: string
+    required: true
+    validations:
+      maxLength: 100
+
+  - id: role
+    name: Role
+    type: string
+    validations:
+      maxLength: 100
+
+editorial:
+  labelField: attribution

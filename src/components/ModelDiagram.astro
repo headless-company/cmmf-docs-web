@@ -1,0 +1,29 @@
+---
+interface Props { compact?: boolean; variant?: 'article' | 'customer-story'; }
+const { compact = false, variant = 'customer-story' } = Astro.props;
+import { parse } from 'yaml';
+import articleSource from '../../vendor/cmmf/examples/models/article.yaml?raw';
+import personSource from '../../vendor/cmmf/examples/models/person.yaml?raw';
+import seoSource from '../../vendor/cmmf/examples/models/seo-metadata.yaml?raw';
+import storySource from '../../examples/customer-story/models/customer-story.yaml?raw';
+import customerSource from '../../examples/customer-story/models/customer.yaml?raw';
+import quoteSource from '../../examples/customer-story/models/quote.yaml?raw';
+const article = parse(variant === 'customer-story' ? storySource : articleSource);
+const person = parse(variant === 'customer-story' ? customerSource : personSource);
+const seo = parse(variant === 'customer-story' ? quoteSource : seoSource);
+const shownFields = (variant === 'customer-story' ? ['title', 'story', 'customer', 'quote'] : ['title', 'body', 'author', 'seo']).map(id => article.fields.find((field: { id: string }) => field.id === id));
+const personName = person.fields.find((field: { id: string }) => field.id === (variant === 'customer-story' ? 'name' : 'full_name'));
+const seoTitle = seo.fields.find((field: { id: string }) => field.id === (variant === 'customer-story' ? 'text' : 'meta_title'));
+const kindLabel = (kind: string) => kind[0].toUpperCase() + kind.slice(1);
+---
+<figure class:list={['model-diagram', { compact }]} aria-label={`${article.name} model relationships — selected fields`}>
+  <div class="diagram-node main-model">
+    <span class="model-kind">{kindLabel(article.kind)}</span><strong>{article.name}</strong>
+    {shownFields.map(field => <span class="diagram-field">{field.id} {field.required && <b aria-label="required">*</b>}<small>{field.type}</small></span>)}
+  </div>
+  <div class="diagram-targets">
+    <div class="diagram-link"><span>links to →</span><div class="diagram-node"><span class="model-kind">{kindLabel(person.kind)} · reusable</span><strong>{person.name}</strong><span class="diagram-field">{personName.id} {personName.required && <b aria-label="required">*</b>}</span></div></div>
+    <div class="diagram-link"><span>embeds →</span><div class="diagram-node"><span class="model-kind">{kindLabel(seo.kind)} · embedded</span><strong>{seo.name}</strong><span class="diagram-field">{seoTitle.id} {seoTitle.required && <b aria-label="required">*</b>}</span></div></div>
+  </div>
+  <figcaption>{variant === 'customer-story' ? 'A customer can be reused across stories. Quote values belong inside one story.' : 'An author has their own identity. SEO metadata belongs inside the article.'} Selected fields shown. <span class="required-key">* Required field</span></figcaption>
+</figure>

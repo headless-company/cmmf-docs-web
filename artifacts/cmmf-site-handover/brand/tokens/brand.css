@@ -1,0 +1,18 @@
+@font-face { font-family: 'Reem Kufi'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/reem-kufi-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Reem Kufi'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/reem-kufi-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Reem Kufi'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/reem-kufi-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Reem Kufi'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/reem-kufi-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Quattrocento'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/quattrocento-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Quattrocento'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/quattrocento-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Source Sans 3'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/source-sans-3-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Source Sans 3'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/source-sans-3-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Source Sans 3'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/source-sans-3-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Source Sans 3'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/source-sans-3-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Source Sans 3'; font-style: italic; font-weight: 400; font-display: swap; src: url('../fonts/source-sans-3-latin-400-italic.woff2') format('woff2'); }
+:root { --cmmf-paper: #F6F7F3; --cmmf-ink: #192329; --cmmf-muted: #667177; --font-interface: 'Source Sans 3', sans-serif; --font-editorial: 'Quattrocento', Georgia, serif; --font-display: 'Reem Kufi', sans-serif; --radius-panel: 8px; --space-unit: 8px; }
+[data-brand="cmmf"] { --brand-from: #BA5579; --brand-to: #D07748; --brand-name: #192329; --brand-name-dark: #FFFFFF; --brand-gradient: linear-gradient(45deg, var(--brand-from), var(--brand-to)); }
+[data-brand="studio"] { --brand-from: #8362B7; --brand-to: #C1639A; --brand-name: #945D9C; --brand-name-dark: #AD76B3; --brand-gradient: linear-gradient(45deg, var(--brand-from), var(--brand-to)); }
+[data-brand="generator"] { --brand-from: #248C9F; --brand-to: #399B77; --brand-name: #2B7D77; --brand-name-dark: #35978E; --brand-gradient: linear-gradient(45deg, var(--brand-from), var(--brand-to)); }
+body { font-family: var(--font-interface); font-synthesis: none; color: var(--cmmf-ink); background: var(--cmmf-paper); }
+.brand-reading { font-family: var(--font-editorial); font-size: 20px; line-height: 1.6; max-width: 65ch; }
+.brand-display { font-family: var(--font-display); font-weight: 600; }

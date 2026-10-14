@@ -1,0 +1,211 @@
+{
+  "version": "1.2",
+  "date": "2026-10-13",
+  "symbol": {
+    "viewBox": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "path": "M24 116.44L81.78 174.22L232 24L232 232L24 232L24 116.44Z",
+    "clearSpace": "one eighth of the visible symbol height",
+    "minimumPixels": 16
+  },
+  "fonts": {
+    "parent": {
+      "family": "Reem Kufi",
+      "weight": 700
+    },
+    "tool": {
+      "family": "Quattrocento",
+      "weight": 700,
+      "relativeSize": 0.8,
+      "case": "initial capital"
+    },
+    "body": {
+      "family": "Source Sans 3",
+      "weight": 400,
+      "size": 16,
+      "lineHeight": 24
+    },
+    "editorial": {
+      "family": "Quattrocento",
+      "weight": 400,
+      "size": 20,
+      "lineHeight": 32
+    },
+    "display": {
+      "family": "Reem Kufi",
+      "weight": 600
+    },
+    "functionalHeading": {
+      "family": "Source Sans 3",
+      "weight": 600
+    },
+    "roles": {
+      "default": "Source Sans 3 for navigation, forms, tables, metadata and short help",
+      "reading": "Quattrocento for dedicated long-form prose and field-intent explanations",
+      "presentation": "Source Sans 3 for bullets, diagrams and data; Quattrocento for short narrative statements; Reem Kufi for opening and section headings"
+    }
+  },
+  "colours": {
+    "paper": "#F6F7F3",
+    "ink": "#192329",
+    "muted": "#667177"
+  },
+  "parts": {
+    "cmmf": {
+      "label": "",
+      "gradient": [
+        "#BA5579",
+        "#D07748"
+      ],
+      "light": "#192329",
+      "dark": "#FFFFFF"
+    },
+    "studio": {
+      "label": "Studio",
+      "gradient": [
+        "#8362B7",
+        "#C1639A"
+      ],
+      "light": "#945D9C",
+      "dark": "#AD76B3"
+    },
+    "generator": {
+      "label": "Generator",
+      "gradient": [
+        "#248C9F",
+        "#399B77"
+      ],
+      "light": "#2B7D77",
+      "dark": "#35978E"
+    }
+  },
+  "gradient": {
+    "space": "sRGB",
+    "from": [
+      24,
+      232
+    ],
+    "to": [
+      232,
+      24
+    ]
+  },
+  "lockup": {
+    "parentTrackingEm": 0.009,
+    "toolGapEm": 0.24,
+    "compactVisibleGap": 12,
+    "stackedVisibleGap": 20,
+    "stackedToolAlignment": "centred ink bounds; tool below CMMF"
+  },
+  "minimumWidths": {
+    "horizontal": {
+      "cmmf": 112,
+      "studio": 220,
+      "generator": 260
+    },
+    "compact": {
+      "cmmf": 112,
+      "studio": 144,
+      "generator": 170
+    },
+    "stacked": {
+      "cmmf": 96,
+      "studio": 160,
+      "generator": 190
+    }
+  },
+  "expandedName": {
+    "text": "Content Model Master Format",
+    "family": "Source Sans 3",
+    "weight": 500,
+    "parentSizeRatio": 0.255,
+    "minimumPixels": 420,
+    "presentationWidthAt1920": 880,
+    "use": "Core CMMF first introductions; retain one line and supplied proportions"
+  },
+  "motion": {
+    "version": "1.0",
+    "easing": {
+      "rise": [
+        0.4,
+        0,
+        0.2,
+        1
+      ],
+      "lettering": [
+        0.35,
+        0,
+        0.65,
+        1
+      ],
+      "opacity": [
+        0.35,
+        0,
+        0.65,
+        1
+      ],
+      "gradient": [
+        0.35,
+        0,
+        0.65,
+        1
+      ]
+    },
+    "headline": {
+      "symbol": {
+        "delay": 0,
+        "duration": 1200
+      },
+      "gradient": {
+        "delay": 0,
+        "tail": 120,
+        "displacement": 224
+      },
+      "wordmark": {
+        "delay": 1320,
+        "duration": 900,
+        "fadeDuration": 1000,
+        "rise": 26,
+        "scale": 0.985
+      },
+      "name": {
+        "delay": 2600,
+        "duration": 850,
+        "fadeDuration": 950,
+        "wordStagger": 50,
+        "rise": 22,
+        "scale": 0.99
+      }
+    },
+    "incidental": {
+      "symbol": {
+        "delay": 0,
+        "duration": 420
+      },
+      "gradient": {
+        "delay": 0,
+        "tail": 40,
+        "displacement": 224
+      },
+      "wordmark": {
+        "delay": 480,
+        "duration": 280,
+        "fadeDuration": 340,
+        "rise": 3,
+        "scale": 1
+      },
+      "name": {
+        "delay": 480,
+        "duration": 280,
+        "fadeDuration": 340,
+        "rise": 3,
+        "scale": 1
+      }
+    },
+    "reducedMotion": "Show the complete signature immediately; no masked rise, translation, scale or gradient movement."
+  }
+}

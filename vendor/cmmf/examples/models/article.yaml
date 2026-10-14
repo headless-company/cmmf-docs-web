@@ -1,0 +1,84 @@
+id: article
+name: Article
+kind: entry
+description: Editorial article content type.
+tags:
+  - editorial
+fields:
+  - id: title
+    name: Title
+    type: string
+    required: true
+    validations:
+      minLength: 5
+      maxLength: 100
+
+  - id: slug
+    name: Slug
+    type: slug
+    required: true
+    editorial:
+      helpText: Used in URLs.
+
+  - id: summary
+    name: Summary
+    type: text
+    validations:
+      maxLength: 250
+
+  - id: body
+    name: Body
+    type: richText
+    required: true
+    richTextConfig:
+      marks:
+        - bold
+        - italic
+        - link
+      blocks:
+        - paragraph
+        - heading-2
+        - heading-3
+        - unordered-list
+        - ordered-list
+        - quote
+      embeds:
+        - kind: asset
+        - kind: reference
+          targets:
+            - person
+
+  - id: hero_image
+    name: Hero Image
+    type: asset
+    validations:
+      mimeTypes:
+        - image/jpeg
+        - image/png
+
+  - id: author
+    name: Author
+    type: reference
+    targets:
+      - person
+    relation:
+      ownership: linked
+
+  - id: seo
+    name: SEO
+    type: object
+    objectType: seo-metadata
+    translationHints:
+      preferredRepresentation: embedded
+
+editorial:
+  labelField: title
+  preview:
+    title: title
+    description: summary
+    image: hero_image
+
+governance:
+  owner: platform-team
+  status: active
+  maturity: stable

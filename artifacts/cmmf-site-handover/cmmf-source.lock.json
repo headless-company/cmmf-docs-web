@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/headless-company/content-model-master-format.git",
+  "revision": "32604441aff09a6dbfe2361e97078af5263fd321",
+  "specVersion": "1.2.0",
+  "snapshotKind": "git-commit",
+  "files": {
+    "CHANGELOG.md": "85dcb91efb2b2346dca9f6d904a0898919339706775b96d37d6c9b0b67abf60b",
+    "LICENSE.md": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "f48956c018796f282f8aee678d93dfaa78ff442f901b587db1adcff8f496f1ed",
+    "docs/brand/assets/cmmf-expanded-gradient-dark.svg": "63356115bae8ec0175931283216fe5751f93a3acc30df14965ebb83ad59da7a5",
+    "docs/brand/assets/cmmf-expanded-gradient-light.svg": "ff1f0271651d86558fd6579c622aa1ad67e110e433c3bf7d206ca2ee9ee36ae4",
+    "docs/canonical-types.md": "5953901643fdfbcd80df107fa122b56d1012ade9ba5160fd01269ec640551e8f",
+    "docs/index.md": "0e17f22174c14da8067a10aa865ed5ab5d3b09bd79a259a08bcf67ad5173fe28",
+    "docs/model-kinds.md": "fcbaa2d5a2020c46abca4d3e3cd05f696aeff3c23abab2c4c9c520d357ab4e95",
+    "docs/relationships.md": "507f48e1e461f38b5d8d6be0adcafd622f4b295eba1a1d3f2064554583fde6a2",
+    "docs/repository-structure.md": "4b227510e5cfbba70d1e3504e54675a0648c61394391dce7a867bc321a1b22e6",
+    "docs/translation-concepts.md": "aa4f6a8ab1e013cc49c5886af7f65f0b7924cc99c0f893160cc81e3fc1160027",
+    "docs/validations.md": "9806e80e23ab4b57ef22862cb928dd914200c692ff76bda7ff581909be18293d",
+    "docs/visualisation.md": "2a3578ee771f55550c74f52e68c3b711eadc1dad07ef811be46c9a8d66c958ef",
+    "docs/why-cmmf.md": "068a9aff6caca9dde391f5a33b4017709857efe488ac5464a26a3714ceceaade",
+    "examples/manifest.yaml": "4ffe6ccecd67c9ad8b7b0f0251e699ffc6a39c3d5353981c222478d1b40faf8e",
+    "examples/models/article.yaml": "2fe6be8c5f8901d4feebb047181c5997400a3600d6d8ecead2dca834061c765b",
+    "examples/models/page.yaml": "5d4ad86ae50d4d3c22e0da2df84d1eff1507aaf8a08833c103a9cffe2d9e9bd0",
+    "examples/models/person.yaml": "685dd8b2d3ba115e653439c1b3c917759f963e0a7fea02c88a87780f300f7e81",
+    "examples/models/seo-metadata.yaml": "3815a263c2bc35e23c28da1cc63a206a53edacf99cdb14dc5a955bbe4f8a2a3e",
+    "schemas/model.schema.json": "286fff8d91593503e94a3616de931a902caddc9f56283fd54471b59853d7fc5b",
+    "spec/cmmf-v1.1.0.md": "7c85c4cfe3814641ebe31698830e9cd3e28ec87d0b6ccabf6219fb6f3348b4a3",
+    "spec/cmmf-v1.2.0.md": "577fff5d5bfda966a9926c612d58aab7de9d0ded6b1ddde98aa6554ea983e9f1",
+    "spec/translation-contract-v1.1.0.md": "5aab0f43e124c37ff9a084c47ce21a64300b24c49c85432550f36923fc192086",
+    "spec/translation-contract-v1.2.0.md": "be712a6ca7c78fdc81c27be748d013e51f33a9b2fe2821fcf66068bd0873b5c3"
+  }
+}

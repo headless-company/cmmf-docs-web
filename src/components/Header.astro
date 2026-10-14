@@ -1,0 +1,18 @@
+---
+import Search from '@astrojs/starlight/components/Search.astro';
+import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
+import BrandLogo from './BrandLogo.astro';
+const links = [
+  ['Learn', '/learn/why-cmmf/'], ['Documentation', '/docs/'],
+  ['Examples', '/examples/'], ['Tools', '/tools/'],
+];
+const path = Astro.url.pathname;
+---
+<div class="site-header">
+  <a class="site-logo-link" href="/" aria-label="CMMF home"><BrandLogo /></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    {links.map(([label, href]) => <a href={href} aria-current={path === href ? 'page' : undefined}>{label}</a>)}
+  </nav>
+  <div class="header-utilities"><Search /><ThemeSelect /><a class="studio-link" href="https://studio.cmmf.dev">Open Studio <span aria-hidden="true">↗</span></a></div>
+  <details class="site-mobile-nav"><summary aria-label="Main navigation"><span class="mobile-menu-label">Explore</span><span class="compact-nav-glyph" aria-hidden="true">⋯</span></summary><nav aria-label="Mobile main navigation">{links.map(([label, href]) => <a href={href}>{label}</a>)}<a href="https://studio.cmmf.dev">Open Studio ↗</a></nav></details>
+</div>

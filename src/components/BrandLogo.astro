@@ -1,0 +1,9 @@
+---
+interface Props { expanded?: boolean; }
+const { expanded = false } = Astro.props;
+const variant = expanded ? 'expanded' : 'horizontal';
+---
+<span class:list={['brand-logo', { 'brand-logo-expanded': expanded }]}>
+  <img class="logo-light" src={`/brand/logos/cmmf/cmmf-${variant}-gradient-light.svg`} alt={expanded ? 'CMMF — Content Model Master Format' : 'CMMF'} width="550" height="256" />
+  <img class="logo-dark" src={`/brand/logos/cmmf/cmmf-${variant}-gradient-dark.svg`} alt={expanded ? 'CMMF — Content Model Master Format' : 'CMMF'} width="550" height="256" />
+</span>

@@ -1,0 +1,18 @@
+---
+const { entry } = Astro.locals.starlightRoute;
+const home = Astro.url.pathname === '/';
+const reference = Astro.url.pathname.startsWith('/docs/reference/') || Astro.url.pathname.startsWith('/spec/');
+const archive = Astro.url.pathname.startsWith('/spec/1.1.0/');
+const specification = Astro.url.pathname.startsWith('/spec/');
+const suffix = Astro.url.pathname.endsWith('/translation-contract/') ? 'translation-contract/' : '';
+---
+{!home && <div class:list={['page-heading', reference ? 'reference-title' : 'reading-title']}>
+  <div class="page-eyebrow"><span>{reference ? 'Format reference' : 'Content modelling'}</span><span class="version-badge">{archive ? '1.1.0 · Archived' : 'CMMF 1.2.0'}</span></div>
+  <h1 id="_top">{entry.data.title}</h1>
+  {entry.data.description && <p class="page-description">{entry.data.description}</p>}
+  {specification && <nav class="spec-versions" aria-label="Specification versions">
+    <span>Read this document in</span>
+    <a href={`/spec/1.2.0/${suffix}`} aria-current={!archive ? 'page' : undefined}>1.2.0 · Current</a>
+    <a href={`/spec/1.1.0/${suffix}`} aria-current={archive ? 'page' : undefined}>1.1.0 · Archived</a>
+  </nav>}
+</div>}
