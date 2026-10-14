@@ -59,4 +59,4 @@ The custom 404 content is intentionally marked draft so Starlight excludes its o
 
 The local machine's initial Node 22.7 x64 runtime was below Astro's requirement. An ignored project-local 22.23.3 x64 runtime was used. Optional native packages needed the matching CPU selection during installation; future installs should keep Node and native dependency architectures consistent. No global Node installation was changed.
 
-No Cloudflare account, DNS, production deployment, commit or push was performed.
+The initial prototype review was completed before publication. Subsequent repository publication and Cloudflare zone progress are recorded in [deployment-status.md](deployment-status.md). The documentation application has not yet been deployed to Cloudflare Pages.

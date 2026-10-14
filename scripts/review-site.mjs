@@ -29,16 +29,24 @@ const base = `http://127.0.0.1:${server.address().port}`;
 const edge = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge';
 const executablePath = process.env.CMMF_BROWSER_EXECUTABLE || (existsSync(edge) ? edge : undefined);
 let browser;
-const report = { engine, templates: [], interactions: [], accessibility: [], errors: [] };
+const report = { engine, templates: [], interactions: [], accessibility: [], errors: [], failedRequests: [] };
+// Starlight imports Pagefind on requestIdleCallback after the page's load event.
+// Wait for its hidden search input before navigating away or closing a context.
+const searchReady = async page => {
+  await page.waitForLoadState('networkidle');
+  await page.locator('.pagefind-ui__search-input').waitFor({ state: 'attached' });
+};
 try {
   browser = await browserType.launch({ executablePath: engine === 'chromium' ? executablePath : undefined, headless: true });
   for (const theme of ['light', 'dark']) for (const width of [390, 1440]) {
     const context = await browser.newContext({ viewport: { width, height: 1000 }, colorScheme: theme, reducedMotion: 'reduce' });
     const page = await context.newPage();
-    page.on('pageerror', e => report.errors.push(e.message));
+    page.on('pageerror', e => report.errors.push(`${page.url()}: ${e.message}\n${e.stack || ''}`));
+    page.on('requestfailed', request => report.failedRequests.push({ page: page.url(), url: request.url(), error: request.failure()?.errorText }));
     page.on('response', r => { if (r.status() >= 400) report.errors.push(`${r.status()} ${r.url()}`); });
     for (const [name, route] of [['home', '/'], ['article', '/learn/why-cmmf/'], ['reference', '/docs/reference/canonical-types/'], ['first-model', '/docs/get-started/first-model/'], ['customer-story', '/examples/customer-story/'], ['studio', '/tools/studio/'], ['visual', '/docs/get-started/visual-modelling/'], ['skills', '/tools/skills/'], ['diagrams', '/docs/guides/visualisation/'], ['migration', '/docs/guides/migrate-to-1-2/']]) {
       await page.goto(base + route, { waitUntil: 'networkidle' });
+      await searchReady(page);
       await page.evaluate(async () => {
         await Promise.all(['16px "Source Sans 3"', '20px "Quattrocento"', '600 44px "Reem Kufi"'].map(font => document.fonts.load(font)));
         await document.fonts.ready;
@@ -114,7 +122,8 @@ try {
         report.accessibility.push({ name, width, theme, violations: violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) })) });
       }
     }
-    await page.goto(base + '/');
+    await page.goto(base + '/', { waitUntil: 'networkidle' });
+    await searchReady(page);
     // macOS WebKit uses Option+Tab to include links in keyboard navigation.
     await page.keyboard.press(engine === 'webkit' && process.platform === 'darwin' ? 'Alt+Tab' : 'Tab');
     assert.equal(await page.locator(':focus').textContent(), 'Skip to content');
@@ -124,14 +133,17 @@ try {
       await page.locator('.site-mobile-nav summary').click();
       await page.locator('.site-mobile-nav nav a').filter({ hasText: 'Documentation' }).click();
       assert.ok(page.url().endsWith('/docs/'));
+      await searchReady(page);
       const button = page.locator('button[popovertarget="starlight__sidebar"]');
       await button.click();
       await page.locator('#starlight__sidebar a').filter({ hasText: 'Canonical types' }).click();
       assert.ok(page.url().endsWith('/docs/reference/canonical-types/'));
+      await searchReady(page);
     }
     const themeSelect = page.locator('.header-utilities starlight-theme-select select');
     await themeSelect.selectOption(theme === 'light' ? 'dark' : 'light');
-    await page.reload();
+    await page.reload({ waitUntil: 'networkidle' });
+    await searchReady(page);
     assert.equal(await page.locator('html').getAttribute('data-theme'), theme === 'light' ? 'dark' : 'light');
     report.interactions.push(`Keyboard skip link, navigation and theme persistence: ${width}/${theme}`);
     await context.close();
