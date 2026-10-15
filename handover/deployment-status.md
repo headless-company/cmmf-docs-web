@@ -8,8 +8,8 @@ Updated 15 October 2026.
 - Pages project: `cmmf-docs-web`, ID `08f9c1e7-34eb-4251-9fbf-bac41d035079`.
 - Pages address: https://cmmf-docs-web.pages.dev.
 - Initial production deployment: `6930dda4-91fa-404e-a752-7c02b7082fe6`, https://6930dda4.cmmf-docs-web.pages.dev, deployed successfully at 23:41 UTC on 14 October 2026.
-- Deployed source revision: `4c3f29c259212ca56d77aa718d7664c3e4426de5` on `main` in `headless-company/cmmf-docs-web`.
-- GitHub integration is configured for automatic production builds from `main` and branch previews. Build command `npm run build`, output `dist`, repository root, `NODE_VERSION=22.23.3` for production and preview. The initial deployment successfully cloned and built the repository. A later push will verify the automatic trigger; an actual branch-preview deployment has not been reviewed yet.
+- Initial deployed site revision: `4c3f29c259212ca56d77aa718d7664c3e4426de5` on `main` in `headless-company/cmmf-docs-web`.
+- GitHub integration is configured for automatic production builds from `main` and branch previews. Build command `npm run build`, output `dist`, repository root, `NODE_VERSION=22.23.3` for production and preview. The initial deployment successfully cloned and built the repository. Automatic GitHub deployment was verified by pushing documentation commit `5482d106c31b1461f4ae580b5fd3d288501ae23e`: deployment `575a4647-bc4e-4cb5-ad64-9028880ac99e` completed successfully at 00:03 UTC on 15 October. Its trigger is recorded as `github:push`. An actual branch-preview deployment has not been reviewed yet.
 
 ## Verification
 

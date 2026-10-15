@@ -1,6 +1,6 @@
 # CMMF documentation website
 
-The public explanation and documentation site for CMMF, built in the existing `headless-company/cmmf-docs-web` repository. Static Astro/Starlight output is intended for Cloudflare Pages at `cmmf.dev`; Studio remains separately deployed at `studio.cmmf.dev`.
+The public explanation and documentation site for CMMF, built in the existing `headless-company/cmmf-docs-web` repository. The static Astro/Starlight site is live on Cloudflare Pages at [cmmf.dev](https://cmmf.dev). Studio remains a separate app and deployment; its production endpoint is tracked independently.
 
 ## Run locally
 
@@ -58,7 +58,7 @@ The site includes all planned launch articles, the Customer Story learning journ
 
 The branded social PNG is tracked. Regenerate it with `npm run assets:social` after a reviewed visual change; it uses an isolated browser and the bundled artwork/fonts. Ordinary builds require no browser. Starlight's `markdown.processedDirs` includes `.generated/docs` so notices and heading links receive the normal transforms. After changing Markdown processor settings, run `npx astro sync --force` once to invalidate cached content.
 
-Follow [the Cloudflare deployment runbook](handover/deployment-runbook.md) and [deployment progress](handover/deployment-status.md) for launch work. The user has added the Cloudflare domain; activation and Pages deployment are pending.
+Follow [the Cloudflare deployment runbook](handover/deployment-runbook.md) and [deployment progress](handover/deployment-status.md) for launch work. The Pages project and both website domains are active. Live browser and download verification passed; the remaining www redirect and Studio availability are recorded in deployment progress.
 
 `npm run test:examples` verifies semantic failure cases. An optional end-to-end Studio check can be run with `node scripts/review-studio.mjs /path/to/studio/dist`; it uses an explicitly supplied local build and is not a documentation-build dependency.
 

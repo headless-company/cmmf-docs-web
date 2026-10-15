@@ -1,6 +1,6 @@
 # Prototype review
 
-The first implementation is a local prototype for the existing `cmmf-docs-web` repository. Editorial approval and production deployment are still pending.
+This document records the local prototype review for the existing `cmmf-docs-web` repository. Subsequent production deployment and live verification are recorded in [deployment-status.md](deployment-status.md).
 
 Review targets:
 
@@ -59,4 +59,4 @@ The custom 404 content is intentionally marked draft so Starlight excludes its o
 
 The local machine's initial Node 22.7 x64 runtime was below Astro's requirement. An ignored project-local 22.23.3 x64 runtime was used. Optional native packages needed the matching CPU selection during installation; future installs should keep Node and native dependency architectures consistent. No global Node installation was changed.
 
-The initial prototype review was completed before publication. Subsequent repository publication and Cloudflare zone progress are recorded in [deployment-status.md](deployment-status.md). The documentation application has not yet been deployed to Cloudflare Pages.
+The initial prototype review was completed before publication. Subsequent repository publication and Cloudflare zone progress are recorded in [deployment-status.md](deployment-status.md). The documentation application is now deployed to Cloudflare Pages; both website domains are active and live verification has passed.
