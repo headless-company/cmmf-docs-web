@@ -43,4 +43,4 @@ Agree the values and their meaning within your team. A `status` property does no
 
 Use `translationHints` to advise a translator about preferred representations. Hints are non-authoritative: they cannot override the field's core meaning. Record any resulting choice in the [translation contract](/spec/1.2.0/translation-contract/).
 
-Review the [complete Customer Story model](/examples/customer-story/) with an author, then inspect its metadata in [Studio](/tools/studio/). The model should explain its purpose to someone who was not in the original workshop.
+Review the [complete Customer Story model](/examples/customer-story/) with an author, including its labels, help text and editorial metadata. The model should explain its purpose to someone who was not in the original workshop.

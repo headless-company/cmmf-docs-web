@@ -259,7 +259,7 @@
     },
     {
       "route": "/tools/",
-      "title": "Studio and Skills",
+      "title": "CMMF Skills",
       "source": "src/content/owned/tools/index.md",
       "owner": "site",
       "status": "implemented-prototype",
@@ -288,10 +288,11 @@
       "route": "/docs/get-started/visual-modelling/",
       "title": "Follow the model visually",
       "owner": "site",
-      "status": "implemented-tutorial",
+      "status": "held-for-release",
       "role": "site-authored",
       "sourceVersion": "1.2.0",
-      "source": "src/content/owned/docs/get-started/visual-modelling.md"
+      "source": "src/content/held/docs/get-started/visual-modelling.md",
+      "notes": "Temporarily unpublished at the owner\u2019s request until nearer the talk. Source retained outside the public content loader."
     },
     {
       "route": "/docs/guides/embed-or-reference/",
@@ -351,10 +352,11 @@
       "route": "/tools/studio/",
       "title": "Studio walkthrough",
       "owner": "site",
-      "status": "implemented-tutorial",
+      "status": "held-for-release",
       "role": "site-authored",
       "sourceVersion": "1.2.0",
-      "source": "src/content/owned/tools/studio.md"
+      "source": "src/content/held/tools/studio.md",
+      "notes": "Temporarily unpublished at the owner\u2019s request until nearer the talk. Source retained outside the public content loader."
     },
     {
       "route": "/tools/skills/",
@@ -412,7 +414,7 @@
     },
     {
       "route": "/downloads/examples/1.2.0/customer-story/customer-story.models.json",
-      "title": "Customer Story Studio import",
+      "title": "Customer Story combined model JSON",
       "owner": "site",
       "status": "implemented-tutorial",
       "role": "generated-example-download",
@@ -430,7 +432,7 @@
     },
     {
       "route": "/downloads/examples/1.2.0/article.models.json",
-      "title": "Article Studio import",
+      "title": "Article combined model JSON",
       "owner": "site",
       "status": "implemented-tutorial",
       "role": "generated-example-download",

@@ -1,18 +1,10 @@
 ---
 title: See the model as a system
-description: Use Studio or generated diagrams to review boundaries, relationships and repeatability.
+description: Use generated diagrams to review boundaries, relationships and repeatability.
 editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/guides/visualisation.md
 ---
 
 A visual view helps a team discuss a model without reading every YAML file. It makes model boundaries, embedded structures and shared identities easier to inspect together.
-
-## Work visually in Studio
-
-Studio already provides an editable model canvas. Add model kinds and fields, connect references and objects, inspect metadata, and arrange related models. Focus and field highlighting help inspect larger graphs.
-
-The canvas shows reference repeatability at the destination using labels such as `0..1` or `0..*`. These describe how many values the field permits; they do not describe how many other models may reference the target.
-
-Save a workspace backup to preserve positions and layout. Export CMMF models when you need portable YAML. [Read Studio’s file and storage boundaries](/tools/#studio).
 
 ## Generate a review diagram
 
@@ -30,7 +22,7 @@ Always explain the important relationships in text as well. A diagram should hel
 
 ## Keep presentation separate from meaning
 
-Studio positions, generated routes and visual grouping are presentation data. CMMF YAML exports keep them separate from the portable model definitions.
+Diagram positions, generated routes and visual grouping are presentation data. Keep them separate from the portable CMMF model definitions.
 
 FigJam/Miro board exports are prospective capabilities in the supplied planning material. The current tool snapshots do not establish an implemented board exporter or hosted collaborative editor.
 

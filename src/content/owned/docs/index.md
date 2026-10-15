@@ -8,9 +8,9 @@ Start with a content need, describe the model, then decide how to implement it i
 
 ## New to CMMF?
 
-Read [Start with the content, keep the intent](/learn/why-cmmf/), then [create your first model set](/docs/get-started/first-model/). The Customer Story tutorial takes you from a content brief to validated files and a Studio import.
+Read [Start with the content, keep the intent](/learn/why-cmmf/), then [create your first model set](/docs/get-started/first-model/). The Customer Story tutorial takes you from a content brief to validated model files.
 
-Prefer a canvas? [Follow the same model visually](/docs/get-started/visual-modelling/). The [example catalogue](/examples/) contains complete downloads for Customer Story and the canonical Article set.
+The [example catalogue](/examples/) contains complete downloads for Customer Story and the canonical Article set.
 
 ## Understand the model
 
@@ -41,6 +41,6 @@ Prefer a canvas? [Follow the same model visually](/docs/get-started/visual-model
 
 ## Work with the tools
 
-The [tool overview](/tools/) explains Studio and the Skills development release. Tool capabilities and import/export boundaries are described separately from format rules.
+The [tool overview](/tools/) explains the CMMF Skills development release. Tool capabilities and validation boundaries are described separately from format rules.
 
 Current learning material targets **CMMF 1.2.0**. [Historical 1.1.0 specification text](/spec/1.1.0/) is available with an archive notice; the current schema does not establish validation for that version.

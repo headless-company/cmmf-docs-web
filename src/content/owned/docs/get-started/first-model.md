@@ -1,19 +1,19 @@
 ---
 title: Create your first model set
-description: Turn a Customer Story content brief into three related CMMF models, validate the complete project and take it into Studio.
+description: Turn a Customer Story content brief into three related CMMF models, validate the complete project and record implementation decisions.
 editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/get-started/first-model.md
 pagination:
   prev:
     label: Why CMMF
     link: /learn/why-cmmf/
   next:
-    label: Inspect the model in Studio
-    link: /tools/studio/
+    label: Review the model relationships
+    link: /docs/guides/visualisation/
 ---
 
-You will work with a small model for customer stories. By the end, you will have a versioned file project, understand its two relationships, validate the complete set and know how to inspect it visually.
+You will work with a small model for customer stories. By the end, you will have a versioned file project, understand its two relationships, validate the complete set and record implementation decisions.
 
-You need a text editor and Node 22.12 or newer for the local validator. If you have access to a running Studio, you can [follow the model visually](/docs/get-started/visual-modelling/) in your browser without installing that validator.
+You need a text editor and Node 22.12 or newer for the local validator.
 
 ## 1. Agree what the content needs to do
 
@@ -120,15 +120,7 @@ Missing target: customer-story.customer -> customer-missing
 
 Restore `targets: [customer]` and rerun validation. This illustrates why validating each file's shape is insufficient: a relationship needs a target that actually exists in the model set.
 
-## 9. Inspect and save the model in Studio
-
-For the unmodified example, download [customer-story.models.json](/downloads/examples/1.2.0/customer-story/customer-story.models.json). It contains the same three models as the supplied YAML. Follow the [Studio walkthrough](/tools/studio/#import-the-complete-model-set) to import the complete set, inspect both relationships and save a workspace backup.
-
-The supplied JSON is a snapshot. If you edit your YAML files, it does not update itself. To inspect your edited set, run `npm run bundle` to produce **models.json** from the validated YAML, then import that new file. The command is included in the project download.
-
-Studio does not import ZIPs or the manifest. Keep this file project as the home for its version and validation setup.
-
-## 10. Record the implementation choices
+## 9. Record the implementation choices
 
 For each relationship or capability, record what your target system will do:
 

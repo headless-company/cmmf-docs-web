@@ -8,7 +8,7 @@ try {
   const { manifest, models } = loadModelSet(root, '1.2.0');
   validateModelSet({ manifest, models }, schema);
   writeFileSync(new URL('./models.json', import.meta.url), `${JSON.stringify({ name: manifest.namespace, models }, null, 2)}\n`);
-  console.log(`Wrote models.json from ${models.length} validated YAML models. Import this file into Studio; it contains no canvas layout.`);
+  console.log(`Wrote models.json from ${models.length} validated YAML models. It contains the complete model set; keep the manifest and schema alongside it.`);
 } catch (error) {
   console.error(error.message);
   process.exitCode = 1;

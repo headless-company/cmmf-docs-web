@@ -98,7 +98,9 @@ for (const file of files(resolve(root, 'src/content/owned'))) {
 }
 for (const directory of ['brand', 'schemas', 'downloads', 'raw']) rmSync(resolve(root, 'public', directory), { recursive: true, force: true });
 // Publish runtime artwork, icons and font licences, rather than kit studies/head snippets.
-cpSync(resolve(root, 'brand/logos'), resolve(root, 'public/brand/logos'), { recursive: true });
+for (const product of ['cmmf', 'generator']) {
+  cpSync(resolve(root, 'brand/logos', product), resolve(root, 'public/brand/logos', product), { recursive: true });
+}
 mkdirSync(resolve(root, 'public/brand/web/cmmf'), { recursive: true });
 for (const path of files(resolve(root, 'brand/web/cmmf')).filter(p => /\.(png|svg|ico)$/.test(p))) {
   cpSync(path, resolve(root, 'public/brand/web/cmmf', posix.basename(path)));

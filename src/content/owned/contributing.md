@@ -12,7 +12,6 @@ Useful contributions include clearer explanations, reproducible validation failu
 | --- | --- |
 | Format rules, canonical schema or translation contract | [Content Model Master Format](https://github.com/headless-company/content-model-master-format) |
 | Tutorials, this website, navigation or presentation | [Documentation website](https://github.com/headless-company/cmmf-docs-web) |
-| Canvas, inspectors or workspace behaviour | [CMMF Studio](https://github.com/headless-company/cmmf-visual-editor) |
 | Agent workflows or deterministic helper behaviour | [CMMF Skills](https://github.com/headless-company/cmmf-creation-agent) |
 | Identity artwork and brand guidance | [CMMF branding](https://github.com/headless-company/cmmf-branding) |
 

@@ -45,7 +45,7 @@ The [translation concepts](/docs/concepts/translation/) and [translation contrac
 
 ## Choose a way to work
 
-You can maintain model files in Git, inspect a model visually in Studio, or use CMMF Skills to assist an agent with modelling and review. Each route works with the same format; the choice depends on the people and the task.
+You can maintain model files in Git or use CMMF Skills to assist an agent with modelling and review. Each route works with the same format; the choice depends on the people and the task.
 
 Start with the content need, agree the structure and relationships, then validate the complete model set. Structural validation and relationship checks help catch errors. Whether the model is useful for your editorial team still requires judgement.
 
@@ -53,6 +53,6 @@ Start with the content need, agree the structure and relationships, then validat
 - [Explore the working Article example](/examples/article/).
 - [Learn the model kinds](/docs/concepts/model-kinds/).
 - [Look up the canonical field types](/docs/reference/canonical-types/).
-- [Understand Studio and Skills](/tools/).
+- [Explore CMMF Skills](/tools/).
 
 <div class="source-note">Website-owned explanation for CMMF 1.2.0. Based on the canonical format and Article example; modelling recommendations remain subject to editorial review.</div>

@@ -20,17 +20,15 @@ This website documents CMMF 1.2.0, pinned at 32604441aff09a6dbfe2361e97078af5263
 - [Changelog](https://cmmf.dev/changelog/): Pinned upstream material. Markdown: https://cmmf.dev/raw/CHANGELOG.md
 - [Format licence](https://cmmf.dev/project/format-licence/): Pinned upstream material. Markdown: https://cmmf.dev/raw/LICENSE.md
 - [Example model sets](https://cmmf.dev/examples/): Website explanation. Markdown: https://cmmf.dev/raw/site/examples/index.md
-- [Studio and Skills](https://cmmf.dev/tools/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/index.md
+- [CMMF Skills](https://cmmf.dev/tools/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/index.md
 - [Glossary](https://cmmf.dev/learn/glossary/): Website explanation. Markdown: https://cmmf.dev/raw/site/learn/glossary.md
 - [Create your first model set](https://cmmf.dev/docs/get-started/first-model/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/get-started/first-model.md
-- [Follow the model visually](https://cmmf.dev/docs/get-started/visual-modelling/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/get-started/visual-modelling.md
 - [Choosing embeddings and references](https://cmmf.dev/docs/guides/embed-or-reference/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/embed-or-reference.md
 - [Rich-text capabilities](https://cmmf.dev/docs/guides/rich-text/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/rich-text.md
 - [Localisation and defaults](https://cmmf.dev/docs/guides/localisation/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/localisation.md
 - [Editorial and governance metadata](https://cmmf.dev/docs/guides/editorial-intent/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/editorial-intent.md
 - [Validation errors and fixes](https://cmmf.dev/docs/guides/errors/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/errors.md
 - [Migration to 1.2.0](https://cmmf.dev/docs/guides/migrate-to-1-2/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/migrate-to-1-2.md
-- [Studio walkthrough](https://cmmf.dev/tools/studio/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/studio.md
 - [Skills development-release installation](https://cmmf.dev/tools/skills/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills.md
 - [Customer Story](https://cmmf.dev/examples/customer-story/): Website explanation. Markdown: https://cmmf.dev/raw/site/examples/customer-story.md
 - [Contribution and publishing guidance](https://cmmf.dev/contributing/): Website explanation. Markdown: https://cmmf.dev/raw/site/contributing.md

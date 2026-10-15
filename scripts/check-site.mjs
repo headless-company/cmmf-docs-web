@@ -38,6 +38,18 @@ for (const file of pages) {
     }
   }
 }
+// Release hold: these pages/assets must be absent, including their raw copies.
+for (const path of [
+  'tools/studio/index.html', 'docs/get-started/visual-modelling/index.html',
+  'raw/site/tools/studio.md', 'raw/site/docs/get-started/visual-modelling.md',
+  'images/tutorials/customer-story-studio.png', 'images/tutorials/customer-story-summary-rules.png',
+  'brand/logos/studio',
+]) if (existsSync(resolve(dist, path))) errors.push(`Held release material was published: ${path}`);
+for (const file of files(dist).filter(file => file.endsWith('.html') ||
+  (file.startsWith(resolve(dist, 'raw/site') + '/') && file.endsWith('.md')) ||
+  (file.startsWith(resolve(dist, 'downloads') + '/') && /\.(md|mjs)$/.test(file)))) {
+  if (/\bstudio\b|cmmf-visual-editor/i.test(readFileSync(file, 'utf8'))) errors.push(`Held tool mentioned in public content: ${file.slice(dist.length)}`);
+}
 const lock = JSON.parse(readFileSync(resolve(root, 'cmmf-source.lock.json'), 'utf8'));
 const png = readFileSync(resolve(dist, 'images/social/cmmf-docs.png'));
 if (png.readUInt32BE(16) !== 1200 || png.readUInt32BE(20) !== 630) errors.push('Social preview must be 1200 × 630.');

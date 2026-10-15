@@ -32,7 +32,6 @@ export default defineConfig({
         { label: 'Glossary', slug: 'learn/glossary' },
         { label: 'Documentation', slug: 'docs' },
         { label: 'Create your first model', slug: 'docs/get-started/first-model' },
-        { label: 'Follow it visually', slug: 'docs/get-started/visual-modelling' },
         { label: 'Project structure', slug: 'docs/get-started/project-structure' },
       ] },
       { label: 'Understand the model', items: [
@@ -57,8 +56,7 @@ export default defineConfig({
       { label: 'Put it to work', items: [
         { label: 'Example models', slug: 'examples' },
         { label: 'Customer Story', slug: 'examples/customer-story' },
-        { label: 'Studio walkthrough', slug: 'tools/studio' },
-        { label: 'Studio and Skills', slug: 'tools' },
+        { label: 'CMMF Skills', slug: 'tools' },
         { label: 'Skills installation', slug: 'tools/skills' },
         { label: 'Contributing', slug: 'contributing' },
       ] },

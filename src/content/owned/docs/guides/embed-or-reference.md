@@ -37,4 +37,4 @@ Use `linked` when independent reuse is intended. Review [relationship rules](/do
 
 Use field-level `list: true` for repeatable objects or references in 1.2.0. Decide order, duplicates and item bounds separately. A required list and a list with a minimum number of items express different concerns; confirm how the target system enforces both.
 
-After changing a relationship, [validate the complete set](/docs/guides/validation/), review every dependent model and inspect the graph in [Studio](/tools/studio/). A successful schema check alone cannot establish that the target model exists.
+After changing a relationship, [validate the complete set](/docs/guides/validation/), review every dependent model and inspect the [relationship diagram](/docs/guides/visualisation/). A successful schema check alone cannot establish that the target model exists.

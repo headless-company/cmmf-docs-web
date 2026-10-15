@@ -44,26 +44,13 @@ try {
     page.on('pageerror', e => report.errors.push(`${page.url()}: ${e.message}\n${e.stack || ''}`));
     page.on('requestfailed', request => report.failedRequests.push({ page: page.url(), url: request.url(), error: request.failure()?.errorText }));
     page.on('response', r => { if (r.status() >= 400) report.errors.push(`${r.status()} ${r.url()}`); });
-    for (const [name, route] of [['home', '/'], ['article', '/learn/why-cmmf/'], ['reference', '/docs/reference/canonical-types/'], ['first-model', '/docs/get-started/first-model/'], ['customer-story', '/examples/customer-story/'], ['studio', '/tools/studio/'], ['visual', '/docs/get-started/visual-modelling/'], ['skills', '/tools/skills/'], ['diagrams', '/docs/guides/visualisation/'], ['migration', '/docs/guides/migrate-to-1-2/']]) {
+    for (const [name, route] of [['home', '/'], ['article', '/learn/why-cmmf/'], ['reference', '/docs/reference/canonical-types/'], ['first-model', '/docs/get-started/first-model/'], ['customer-story', '/examples/customer-story/'], ['tools', '/tools/'], ['skills', '/tools/skills/'], ['diagrams', '/docs/guides/visualisation/'], ['migration', '/docs/guides/migrate-to-1-2/']]) {
       await page.goto(base + route, { waitUntil: 'networkidle' });
       await searchReady(page);
       await page.evaluate(async () => {
         await Promise.all(['16px "Source Sans 3"', '20px "Quattrocento"', '600 44px "Reem Kufi"'].map(font => document.fonts.load(font)));
         await document.fonts.ready;
       });
-      if (name === 'studio') {
-        for (const picture of await page.locator('.studio-shot img').all()) {
-          await picture.scrollIntoViewIfNeeded();
-          await picture.evaluate(img => img.complete ? Promise.resolve() : new Promise(resolve => img.addEventListener('load', resolve, { once: true })));
-          assert.equal(await picture.evaluate(img => img.naturalWidth), 1440);
-          assert.equal(await picture.evaluate(img => img.naturalHeight), 1000);
-          const box = await picture.boundingBox();
-          assert.ok(Math.abs(box.width / box.height - 1.44) < .02, 'Studio screenshot distorted');
-        }
-        await page.locator('.studio-shot').first().scrollIntoViewIfNeeded();
-        await page.screenshot({ path: resolve(output, `studio-illustration-${width}-${theme}.png`) });
-        await page.evaluate(() => scrollTo(0, 0));
-      }
       if (name === 'diagrams') {
         for (const diagram of await page.locator('.download-diagram img:visible').all()) {
           await diagram.scrollIntoViewIfNeeded();
@@ -170,9 +157,17 @@ try {
   const results = await page.locator('.pagefind-ui__result-link').evaluateAll(links => links.map(a => ({ title: a.textContent, href: a.getAttribute('href') })));
   assert.ok(results.some(r => r.href.includes('/docs/reference/canonical-types/')), 'Reference missing from search');
   assert.ok(!results.some(r => r.href.includes('/spec/1.1.0')), 'Historical specification leaked into search');
+  await page.locator('.pagefind-ui__search-input').fill('Studio');
+  await page.waitForFunction(() => /No results/i.test(document.querySelector('.pagefind-ui__message')?.textContent || ''));
+  assert.equal(await page.locator('.pagefind-ui__result-link').count(), 0);
+  report.interactions.push('Held tool is absent from search');
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('dialog').evaluate(d => d.open), false);
   report.interactions.push({ search: results });
+  for (const route of ['/tools/studio/', '/docs/get-started/visual-modelling/', '/raw/site/tools/studio.md', '/raw/site/docs/get-started/visual-modelling.md', '/images/tutorials/customer-story-studio.png', '/images/tutorials/customer-story-summary-rules.png']) {
+    assert.equal((await page.request.get(base + route)).status(), 404, `Held route is still public: ${route}`);
+  }
+  report.interactions.push('Held walkthroughs, raw Markdown and screenshots return 404');
   const raw = await page.request.get(base + '/schemas/1.2.0/model.schema.json');
   assert.equal(raw.status(), 200);
   assert.deepEqual(await raw.body(), readFileSync(resolve(root, 'vendor/cmmf/schemas/model.schema.json')));
@@ -185,9 +180,9 @@ try {
   assert.equal((await download).suggestedFilename(), 'customer-story.zip');
   await page.getByRole('link', { name: 'Build your first model step by step' }).click();
   assert.ok(page.url().endsWith('/docs/get-started/first-model/'));
-  await page.locator('a[href="/tools/studio/#import-the-complete-model-set"]').click();
-  assert.ok(page.url().includes('/tools/studio/'));
-  report.interactions.push('Homepage → Customer Story → project download → first-model tutorial → Studio walkthrough');
+  await page.locator('a[href="/docs/guides/visualisation/"]').click();
+  assert.ok(page.url().includes('/docs/guides/visualisation/'));
+  report.interactions.push('Homepage → Customer Story → project download → first-model tutorial → relationship diagrams');
   for (const width of [320, 768, 1060]) {
     await page.setViewportSize({ width, height: 1000 });
     for (const route of ['/', '/learn/why-cmmf/', '/docs/reference/canonical-types/']) {

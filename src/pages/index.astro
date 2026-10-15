@@ -7,7 +7,7 @@ import article from '../../examples/customer-story/models/customer-story.yaml?ra
 const snippet = article.slice(article.indexOf('  - id: customer'), article.indexOf('\neditorial:')).trimEnd();
 const code = await codeToHtml(snippet, { lang: 'yaml', themes: { light: 'github-light', dark: 'github-dark' } });
 ---
-<StarlightPage frontmatter={{ title: 'A shared language for content models', description: 'A portable format for content models and the intent behind them. Learn CMMF, explore the specification, and work visually in Studio.', template: 'splash', editUrl: false }}>
+<StarlightPage frontmatter={{ title: 'A shared language for content models', description: 'A portable format for content models and the intent behind them. Learn CMMF, explore the specification, and build portable models.', template: 'splash', editUrl: false }}>
   <div class="homepage">
     <section class="home-intro" aria-labelledby="_top">
       <div class="home-copy">
@@ -32,7 +32,7 @@ const code = await codeToHtml(snippet, { lang: 'yaml', themes: { light: 'github-
     <section class="home-paths" aria-labelledby="paths-title"><div class="section-intro"><p class="eyebrow">Choose your next step</p><h2 id="paths-title">A format, with tools around it.</h2></div><div class="path-grid">
       <a class="path-card" href="/docs/get-started/first-model/"><span class="path-index">Learn</span><h3>Start with the content</h3><p>Understand the problem, the vocabulary and the modelling decisions.</p><span>Create your first model <span aria-hidden="true">→</span></span></a>
       <a class="path-card" href="/docs/reference/canonical-types/"><span class="path-index">Reference</span><h3>Find the precise detail</h3><p>Look up field types, read the specification and download the schema.</p><span>Explore the reference <span aria-hidden="true">→</span></span></a>
-      <a class="path-card studio-card" href="/tools/"><span class="path-index">Tools</span><h3>Work visually or with an agent</h3><p>Explore Studio’s visual editor and the CMMF Skills development release.</p><span>Meet the tools <span aria-hidden="true">→</span></span></a>
+      <a class="path-card" href="/tools/"><span class="path-index">Tools</span><h3>Work with an agent</h3><p>Explore the CMMF Skills development release for authoring, validation and review.</p><span>Meet the tools <span aria-hidden="true">→</span></span></a>
     </div></section>
     <div class="home-version"><span>Current format <strong>1.2.0</strong></span><a href="/changelog/">What changed <span aria-hidden="true">→</span></a><a href="https://github.com/headless-company/content-model-master-format">Open format · Apache 2.0 <span aria-hidden="true">↗</span></a></div>
   </div>

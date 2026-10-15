@@ -17,7 +17,7 @@ An article links to a reusable Person and embeds SEO Metadata. A Page can link t
 
 ## Download the complete set
 
-[Download the complete Article project ZIP](/downloads/examples/1.2.0/article.zip). It includes the manifest, all four models, the pinned schema, a local validator and a Studio import JSON file. After extracting, use Node 22.12+ to run `npm ci` and `npm run validate` in that folder.
+[Download the complete Article project ZIP](/downloads/examples/1.2.0/article.zip). It includes the manifest, all four models, the pinned schema, a local validator and a combined JSON model file. After extracting, use Node 22.12+ to run `npm ci` and `npm run validate` in that folder.
 
 Individual canonical files are also available below.
 
@@ -50,10 +50,6 @@ The author is linked because their profile has separate identity. SEO values are
 
 <!-- canonical-file: examples/models/article.yaml -->
 
-## Try the model visually
+## Work with the combined model set
 
-Download [article.models.json](/downloads/examples/1.2.0/article.models.json) and follow the [Studio import walkthrough](/tools/studio/#import-the-complete-model-set).
-
-Studio accepts individual model YAML or JSON, and a JSON/YAML `{ models: [...] }` bundle. Import replaces the current board and can be undone. Importing a model by itself can leave its related targets unresolved; use the complete set in a bundle when inspecting the whole graph.
-
-Studio exports model YAML in a ZIP but does **not** import ZIP files or a directory of files. Save a Studio workspace JSON backup for a complete layout round trip. [Read the tool boundaries](/tools/).
+Download [article.models.json](/downloads/examples/1.2.0/article.models.json) to inspect all four model definitions in one JSON file. After editing the YAML, run `npm run bundle` in the extracted project to regenerate `models.json` from the validated model files.
