@@ -1,0 +1,12 @@
+# Temporary release hold: send retired entry points to current documentation.
+/tools/studio /tools/ 302
+/tools/studio/ /tools/ 302
+/tools/studio/* /tools/ 302
+/docs/get-started/visual-modelling /docs/guides/visualisation/ 302
+/docs/get-started/visual-modelling/ /docs/guides/visualisation/ 302
+/docs/get-started/visual-modelling/* /docs/guides/visualisation/ 302
+/raw/site/tools/studio.md /raw/site/tools/index.md 302
+/raw/site/docs/get-started/visual-modelling.md /raw/site/docs/guides/visualisation.md 302
+/images/tutorials/customer-story-studio.png /downloads/diagrams/1.2.0/customer-story-light.svg 302
+/images/tutorials/customer-story-summary-rules.png /downloads/diagrams/1.2.0/customer-story-light.svg 302
+/brand/logos/studio/* /brand/web/cmmf/favicon.svg 302
