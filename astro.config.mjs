@@ -20,11 +20,13 @@ export default defineConfig({
     head: [
       { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/brand/web/cmmf/apple-touch-icon.png' } },
       { tag: 'meta', attrs: { name: 'theme-color', content: '#192329' } },
-      { tag: 'meta', attrs: { property: 'og:image', content: 'https://cmmf.dev/images/social/cmmf-docs.png' } },
-      { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
-      { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
-      { tag: 'meta', attrs: { property: 'og:image:alt', content: 'CMMF. A portable format for content models and the intent behind them.' } },
-      { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://cmmf.dev/images/social/cmmf-docs.png' } },
+      { tag: 'meta', attrs: { property: 'og:image', content: 'https://cmmf.dev/images/social/cmmf-social-preview.png' } },
+      { tag: 'meta', attrs: { property: 'og:image:type', content: 'image/png' } },
+      { tag: 'meta', attrs: { property: 'og:image:width', content: '1280' } },
+      { tag: 'meta', attrs: { property: 'og:image:height', content: '640' } },
+      { tag: 'meta', attrs: { property: 'og:image:alt', content: 'CMMF — Content Model Master Format' } },
+      { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://cmmf.dev/images/social/cmmf-social-preview.png' } },
+      { tag: 'meta', attrs: { name: 'twitter:image:alt', content: 'CMMF — Content Model Master Format' } },
     ],
     sidebar: [
       { label: 'Start here', items: [

@@ -21,7 +21,16 @@ for (const file of pages) {
   if (route !== '/' && $('.sl-markdown-content h2').length && !$('.sl-markdown-content .sl-heading-wrapper a').length) errors.push(`${route}: article heading links are missing`);
   if (route === '/tools/skills/' && !$('.starlight-aside').length) errors.push('Skills development notice did not receive Starlight rendering.');
   const social = $('meta[property="og:image"]').attr('content');
-  if (social !== 'https://cmmf.dev/images/social/cmmf-docs.png') errors.push(`${route}: missing social preview metadata`);
+  if (social !== 'https://cmmf.dev/images/social/cmmf-social-preview.png') errors.push(`${route}: missing social preview metadata`);
+  for (const [selector, expected] of [
+    ['meta[property="og:image:width"]', '1280'],
+    ['meta[property="og:image:height"]', '640'],
+    ['meta[property="og:image:type"]', 'image/png'],
+    ['meta[property="og:image:alt"]', 'CMMF — Content Model Master Format'],
+    ['meta[name="twitter:card"]', 'summary_large_image'],
+    ['meta[name="twitter:image"]', social],
+    ['meta[name="twitter:image:alt"]', 'CMMF — Content Model Master Format'],
+  ]) if ($(selector).length !== 1 || $(selector).attr('content') !== expected) errors.push(`${route}: incorrect social metadata ${selector}`);
   for (const element of $('[href], [src]').toArray()) {
     const target = $(element).attr('href') ?? $(element).attr('src');
     if (!target || /^(mailto:|tel:|data:|javascript:)/.test(target)) continue;
@@ -51,8 +60,8 @@ for (const file of files(dist).filter(file => file.endsWith('.html') ||
   if (/\bstudio\b|cmmf-visual-editor/i.test(readFileSync(file, 'utf8'))) errors.push(`Held tool mentioned in public content: ${file.slice(dist.length)}`);
 }
 const lock = JSON.parse(readFileSync(resolve(root, 'cmmf-source.lock.json'), 'utf8'));
-const png = readFileSync(resolve(dist, 'images/social/cmmf-docs.png'));
-if (png.readUInt32BE(16) !== 1200 || png.readUInt32BE(20) !== 630) errors.push('Social preview must be 1200 × 630.');
+const png = readFileSync(resolve(dist, 'images/social/cmmf-social-preview.png'));
+if (png.readUInt32BE(16) !== 1280 || png.readUInt32BE(20) !== 640) errors.push('Social preview must be 1280 × 640.');
 for (const target of readFileSync(resolve(dist, 'llms.txt'), 'utf8').matchAll(/https:\/\/cmmf\.dev([^\s)]+)/g)) {
   const path = target[1];
   const file = resolve(dist, `.${path}`, ...(path.endsWith('/') ? ['index.html'] : []));
