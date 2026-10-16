@@ -58,7 +58,7 @@ The site includes all planned launch articles, the Customer Story learning journ
 
 The branded social PNG is tracked. Regenerate it with `npm run assets:social` after a reviewed visual change; it uses an isolated browser and the bundled artwork/fonts. Ordinary builds require no browser. Starlight's `markdown.processedDirs` includes `.generated/docs` so notices and heading links receive the normal transforms. After changing Markdown processor settings, run `npx astro sync --force` once to invalidate cached content.
 
-Follow [the Cloudflare deployment runbook](handover/deployment-runbook.md) and [deployment progress](handover/deployment-status.md) for launch work. The Pages project and both website domains are active. Live browser and download verification passed; the remaining www redirect and Studio availability are recorded in deployment progress.
+Follow [the Cloudflare deployment runbook](handover/deployment-runbook.md) and [deployment progress](handover/deployment-status.md) for launch work. The Pages project and both website domains are active. Live browser and download verification passed; the www redirect is verified, and separate Studio availability is recorded in deployment progress.
 
 `npm run test:examples` verifies semantic failure cases. An optional end-to-end Studio check can be run with `node scripts/review-studio.mjs /path/to/studio/dist`; it uses an explicitly supplied local build and is not a documentation-build dependency.
 

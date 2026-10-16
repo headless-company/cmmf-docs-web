@@ -13,10 +13,12 @@ Updated 15 October 2026.
 
 ## Verification
 
+- Deployment documentation revision `0aa39d0` also passed [GitHub Actions run 38657847552](https://github.com/headless-company/cmmf-docs-web/actions/runs/38657847552), including both browser engines.
 - [GitHub Actions run 38655088672](https://github.com/headless-company/cmmf-docs-web/actions/runs/38655088672) passed every gate, including Chromium and Linux WebKit browser review.
 - The live Pages address passed 40 template/theme/viewport combinations, 20 automated WCAG audits with zero violations, search, navigation, keyboard interactions, theme persistence, font loading, logo geometry and project download checks. No browser errors or failed requests were recorded.
 - The live apex domain passed the three primary templates at 390 and 1440 px in both themes (12 combinations), 12 automated WCAG audits with zero violations, and the search/navigation/download interactions. No browser errors or failed requests were recorded. Screenshots were inspected visually.
 - Live schema, both project ZIPs, diagram source/SVG, raw Markdown, social image, robots, sitemap and retrieval files matched the local reviewed build byte for byte. Eleven files, including the homepage, were independently compared on `cmmf.dev`.
+- The user deployed the `www` redirect. Verified HTTPS requests return HTTP 301 to the apex, preserving paths and query strings; the apex returns HTTP 200 without a loop. Exact saved settings and checks are in [www-redirect.md](www-redirect.md).
 - A missing URL returns HTTP 404 with the custom recovery page. `/learn/why-cmmf/index.html` returns HTTP 308 to `/learn/why-cmmf/`. The apex redirects HTTP to HTTPS. Production HTML has no unintended `noindex` header.
 - Authoritative Cloudflare addresses were used for the apex checks while the local recursive resolver still returned Porkbun parking addresses. Certificate verification remained enabled. Public resolvers `1.1.1.1` and `8.8.8.8` report the assigned Cloudflare nameservers; `1.1.1.1` resolves both website names to Cloudflare.
 - Generated screenshots and machine-readable reports are local, ignored artifacts under `artifacts/site-review/live-pages/`, `live-domain/`, `live-http.json` and `live-domain-http.json`.
@@ -25,6 +27,7 @@ Updated 15 October 2026.
 
 - The deployment domain is `cmmf.dev`; `comfy.dev` was explicitly corrected as a typo.
 - Cloudflare reports the zone active, with nameservers `ali.ns.cloudflare.com` and `ram.ns.cloudflare.com`. The user completed the registrar update.
+- At the final redirect check, the local resolver still returned Porkbun addresses and an old nameserver cache with approximately 62 minutes remaining. This explains the user's holding page and TLS failure on that network; both public resolvers and direct Cloudflare HTTPS checks show the new site. No OS/network DNS settings were changed.
 - The user reports adding `@` and `www` DNS records. Both domain names serve the docs site over valid HTTPS when queried through Cloudflare. Imported Porkbun parking records had previously been observed; this session did not edit DNS records.
 - The restricted Wrangler login succeeded. `whoami` confirms the account email supplied by the user, Pages write plus account/user/zone read permissions, and encrypted credential storage with its key in macOS Keychain. No credential is recorded in the repository.
 - The restricted credential cannot list or edit DNS records or create redirect rules. A DNS inventory attempt returned HTTP 403, so no complete DNS export was obtained. Preserve unrelated records when making further dashboard changes.
@@ -32,7 +35,6 @@ Updated 15 October 2026.
 
 ## Remaining work
 
-- `www.cmmf.dev` currently serves the same site with apex canonical URLs. A permanent redirect to `cmmf.dev` is prepared in [www-redirect.md](www-redirect.md), awaiting the user's dashboard action and live verification. This requires redirect-rule write access beyond the approved CLI scopes.
 - `studio.cmmf.dev` is a separate deployment. Its HTTPS endpoint failed the current outbound check; Studio has not been deployed or associated with this docs project. Its production availability remains a separate follow-up.
 - Recheck an actual branch preview's `noindex` behaviour when a preview branch is deployed.
 
