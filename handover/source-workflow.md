@@ -37,3 +37,14 @@ The snapshot may contain historical normative documents alongside the current sc
 `source-provenance.json` is export-time context for brand/tool documents; it is not updated by canonical-source sync. Tool documentation and brand updates need their own reviewed provenance refresh. `SHA256SUMS` verifies the original handover; after intentional project edits, retain the source-only check for ongoing CI.
 
 Content ingestion is an implementation task: `content-map.json` proposes destinations but does not yet rewrite links, add Starlight frontmatter or serve pages. Build those behaviours explicitly. Preserve exact raw schema/spec/example bytes for downloads and point source/edit links to their owning repo.
+
+## Independently pinned prereleases
+
+The 1.3 beta has a separate lock and snapshot; stable stays pinned to 1.2.0:
+
+```sh
+node scripts/sync-cmmf.mjs --check --snapshot vendor/cmmf-beta --lock cmmf-beta-source.lock.json
+node scripts/sync-cmmf.mjs --source /path/to/content-model-master-format --revision a0c7a3d87fe46d74b5e78ac851e8b156201376a4 --spec-version 1.3.0-beta.1 --snapshot vendor/cmmf-beta --lock cmmf-beta-source.lock.json
+```
+
+The helper now accepts exact prerelease versions and independently named snapshots/locks. The beta snapshot also includes its declaration checker, regression tests and package metadata from the same Git commit. `npm run source:check` verifies both pins. See [the documentation versioning policy](documentation-versioning.md) before adding an edition or promoting stable.

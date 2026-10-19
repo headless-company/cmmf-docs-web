@@ -1,10 +1,12 @@
 ---
 interface Props { variant: 'article' | 'customer-story'; }
-import articleDiagram from '../../public/downloads/diagrams/1.2.0/article-light.svg?raw';
-import storyDiagram from '../../public/downloads/diagrams/1.2.0/customer-story-light.svg?raw';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { editionFor } from '../../scripts/lib/versions.mjs';
+const version = editionFor(Astro.url.pathname).version;
 const { variant } = Astro.props;
-const base = `/downloads/diagrams/1.2.0/${variant}`;
-const svg = variant === 'article' ? articleDiagram : storyDiagram;
+const base = `/downloads/diagrams/${version}/${variant}`;
+const svg = readFileSync(resolve('public', `.${base}-light.svg`), 'utf8');
 const [, width, height] = svg.match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/)!;
 const description = variant === 'customer-story'
   ? 'Customer Story links to a reusable Customer entry and embeds a Quote object.'

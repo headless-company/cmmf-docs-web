@@ -1,12 +1,14 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://cmmf.dev',
   output: 'static',
   trailingSlash: 'always',
-  integrations: [starlight({
+  integrations: [sitemap({ filter: page => !new URL(page).pathname.startsWith('/versions/1.2.0/') }), starlight({
     title: 'CMMF',
+    routeMiddleware: './src/route-middleware.ts',
     description: 'A portable format for content models and the intent behind them.',
     favicon: '/brand/web/cmmf/favicon.svg',
     markdown: { processedDirs: ['.generated/docs'] },

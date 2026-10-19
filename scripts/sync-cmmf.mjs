@@ -7,16 +7,17 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const lockPath = join(root, 'cmmf-source.lock.json');
-const snapshot = join(root, 'vendor/cmmf');
-const lock = JSON.parse(readFileSync(lockPath, 'utf8'));
 const args = process.argv.slice(2);
 const options = {};
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--check') options.check = true;
-  else if (['--source', '--revision', '--spec-version'].includes(args[i]) && args[i + 1]) options[args[i].slice(2)] = args[++i];
-  else throw new Error('Usage: node scripts/sync-cmmf.mjs [--check | --source /checkout] [--revision FULL_SHA --spec-version VERSION]');
+  else if (['--source', '--revision', '--spec-version', '--snapshot', '--lock'].includes(args[i]) && args[i + 1]) options[args[i].slice(2)] = args[++i];
+  else throw new Error('Usage: node scripts/sync-cmmf.mjs [--check | --source /checkout] [--revision FULL_SHA --spec-version VERSION] [--snapshot vendor/DIR --lock LOCK.json]');
 }
+const lockPath = resolve(root, options.lock || 'cmmf-source.lock.json');
+const snapshot = resolve(root, options.snapshot || 'vendor/cmmf');
+if (![snapshot, lockPath].every(path => path.startsWith(root + '/'))) throw new Error('Snapshot and lock must stay inside the repository.');
+const lock = JSON.parse(readFileSync(existsSync(lockPath) ? lockPath : join(root, 'cmmf-source.lock.json'), 'utf8'));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const paths = directory => readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
   if (entry.isSymbolicLink()) throw new Error(`Symlink is not allowed in the snapshot: ${entry.name}`);
@@ -33,7 +34,7 @@ function check() {
   }
 }
 if (options.check) {
-  if (Object.keys(options).length !== 1) throw new Error('--check cannot be combined with sync options.');
+  if (Object.keys(options).some(key => !['check', 'snapshot', 'lock'].includes(key))) throw new Error('--check cannot be combined with sync options.');
   check();
   console.log(`Verified ${Object.keys(lock.files).length} canonical files at ${lock.revision} (CMMF ${lock.specVersion}).`);
 } else {
@@ -42,7 +43,7 @@ if (options.check) {
   const revision = options.revision || lock.revision;
   const specVersion = options['spec-version'] || lock.specVersion;
   if (!/^[a-f0-9]{40}$/.test(revision)) throw new Error('Use a complete 40-character Git commit SHA.');
-  if (!/^\d+\.\d+\.\d+$/.test(specVersion)) throw new Error('Use an explicit semver format version.');
+  if (!/^\d+\.\d+\.\d+(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?$/.test(specVersion)) throw new Error('Use an explicit semver format version.');
   const temporary = mkdtempSync(join(tmpdir(), 'cmmf-source-'));
   const stage = join(root, 'vendor', `.cmmf-stage-${randomUUID()}`);
   const backup = join(root, 'vendor', `.cmmf-backup-${randomUUID()}`);
@@ -57,7 +58,7 @@ if (options.check) {
     }
     const resolvedRevision = git(['rev-parse', `${revision}^{commit}`]).toString().trim();
     if (resolvedRevision !== revision) throw new Error('The fetched commit does not match the requested pin.');
-    const tree = git(['ls-tree', '-r', '-z', revision, '--', 'docs', 'spec', 'schemas', 'examples', 'README.md', 'CHANGELOG.md', 'LICENSE.md']).toString().split('\0').filter(Boolean);
+    const tree = git(['ls-tree', '-r', '-z', revision, '--', 'docs', 'spec', 'schemas', 'examples', 'scripts/validate-models.mjs', 'test/validation-hints.test.mjs', 'package.json', 'package-lock.json', 'README.md', 'CHANGELOG.md', 'LICENSE.md']).toString().split('\0').filter(Boolean);
     const files = {};
     mkdirSync(stage, { recursive: true });
     for (const row of tree) {

@@ -1,0 +1,20 @@
+---
+import { routes } from '../../.generated/versions.json';
+import { editions, editionFor, editionLink, topicPath, versionedTopic } from '../../scripts/lib/versions.mjs';
+const path = Astro.url.pathname;
+const current = editionFor(path);
+const archived = path.startsWith('/spec/1.1.0/');
+const missing = versionedTopic(topicPath(path)) && !routes.includes(topicPath(path));
+const links = editions.map(edition => ({
+  ...edition,
+  href: missing || (edition.version === '1.2.0' && ['/docs/guides/document-validation-hints/', '/docs/guides/adopt-1-3-beta/'].includes(topicPath(path)))
+    ? edition.prefix + '/docs/' : editionLink(path, edition),
+}));
+---
+<nav class="version-selector" aria-label="Documentation version" data-pagefind-ignore>
+  <details>
+    <summary>{archived ? '1.1.0 · Specification archive' : current.label}<span aria-hidden="true"> ▾</span></summary>
+    <ul>{links.map(edition => <li><a href={edition.href} aria-current={!archived && edition.version === current.version ? 'true' : undefined}>{edition.label}</a></li>)}</ul>
+  </details>
+  {topicPath(path).includes('document-validation-hints') || topicPath(path).includes('adopt-1-3-beta') ? <small>This topic is new in the beta; stable opens its documentation overview.</small> : null}
+</nav>

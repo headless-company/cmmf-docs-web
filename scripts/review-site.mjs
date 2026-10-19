@@ -38,13 +38,13 @@ const searchReady = async page => {
 };
 try {
   browser = await browserType.launch({ executablePath: engine === 'chromium' ? executablePath : undefined, headless: true });
-  for (const theme of ['light', 'dark']) for (const width of [390, 1440]) {
+  for (const theme of (process.env.CMMF_REVIEW_INTERACTIONS_ONLY ? [] : ['light', 'dark'])) for (const width of [390, 1440]) {
     const context = await browser.newContext({ viewport: { width, height: 1000 }, colorScheme: theme, reducedMotion: 'reduce' });
     const page = await context.newPage();
     page.on('pageerror', e => report.errors.push(`${page.url()}: ${e.message}\n${e.stack || ''}`));
     page.on('requestfailed', request => report.failedRequests.push({ page: page.url(), url: request.url(), error: request.failure()?.errorText }));
     page.on('response', r => { if (r.status() >= 400) report.errors.push(`${r.status()} ${r.url()}`); });
-    for (const [name, route] of [['home', '/'], ['article', '/learn/why-cmmf/'], ['reference', '/docs/reference/canonical-types/'], ['first-model', '/docs/get-started/first-model/'], ['customer-story', '/examples/customer-story/'], ['tools', '/tools/'], ['skills', '/tools/skills/'], ['diagrams', '/docs/guides/visualisation/'], ['migration', '/docs/guides/migrate-to-1-2/']]) {
+    for (const [name, route] of [['home', '/'], ['article', '/learn/why-cmmf/'], ['reference', '/docs/reference/canonical-types/'], ['first-model', '/docs/get-started/first-model/'], ['customer-story', '/examples/customer-story/'], ['tools', '/tools/'], ['skills', '/tools/skills/'], ['diagrams', '/docs/guides/visualisation/'], ['migration', '/docs/guides/migrate-to-1-2/'], ['beta-overview', '/versions/1.3.0-beta.1/docs/'], ['beta-guide', '/versions/1.3.0-beta.1/docs/guides/document-validation-hints/'], ['beta-spec', '/spec/1.3.0-beta.1/'], ['stable-pinned', '/versions/1.2.0/docs/']]) {
       await page.goto(base + route, { waitUntil: 'networkidle' });
       await searchReady(page);
       await page.evaluate(async () => {
@@ -87,7 +87,7 @@ try {
       });
       assert.equal(metrics.theme, theme);
       assert.ok(metrics.scrollWidth <= width + 1, `${name} overflows at ${width}: ${metrics.scrollWidth}`);
-      const requiredFonts = name === 'home' ? ['interface', 'reading', 'display'] : name !== 'reference' ? ['interface', 'reading'] : ['interface'];
+      const requiredFonts = name === 'home' ? ['interface', 'reading', 'display'] : !['reference', 'beta-spec'].includes(name) ? ['interface', 'reading'] : ['interface'];
       assert.ok(requiredFonts.every(font => metrics.fonts[font]), `Required font loading failed: ${name}/${width}/${theme}: ${JSON.stringify(metrics.fonts)}`);
       if (name === 'reference' && width === 390) {
         const table = page.locator('.sl-markdown-content table').first();
@@ -101,10 +101,10 @@ try {
         assert.ok(Math.abs(logo.width / logo.height - logo.naturalWidth / logo.naturalHeight) < .01, 'Logo was distorted');
         assert.ok(logo.width >= (logo.src.includes('expanded') ? 420 : 112) - .1, 'Logo below brand minimum');
       }
-      if (name !== 'home' && name !== 'reference') assert.match(metrics.prose.font, /Quattrocento/);
-      if (name === 'reference') assert.match(metrics.articleFont, /Source Sans 3/);
+      if (name !== 'home' && name !== 'reference' && name !== 'beta-spec') assert.match(metrics.prose.font, /Quattrocento/);
+      if (['reference', 'beta-spec'].includes(name)) assert.match(metrics.articleFont, /Source Sans 3/);
       report.templates.push({ name, width, theme, ...metrics });
-      if (['home', 'article', 'reference', 'skills', 'diagrams'].includes(name)) {
+      if (['home', 'article', 'reference', 'skills', 'diagrams', 'beta-guide', 'beta-spec', 'stable-pinned'].includes(name)) {
         const { violations } = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
         report.accessibility.push({ name, width, theme, violations: violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) })) });
       }
@@ -145,6 +145,22 @@ try {
   await page.getByRole('navigation', { name: 'Specification versions' }).getByRole('link', { name: '1.2.0 · Current' }).click();
   assert.ok(page.url().endsWith('/spec/1.2.0/translation-contract/'));
   report.interactions.push('Version switching preserves the translation-contract document and its archive notice');
+  await page.goto(base + '/versions/1.2.0/docs/concepts/relationships/');
+  await page.locator('.version-selector summary').click();
+  await page.locator('.version-selector a').filter({ hasText: '1.3.0-beta.1' }).click();
+  assert.ok(page.url().endsWith('/versions/1.3.0-beta.1/docs/concepts/relationships/'));
+  await searchReady(page);
+  await page.locator('button[data-open-modal]').click();
+  await page.locator('.pagefind-ui__search-input').fill('validation');
+  await page.locator('.pagefind-ui__result-link').first().waitFor();
+  const betaResults = await page.locator('.pagefind-ui__result-link').evaluateAll(links => links.map(a => a.getAttribute('href')));
+  assert.ok(betaResults.every(href => href.includes('/versions/1.3.0-beta.1/') || href.includes('/spec/1.3.0-beta.1/')), JSON.stringify(betaResults));
+  await page.keyboard.press('Escape');
+  await page.goto(base + '/versions/1.3.0-beta.1/docs/guides/document-validation-hints/');
+  await page.locator('.version-selector summary').click();
+  await page.locator('.version-selector a').filter({ hasText: '1.2.0' }).click();
+  assert.ok(page.url().endsWith('/versions/1.2.0/docs/'));
+  report.interactions.push('Edition switching preserves topics, new beta topics fall back to stable overview, beta search stays within beta');
   await page.goto(base + '/404.html');
   assert.equal(await page.locator('h1').textContent(), 'This page could not be found');
   await page.getByRole('link', { name: 'Browse documentation', exact: true }).click();
@@ -156,6 +172,7 @@ try {
   await page.locator('.pagefind-ui__result-link').first().waitFor();
   const results = await page.locator('.pagefind-ui__result-link').evaluateAll(links => links.map(a => ({ title: a.textContent, href: a.getAttribute('href') })));
   assert.ok(results.some(r => r.href.includes('/docs/reference/canonical-types/')), 'Reference missing from search');
+  assert.ok(!results.some(r => r.href.includes('/versions/') || r.href.includes('/spec/1.3.0-beta.1/')), 'Other editions leaked into stable search');
   assert.ok(!results.some(r => r.href.includes('/spec/1.1.0')), 'Historical specification leaked into search');
   await page.locator('.pagefind-ui__search-input').fill('Studio');
   await page.waitForFunction(() => /No results/i.test(document.querySelector('.pagefind-ui__message')?.textContent || ''));

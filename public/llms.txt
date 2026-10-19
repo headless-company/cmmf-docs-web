@@ -43,3 +43,33 @@ This website documents CMMF 1.2.0, pinned at 32604441aff09a6dbfe2361e97078af5263
 ## Historical material
 
 - [1.1.0 specification](https://cmmf.dev/spec/1.1.0/): archived; matching historical schema is not bundled.
+
+## Experimental CMMF 1.3.0-beta.1
+
+Opt in explicitly; stable/latest remains 1.2.0. Pinned upstream revision: a0c7a3d87fe46d74b5e78ac851e8b156201376a4.
+
+- [model-kinds](https://cmmf.dev/versions/1.3.0-beta.1/docs/concepts/model-kinds/)
+- [relationships](https://cmmf.dev/versions/1.3.0-beta.1/docs/concepts/relationships/)
+- [translation](https://cmmf.dev/versions/1.3.0-beta.1/docs/concepts/translation/)
+- [first-model](https://cmmf.dev/versions/1.3.0-beta.1/docs/get-started/first-model/)
+- [project-structure](https://cmmf.dev/versions/1.3.0-beta.1/docs/get-started/project-structure/)
+- [editorial-intent](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/editorial-intent/)
+- [embed-or-reference](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/embed-or-reference/)
+- [errors](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/errors/)
+- [localisation](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/localisation/)
+- [migrate-to-1-2](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/migrate-to-1-2/)
+- [rich-text](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/rich-text/)
+- [validation](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/validation/)
+- [visualisation](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/visualisation/)
+- [docs](https://cmmf.dev/versions/1.3.0-beta.1/docs/)
+- [canonical-types](https://cmmf.dev/versions/1.3.0-beta.1/docs/reference/canonical-types/)
+- [article](https://cmmf.dev/versions/1.3.0-beta.1/examples/article/)
+- [customer-story](https://cmmf.dev/versions/1.3.0-beta.1/examples/customer-story/)
+- [examples](https://cmmf.dev/versions/1.3.0-beta.1/examples/)
+- [glossary](https://cmmf.dev/versions/1.3.0-beta.1/learn/glossary/)
+- [why-cmmf](https://cmmf.dev/versions/1.3.0-beta.1/learn/why-cmmf/)
+- [document-validation-hints](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/document-validation-hints/)
+- [adopt-1-3-beta](https://cmmf.dev/versions/1.3.0-beta.1/docs/guides/adopt-1-3-beta/)
+- [Beta specification](https://cmmf.dev/spec/1.3.0-beta.1/)
+- [Beta translation contract](https://cmmf.dev/spec/1.3.0-beta.1/translation-contract/)
+- [Beta schema](https://cmmf.dev/schemas/1.3.0-beta.1/model.schema.json)

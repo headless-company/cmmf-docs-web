@@ -5,14 +5,14 @@ import { exampleSets } from './examples.mjs';
 import { loadModelSet, validateModelSet } from './model-set.mjs';
 
 export function exampleFiles(root, example, lock) {
-  const schemaBytes = readFileSync(resolve(root, 'vendor/cmmf/schemas/model.schema.json'));
+  const schemaBytes = readFileSync(resolve(root, `${lock.snapshot || 'vendor/cmmf'}/schemas/model.schema.json`));
   const set = loadModelSet(resolve(root, example.source), lock.specVersion);
   validateModelSet(set, JSON.parse(schemaBytes.toString()));
   const template = resolve(root, 'examples/customer-story');
   const inputs = {
     'manifest.yaml': readFileSync(resolve(root, example.source, 'manifest.yaml')),
     'schemas/model.schema.json': schemaBytes,
-    'SCHEMA-LICENSE.md': readFileSync(resolve(root, 'vendor/cmmf/LICENSE.md')),
+    'SCHEMA-LICENSE.md': readFileSync(resolve(root, `${lock.snapshot || 'vendor/cmmf'}/LICENSE.md`)),
     'validation.mjs': readFileSync(resolve(root, 'scripts/lib/model-set.mjs')),
     'validate.mjs': readFileSync(resolve(template, 'validate.mjs')),
     'bundle.mjs': readFileSync(resolve(template, 'bundle.mjs')),
@@ -26,14 +26,22 @@ export function exampleFiles(root, example, lock) {
   packageJson.name = packageLock.name = packageLock.packages[''].name = `cmmf-${example.id}-example`;
   inputs['package.json'] = Buffer.from(`${JSON.stringify(packageJson, null, 2)}\n`);
   inputs['package-lock.json'] = Buffer.from(`${JSON.stringify(packageLock, null, 2)}\n`);
-  inputs['README.md'] = example.id === 'customer-story' ? readFileSync(resolve(template, 'README.md')) : Buffer.from(`# Article model project\n\nFour canonical CMMF ${lock.specVersion} model definitions. Extract the ZIP, then use Node 22.12+ to run \`npm ci\` and \`npm run validate\`.\n\nThe combined model file \`${example.bundleFile}\` contains all four model definitions. After editing YAML, run \`npm run bundle\` to regenerate \`models.json\`. Keep the manifest, schema and validation files alongside the model definitions.\n\nSource and licence boundaries are recorded in SOURCE.md and SCHEMA-LICENSE.md.\n`);
+  inputs['README.md'] = example.id === 'customer-story' ? readFileSync(resolve(template, 'README.md')) : Buffer.from(`# Article model project\n\n${set.models.length} canonical CMMF ${lock.specVersion} model definitions. Extract the ZIP, then use Node 22.12+ to run \`npm ci\` and \`npm run validate\`.\n\nThe combined model file \`${example.bundleFile}\` contains all ${set.models.length} model definitions. After editing YAML, run \`npm run bundle\` to regenerate \`models.json\`. Keep the manifest, schema and validation files alongside the model definitions.\n\nSource and licence boundaries are recorded in SOURCE.md and SCHEMA-LICENSE.md.\n`);
+  for (const file of ['validate.mjs', 'bundle.mjs', 'README.md']) inputs[file] = Buffer.from(inputs[file].toString().replaceAll('1.2.0', lock.specVersion));
+  if (lock.snapshot) {
+    inputs['scripts/validate-models.mjs'] = readFileSync(resolve(root, lock.snapshot, 'scripts/validate-models.mjs'));
+    for (const name of ['validate.mjs', 'bundle.mjs']) {
+      inputs[name] = Buffer.from("import { validateModel } from './scripts/validate-models.mjs';\n" + inputs[name].toString().replace('  validateModelSet({ manifest, models }, schema);', '  validateModelSet({ manifest, models }, schema);\n  for (const model of models) { const errors = validateModel(model); if (errors.length) throw new Error(JSON.stringify(errors)); }'));
+    }
+    inputs['README.md'] = Buffer.from(inputs['README.md'].toString() + '\nExperimental prerelease. Declaration checks include hint semantics; content and expressions are never evaluated.\n');
+  }
   for (const file of set.files) inputs[`models/${file}`] = readFileSync(resolve(root, example.source, 'models', file));
   return Object.fromEntries(Object.entries(inputs).sort(([a], [b]) => a.localeCompare(b)));
 }
 
-export function prepareExampleDownloads(root, lock) {
+export function prepareExampleDownloads(root, lock, sets = exampleSets) {
   const base = resolve(root, 'public/downloads/examples', lock.specVersion);
-  for (const example of exampleSets) {
+  for (const example of sets) {
     const entries = exampleFiles(root, example, lock);
     const folder = resolve(base, example.downloadPath);
     for (const [name, bytes] of Object.entries(entries)) {
@@ -46,8 +54,8 @@ export function prepareExampleDownloads(root, lock) {
   }
 }
 
-export function checkExampleDownloads(root, dist, lock) {
-  for (const example of exampleSets) {
+export function checkExampleDownloads(root, dist, lock, sets = exampleSets) {
+  for (const example of sets) {
     const expected = exampleFiles(root, example, lock);
     const base = resolve(dist, 'downloads/examples', lock.specVersion);
     const archive = unzipSync(new Uint8Array(readFileSync(resolve(base, `${example.id}.zip`))));

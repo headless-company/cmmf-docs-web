@@ -1,12 +1,16 @@
 ---
-import Search from '@astrojs/starlight/components/Search.astro';
+import Search from './Search.astro';
+import { editionFor, versionedTopic } from '../../scripts/lib/versions.mjs';
 import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
 import BrandLogo from './BrandLogo.astro';
+const edition = editionFor(Astro.url.pathname);
+const pinned = Astro.url.pathname.startsWith('/versions/') || edition.version !== '1.2.0';
 const links = [
   ['Learn', '/learn/why-cmmf/'], ['Documentation', '/docs/'],
   ['Examples', '/examples/'], ['Tools', '/tools/'],
 ];
 const path = Astro.url.pathname;
+if (pinned) for (const link of links) if (versionedTopic(link[1])) link[1] = edition.prefix + link[1];
 ---
 <div class="site-header">
   <a class="site-logo-link" href="/" aria-label="CMMF home"><BrandLogo /></a>
