@@ -1,0 +1,136 @@
+id: article
+name: Article
+kind: entry
+description: Editorial article content type.
+tags:
+  - editorial
+fields:
+  - id: title
+    name: Title
+    type: string
+    required: true
+    validations:
+      minLength: 5
+      maxLength: 100
+
+  - id: slug
+    name: Slug
+    type: slug
+    required: true
+    editorial:
+      helpText: Used in URLs.
+
+  - id: summary
+    name: Summary
+    type: text
+    validations:
+      maxLength: 250
+
+  - id: body
+    name: Body
+    type: richText
+    required: true
+    richTextConfig:
+      marks:
+        - bold
+        - italic
+        - link
+      blocks:
+        - paragraph
+        - heading-2
+        - heading-3
+        - unordered-list
+        - ordered-list
+        - quote
+      embeds:
+        - kind: asset
+        - kind: reference
+          targets:
+            - person
+
+  - id: hero_image
+    name: Hero Image
+    type: asset
+    validations:
+      mimeTypes:
+        - image/jpeg
+        - image/png
+
+  - id: author
+    name: Author
+    type: reference
+    targets:
+      - person
+    relation:
+      ownership: linked
+
+  - id: seo
+    name: SEO
+    type: object
+    objectType: seo-metadata
+    translationHints:
+      preferredRepresentation: embedded
+
+  - id: article_type
+    name: Article Type
+    type: enum
+    required: true
+    values: [internal, external]
+
+  - id: source_url
+    name: Source URL
+    type: string
+
+  - id: noindex
+    name: Exclude from Search
+    type: boolean
+
+  - id: noindex_reason
+    name: Search Exclusion Reason
+    type: text
+
+validationHints:
+  - id: external-requires-source
+    description: External articles must provide a source URL.
+    when:
+      field: article_type
+      equals: external
+    then:
+      require: [source_url]
+
+  - id: author-or-source
+    description: Provide at least one author or a source URL.
+    then:
+      atLeastOneOf: [author, source_url]
+
+  - id: explain-noindex
+    description: Explain why an external article is excluded from search.
+    severity: warning
+    when:
+      allOf:
+        - field: article_type
+          equals: external
+        - not:
+            anyOf:
+              - field: noindex
+                isEmpty: true
+              - field: noindex
+                equals: false
+    then:
+      require: [noindex_reason]
+
+  - id: check-source-rights
+    description: Confirm permission to republish external source material.
+    severity: info
+
+editorial:
+  labelField: title
+  preview:
+    title: title
+    description: summary
+    image: hero_image
+
+governance:
+  owner: platform-team
+  status: active
+  maturity: stable

@@ -7,19 +7,21 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "prepare:content": "node scripts/prepare-content.mjs",
+    "prepare:content": "node scripts/prepare-content.mjs && node scripts/prepare-versions.mjs",
     "dev": "npm run prepare:content && astro dev --host 127.0.0.1",
-    "build": "npm run source:check && npm run examples:check && npm run test:examples && npm run prepare:content && astro build && node scripts/check-site.mjs",
+    "build": "npm run source:check && npm run examples:check && npm run test:examples && npm run test:beta && npm run prepare:content && astro build && node scripts/check-site.mjs && node scripts/check-versions.mjs",
     "preview": "astro preview --host 127.0.0.1",
-    "source:check": "node scripts/sync-cmmf.mjs --check",
+    "source:check": "node scripts/sync-cmmf.mjs --check && node scripts/sync-cmmf.mjs --check --snapshot vendor/cmmf-beta --lock cmmf-beta-source.lock.json",
     "handover:check": "node artifacts/cmmf-site-handover/scripts/verify-handover.mjs",
     "examples:check": "node scripts/check-examples.mjs",
     "check": "npm run prepare:content && astro check",
     "test:browser": "node scripts/review-site.mjs",
     "test:examples": "node --test scripts/test-model-set.mjs",
-    "assets:social": "node scripts/render-social.mjs"
+    "assets:social": "node scripts/render-social.mjs",
+    "test:beta": "node --test vendor/cmmf-beta/test/validation-hints.test.mjs && node scripts/check-beta.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
     "@astrojs/starlight": "0.42.6",
     "astro": "7.3.8",
     "shiki": "4.5.0"

@@ -1,0 +1,6 @@
+specVersion: "1.3.0-beta.1"
+namespace: headlessco.content-model-master
+modelsPath: ./models
+defaults:
+  required: false
+  localisation: false

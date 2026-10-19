@@ -63,3 +63,9 @@ Follow [the Cloudflare deployment runbook](handover/deployment-runbook.md) and [
 `npm run test:examples` verifies semantic failure cases. An optional end-to-end Studio check can be run with `node scripts/review-studio.mjs /path/to/studio/dist`; it uses an explicitly supplied local build and is not a documentation-build dependency.
 
 See [licence and provenance notes](LICENSES.md). The upstream format's Apache-2.0 licence and supplied font OFLs do not assign a blanket licence to brand artwork or the whole website.
+
+## Documentation versions
+
+Unversioned articles remain on stable CMMF 1.2.0. Explicit editions live at `/versions/1.2.0/` and `/versions/1.3.0-beta.1/` before the usual `docs/`, `learn/` and `examples/` paths. The selector preserves topics, labels the beta as experimental and scopes search by edition. Specifications and machine assets keep their existing exact-version route structure.
+
+Read [the versioning decision and release workflow](handover/documentation-versioning.md) for canonical URLs, sitemap/search treatment, source ownership and stable promotion. The beta is independently pinned in `cmmf-beta-source.lock.json`; update it only through the sync helper with `--snapshot vendor/cmmf-beta --lock cmmf-beta-source.lock.json`, a full revision and exact version. Beta-only articles are authored under `src/content/beta/`. The original stable snapshot is unchanged.

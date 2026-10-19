@@ -4,13 +4,13 @@ import { renderMermaidSVG } from 'beautiful-mermaid';
 import { loadModelSet } from './model-set.mjs';
 import { exampleSets } from './examples.mjs';
 
-export function prepareDiagrams(root, version) {
+export function prepareDiagrams(root, version, sets = exampleSets) {
   const folder = resolve(root, 'public/downloads/diagrams', version);
   mkdirSync(folder, { recursive: true });
   const font = readFileSync(resolve(root, 'brand/fonts/source-sans-3-latin-400-normal.woff2')).toString('base64');
   const mediumFont = readFileSync(resolve(root, 'brand/fonts/source-sans-3-latin-500-normal.woff2')).toString('base64');
   const licence = readFileSync(resolve(root, 'brand/fonts/Source-Sans-3-OFL.txt'), 'utf8').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  for (const example of exampleSets) {
+  for (const example of sets) {
     const { models } = loadModelSet(resolve(root, example.source), version);
     const ids = new Map(models.map((model, i) => [model.id, `m${i}`]));
     const safe = value => value.replace(/["<>\[\]\n]/g, '');
