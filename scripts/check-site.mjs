@@ -19,7 +19,7 @@ for (const file of pages) {
   const route = file.slice(dist.length).replace(/index\.html$/, '');
   const $ = load(readFileSync(file, 'utf8'));
   if (route !== '/' && $('.sl-markdown-content h2').length && !$('.sl-markdown-content .sl-heading-wrapper a').length) errors.push(`${route}: article heading links are missing`);
-  if (route === '/tools/skills/' && !$('.starlight-aside').length) errors.push('Skills development notice did not receive Starlight rendering.');
+  if (route === '/tools/skills/' && !$('.starlight-aside').length) errors.push('Skills implementation status notice did not receive Starlight rendering.');
   const social = $('meta[property="og:image"]').attr('content');
   if (social !== 'https://cmmf.dev/images/social/cmmf-social-preview.png') errors.push(`${route}: missing social preview metadata`);
   for (const [selector, expected] of [

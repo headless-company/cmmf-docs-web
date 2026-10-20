@@ -1,0 +1,340 @@
+{
+  "root": "<trial>/article",
+  "manifest": {
+    "specVersion": "1.2.0",
+    "namespace": "headlessco.content-model-master",
+    "modelsPath": "./models",
+    "defaults": {
+      "required": false,
+      "localisation": false
+    }
+  },
+  "manifestFile": "<trial>/article/manifest.yaml",
+  "models": [
+    {
+      "file": "<trial>/article/models/article.yaml",
+      "data": {
+        "id": "article",
+        "name": "Article",
+        "kind": "entry",
+        "description": "Editorial article content type.",
+        "tags": [
+          "editorial"
+        ],
+        "fields": [
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "string",
+            "required": true,
+            "validations": {
+              "minLength": 5,
+              "maxLength": 100
+            }
+          },
+          {
+            "id": "slug",
+            "name": "Slug",
+            "type": "slug",
+            "required": true,
+            "editorial": {
+              "helpText": "Used in URLs."
+            }
+          },
+          {
+            "id": "summary",
+            "name": "Summary",
+            "type": "text",
+            "validations": {
+              "maxLength": 250
+            }
+          },
+          {
+            "id": "body",
+            "name": "Body",
+            "type": "richText",
+            "required": true,
+            "richTextConfig": {
+              "marks": [
+                "bold",
+                "italic",
+                "link"
+              ],
+              "blocks": [
+                "paragraph",
+                "heading-2",
+                "heading-3",
+                "unordered-list",
+                "ordered-list",
+                "quote"
+              ],
+              "embeds": [
+                {
+                  "kind": "asset"
+                },
+                {
+                  "kind": "reference",
+                  "targets": [
+                    "person"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "hero_image",
+            "name": "Hero Image",
+            "type": "asset",
+            "validations": {
+              "mimeTypes": [
+                "image/jpeg",
+                "image/png"
+              ]
+            }
+          },
+          {
+            "id": "author",
+            "name": "Author",
+            "type": "reference",
+            "targets": [
+              "person"
+            ],
+            "relation": {
+              "ownership": "linked"
+            }
+          },
+          {
+            "id": "seo",
+            "name": "SEO",
+            "type": "object",
+            "objectType": "seo-metadata",
+            "translationHints": {
+              "preferredRepresentation": "embedded"
+            }
+          }
+        ],
+        "editorial": {
+          "labelField": "title",
+          "preview": {
+            "title": "title",
+            "description": "summary",
+            "image": "hero_image"
+          }
+        },
+        "governance": {
+          "owner": "platform-team",
+          "status": "active",
+          "maturity": "stable"
+        }
+      }
+    },
+    {
+      "file": "<trial>/article/models/page.yaml",
+      "data": {
+        "id": "page",
+        "name": "Page",
+        "kind": "entry",
+        "description": "Generic page model for composed website content.",
+        "fields": [
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "string",
+            "required": true
+          },
+          {
+            "id": "slug",
+            "name": "Slug",
+            "type": "slug",
+            "required": true
+          },
+          {
+            "id": "page_type",
+            "name": "Page Type",
+            "type": "enum",
+            "values": [
+              "landing",
+              "article",
+              "standard"
+            ],
+            "default": "standard"
+          },
+          {
+            "id": "hero_image",
+            "name": "Hero Image",
+            "type": "asset"
+          },
+          {
+            "id": "seo",
+            "name": "SEO",
+            "type": "object",
+            "objectType": "seo-metadata"
+          },
+          {
+            "id": "related_articles",
+            "name": "Related Articles",
+            "type": "reference",
+            "list": true,
+            "targets": [
+              "article"
+            ],
+            "relation": {
+              "ordered": true,
+              "uniqueItems": true,
+              "ownership": "linked"
+            }
+          }
+        ],
+        "editorial": {
+          "labelField": "title",
+          "preview": {
+            "title": "title",
+            "image": "hero_image"
+          }
+        },
+        "governance": {
+          "owner": "platform-team",
+          "status": "active",
+          "maturity": "stable"
+        }
+      }
+    },
+    {
+      "file": "<trial>/article/models/person.yaml",
+      "data": {
+        "id": "person",
+        "name": "Person",
+        "kind": "entry",
+        "description": "Person profile content used for authorship and attribution.",
+        "fields": [
+          {
+            "id": "full_name",
+            "name": "Full Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "id": "slug",
+            "name": "Slug",
+            "type": "slug",
+            "required": true,
+            "editorial": {
+              "helpText": "Used in profile URLs."
+            }
+          },
+          {
+            "id": "bio",
+            "name": "Biography",
+            "type": "text"
+          },
+          {
+            "id": "headshot",
+            "name": "Headshot",
+            "type": "asset",
+            "validations": {
+              "mimeTypes": [
+                "image/jpeg",
+                "image/png"
+              ]
+            }
+          }
+        ],
+        "editorial": {
+          "labelField": "full_name",
+          "preview": {
+            "title": "full_name",
+            "description": "bio",
+            "image": "headshot"
+          }
+        },
+        "governance": {
+          "owner": "platform-team",
+          "status": "active",
+          "maturity": "stable"
+        }
+      }
+    },
+    {
+      "file": "<trial>/article/models/seo-metadata.yaml",
+      "data": {
+        "id": "seo-metadata",
+        "name": "SEO Metadata",
+        "kind": "object",
+        "description": "Reusable embedded SEO metadata structure.",
+        "fields": [
+          {
+            "id": "meta_title",
+            "name": "Meta Title",
+            "type": "string",
+            "validations": {
+              "maxLength": 60
+            }
+          },
+          {
+            "id": "meta_description",
+            "name": "Meta Description",
+            "type": "text",
+            "validations": {
+              "maxLength": 160
+            }
+          },
+          {
+            "id": "canonical_url",
+            "name": "Canonical URL",
+            "type": "string"
+          },
+          {
+            "id": "noindex",
+            "name": "No Index",
+            "type": "boolean",
+            "default": false
+          }
+        ],
+        "editorial": {
+          "labelField": "meta_title"
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "article",
+      "field": "body",
+      "list": true,
+      "to": "person",
+      "kind": "richTextEmbed"
+    },
+    {
+      "from": "article",
+      "field": "author",
+      "list": false,
+      "ownership": "linked",
+      "to": "person",
+      "kind": "reference"
+    },
+    {
+      "from": "article",
+      "field": "seo",
+      "list": false,
+      "to": "seo-metadata",
+      "kind": "object"
+    },
+    {
+      "from": "page",
+      "field": "seo",
+      "list": false,
+      "to": "seo-metadata",
+      "kind": "object"
+    },
+    {
+      "from": "page",
+      "field": "related_articles",
+      "list": true,
+      "ownership": "linked",
+      "to": "article",
+      "kind": "reference"
+    }
+  ],
+  "instructions": [],
+  "diagnostics": []
+}

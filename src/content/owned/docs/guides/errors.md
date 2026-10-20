@@ -58,3 +58,7 @@ Common causes include missing `objectType`, missing reference `targets`, an unkn
 The example validator requires the manifest string `"1.2.0"`. A different declared version needs matching source material and tooling; changing the label alone is not a migration. YAML parser errors identify the file and location. Check indentation, repeated keys and quoted strings before debugging relationships.
 
 Run validation again after each repair. Then review editorial usefulness and any CMS mapping separately. A passing check has the [scope described here](/docs/guides/validation/).
+
+## Work with Skills
+
+For package installation, source resolution, unsupported helper versions and diff exit codes, see [Skills troubleshooting](/tools/skills/troubleshooting/).

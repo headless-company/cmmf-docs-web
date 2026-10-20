@@ -9,7 +9,7 @@ Recommendation: create `cmmf-site` separately. This supersedes the first plan's 
 | content-model-master-format | Normative specs, translation contracts, machine schemas, small reference example sets, release history and essential contributor guidance. |
 | cmmf-site | Explanation/learning content, tutorial examples, presentation/layout/components, navigation, search, downloadable presentation of upstream assets and deployment. |
 | cmmf-visual-editor | Studio application and its release/deployment lifecycle. |
-| cmmf-creation-agent | Agent skills, deterministic helpers and their release evidence. |
+| cmmf-skills | Agent skills, deterministic helpers and their release evidence. |
 | cmmf-branding | Canonical artwork, tokens and brand guidelines. |
 
 Separation suits the ecosystem: site releases and frontend dependencies need not change the format's repository or imply a format release. The website can evolve its explanations while agents and implementers continue to use a small authoritative source repository.

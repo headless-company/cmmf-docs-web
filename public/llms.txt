@@ -20,7 +20,6 @@ This website documents CMMF 1.2.0, pinned at 32604441aff09a6dbfe2361e97078af5263
 - [Changelog](https://cmmf.dev/changelog/): Pinned upstream material. Markdown: https://cmmf.dev/raw/CHANGELOG.md
 - [Format licence](https://cmmf.dev/project/format-licence/): Pinned upstream material. Markdown: https://cmmf.dev/raw/LICENSE.md
 - [Example model sets](https://cmmf.dev/examples/): Website explanation. Markdown: https://cmmf.dev/raw/site/examples/index.md
-- [CMMF Skills](https://cmmf.dev/tools/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/index.md
 - [Glossary](https://cmmf.dev/learn/glossary/): Website explanation. Markdown: https://cmmf.dev/raw/site/learn/glossary.md
 - [Create your first model set](https://cmmf.dev/docs/get-started/first-model/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/get-started/first-model.md
 - [Choosing embeddings and references](https://cmmf.dev/docs/guides/embed-or-reference/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/embed-or-reference.md
@@ -29,10 +28,23 @@ This website documents CMMF 1.2.0, pinned at 32604441aff09a6dbfe2361e97078af5263
 - [Editorial and governance metadata](https://cmmf.dev/docs/guides/editorial-intent/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/editorial-intent.md
 - [Validation errors and fixes](https://cmmf.dev/docs/guides/errors/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/errors.md
 - [Migration to 1.2.0](https://cmmf.dev/docs/guides/migrate-to-1-2/): Website explanation. Markdown: https://cmmf.dev/raw/site/docs/guides/migrate-to-1-2.md
-- [Skills development-release installation](https://cmmf.dev/tools/skills/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills.md
 - [Customer Story](https://cmmf.dev/examples/customer-story/): Website explanation. Markdown: https://cmmf.dev/raw/site/examples/customer-story.md
 - [Contribution and publishing guidance](https://cmmf.dev/contributing/): Website explanation. Markdown: https://cmmf.dev/raw/site/contributing.md
 - [Article model set](https://cmmf.dev/examples/article/): Website explanation. Markdown: https://cmmf.dev/raw/site/examples/article.md
+- [CMMF Skills](https://cmmf.dev/tools/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/index.md
+- [Author: create or extend model YAML](https://cmmf.dev/tools/skills/author/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/author.md
+- [Discover: turn requirements into modelling decisions](https://cmmf.dev/tools/skills/discover/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/discover.md
+- [Document: explain the actual model set](https://cmmf.dev/tools/skills/document/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/document.md
+- [Evolve: plan or implement intentional change](https://cmmf.dev/tools/skills/evolve/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/evolve.md
+- [Local tool reference](https://cmmf.dev/tools/skills/local-tools/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/local-tools.md
+- [Migrate to CMMF Skills](https://cmmf.dev/tools/skills/migration/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/migration.md
+- [Review: assess architecture and editorial usability](https://cmmf.dev/tools/skills/review/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/review.md
+- [Sources and versions](https://cmmf.dev/tools/skills/sources-and-versions/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/sources-and-versions.md
+- [Team adoption and assurance](https://cmmf.dev/tools/skills/team-adoption/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/team-adoption.md
+- [Skills troubleshooting](https://cmmf.dev/tools/skills/troubleshooting/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/troubleshooting.md
+- [Validate: check format and cross-model integrity](https://cmmf.dev/tools/skills/validate/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/validate.md
+- [Worked modelling journeys](https://cmmf.dev/tools/skills/workflows/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills/workflows.md
+- [Install CMMF Skills](https://cmmf.dev/tools/skills/): Website explanation. Markdown: https://cmmf.dev/raw/site/tools/skills.md
 
 ## Machine-readable assets
 

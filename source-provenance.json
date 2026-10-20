@@ -1581,7 +1581,7 @@
       "name": "cmmf-creation-agent",
       "baseGitRevision": "53cf3928e1a08c724dab0cf58098485c5d7de2bb",
       "snapshotKind": "working-tree",
-      "note": "Includes uncommitted skills-first development guidance. This is evidence for writing accurate site content, not a packaged skills release or host-support certification.",
+      "note": "Historical pre-migration evidence only; superseded by the cmmf-skills pinned source snapshot.",
       "files": [
         {
           "sourcePath": "README.md",
@@ -1607,7 +1607,172 @@
           "gitStatus": "?? docs/implementation-progress.md",
           "transformation": null
         }
-      ]
+      ],
+      "historical": true
+    },
+    {
+      "name": "cmmf-skills",
+      "repository": "https://github.com/headless-company/cmmf-skills",
+      "baseGitRevision": "68ec28d3993eb08298ebf9a896f6a9d51b425bf0",
+      "snapshotKind": "git-commit-files",
+      "workspaceVersion": "0.2.0",
+      "note": "Pinned source evidence; private workspace, not a published package or host certification.",
+      "files": [
+        {
+          "sourcePath": "README.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/README.md",
+          "sourceSha256": "e11ce7fb3efe3530f7c1fe86614198a48ea5b06028a830908e6b035ec0ea5651",
+          "bundledSha256": "e11ce7fb3efe3530f7c1fe86614198a48ea5b06028a830908e6b035ec0ea5651",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "package.json",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/package.json",
+          "sourceSha256": "783d0fff7ff37b27305ddb07c4ac94227ba1a19fbc021348ce0ea2954c021870",
+          "bundledSha256": "783d0fff7ff37b27305ddb07c4ac94227ba1a19fbc021348ce0ea2954c021870",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": ".npmrc",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/.npmrc",
+          "sourceSha256": "4f6864e7f51ebbe91c0dbd228444c3e4c9f8d5f95aa9079bfa81af6371648c24",
+          "bundledSha256": "4f6864e7f51ebbe91c0dbd228444c3e4c9f8d5f95aa9079bfa81af6371648c24",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": ".nvmrc",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/.nvmrc",
+          "sourceSha256": "f14b4987904bcb5814e4459a057ed4d20f58a633152288a761214dcd28780b56",
+          "bundledSha256": "f14b4987904bcb5814e4459a057ed4d20f58a633152288a761214dcd28780b56",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "LICENSE.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/LICENSE.md",
+          "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bundledSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "docs/skills-quickstart.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/docs/skills-quickstart.md",
+          "sourceSha256": "a8da41592ef7da929fdf96526847dd52fae262ba105fb3da14e26cc672254ed8",
+          "bundledSha256": "a8da41592ef7da929fdf96526847dd52fae262ba105fb3da14e26cc672254ed8",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "docs/migration.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/docs/migration.md",
+          "sourceSha256": "bc111cae6577944c23fe19f5b73793bbdd0707fb3f033f4356412e4daf7cba6b",
+          "bundledSha256": "bc111cae6577944c23fe19f5b73793bbdd0707fb3f033f4356412e4daf7cba6b",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "docs/project-guide.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/docs/project-guide.md",
+          "sourceSha256": "eaec73fe47b05391534f2bb15a888e07cbc4ec0c55cf7c61d8656b714f3b9683",
+          "bundledSha256": "eaec73fe47b05391534f2bb15a888e07cbc4ec0c55cf7c61d8656b714f3b9683",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "docs/implementation-progress.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/docs/implementation-progress.md",
+          "sourceSha256": "77625babf62e0fcbae8421649ff52a918d60a84823ecc943b0523b588d300bbc",
+          "bundledSha256": "77625babf62e0fcbae8421649ff52a918d60a84823ecc943b0523b588d300bbc",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "evals/core-workflows.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/evals/core-workflows.md",
+          "sourceSha256": "a12afb7db7b05604acf2d19e1d3579008fe69f968682d92b89bb8ee8de0aeb48",
+          "bundledSha256": "a12afb7db7b05604acf2d19e1d3579008fe69f968682d92b89bb8ee8de0aeb48",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "skills/cmmf-discover/SKILL.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/skills/cmmf-discover/SKILL.md",
+          "sourceSha256": "e007bcf0e564d6cbc0999023861beca3b56a1dab0c1dbe3da9fb593517237939",
+          "bundledSha256": "e007bcf0e564d6cbc0999023861beca3b56a1dab0c1dbe3da9fb593517237939",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "skills/cmmf-author/SKILL.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/skills/cmmf-author/SKILL.md",
+          "sourceSha256": "456bf617e8259b04d21198e2b3656b07074de450786a4cf514251eb485ff524f",
+          "bundledSha256": "456bf617e8259b04d21198e2b3656b07074de450786a4cf514251eb485ff524f",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "skills/cmmf-validate/SKILL.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/skills/cmmf-validate/SKILL.md",
+          "sourceSha256": "4326bd0b82d105a0ab3e4d5992347f03f43075de5f03f18c76b66aee2671b5a8",
+          "bundledSha256": "4326bd0b82d105a0ab3e4d5992347f03f43075de5f03f18c76b66aee2671b5a8",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "skills/cmmf-review/SKILL.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/skills/cmmf-review/SKILL.md",
+          "sourceSha256": "0747cfe9cd844bc32587ea749ca31874909373893a7a72451f51f34f893bccd9",
+          "bundledSha256": "0747cfe9cd844bc32587ea749ca31874909373893a7a72451f51f34f893bccd9",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "skills/cmmf-document/SKILL.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/skills/cmmf-document/SKILL.md",
+          "sourceSha256": "5c37af1caf283de4de7deca930e6825d89da50f195f3e96ecc8682bcfb1a397f",
+          "bundledSha256": "5c37af1caf283de4de7deca930e6825d89da50f195f3e96ecc8682bcfb1a397f",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "skills/cmmf-evolve/SKILL.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/skills/cmmf-evolve/SKILL.md",
+          "sourceSha256": "1da4cd8425ebd5a741848636f58dee2062972726841d3320f2398fdd7a7906cd",
+          "bundledSha256": "1da4cd8425ebd5a741848636f58dee2062972726841d3320f2398fdd7a7906cd",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "references/source-resolution.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/references/source-resolution.md",
+          "sourceSha256": "d22df4f56dc809fb087773b59b6ff9130c05d944497876860e271222d9587b6d",
+          "bundledSha256": "d22df4f56dc809fb087773b59b6ff9130c05d944497876860e271222d9587b6d",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "references/local-tools.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/references/local-tools.md",
+          "sourceSha256": "7ea34be1fd9542c1db378aa96145109f03d0f06e5c185a808a69a86554751cba",
+          "bundledSha256": "7ea34be1fd9542c1db378aa96145109f03d0f06e5c185a808a69a86554751cba",
+          "gitStatus": "clean",
+          "transformation": null
+        },
+        {
+          "sourcePath": "references/modelling-decisions.md",
+          "bundledPath": "reference/skills/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/references/modelling-decisions.md",
+          "sourceSha256": "9e2580f75954b4b41b2d19b7f2543b207683653837a534e08fb9e0cfb34f950a",
+          "bundledSha256": "9e2580f75954b4b41b2d19b7f2543b207683653837a534e08fb9e0cfb34f950a",
+          "gitStatus": "clean",
+          "transformation": null
+        }
+      ],
+      "capturedAt": "2026-10-20"
     }
-  ]
+  ],
+  "updatedAt": "2026-10-20"
 }

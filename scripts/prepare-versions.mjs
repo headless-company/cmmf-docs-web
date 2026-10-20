@@ -52,6 +52,7 @@ function imported(source, title, normative = false) {
     if (!route) throw new Error(`Unmapped beta link: ${source} -> ${target}`);
     return `](${route}${hash ? '#' + hash : ''})`;
   });
+  if (source === 'docs/validations.md') text += '\n\n## Skills compatibility\n\n[CMMF Skills](/tools/skills/sources-and-versions/) does not support beta source requests or beta helper semantics. Use the matching beta example validator for the checks described here; do not treat those checks as Skills support.\n';
   // Site publication deliberately retains the existing release hold on tool promotion.
   if (!normative) text = text.replace(/Studio and other editors/g, 'Editors');
   const sourceUrl = `${lock.repository.replace(/\.git$/, '')}/blob/${lock.revision}/${source}`;

@@ -1,0 +1,47 @@
+{
+  "name": "cmmf-skills",
+  "version": "0.2.0",
+  "description": "Portable CMMF modelling skills with deterministic local inspection, validation, diff, and documentation tools.",
+  "type": "module",
+  "packageManager": "npm@11.11.0",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=11.10.0"
+  },
+  "bin": {
+    "cmmf-tools": "./dist/tools/cli.js"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "clean": "node ./scripts/clean.mjs",
+    "inspect": "node ./dist/tools/cli.js inspect",
+    "validate": "node ./dist/tools/cli.js validate",
+    "deps:verify": "node ./scripts/verify-dependencies.mjs",
+    "tools": "node ./dist/tools/cli.js",
+    "skills:package": "npm run build && node ./scripts/package-skills.mjs",
+    "skills:verify": "node ./scripts/verify-skills.mjs",
+    "test": "node ./scripts/test.mjs",
+    "check": "npm run build && npm run test && npm run deps:verify && node ./scripts/package-skills.mjs && npm run skills:verify"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.3"
+  },
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/headless-company/cmmf-skills.git"
+  }
+}

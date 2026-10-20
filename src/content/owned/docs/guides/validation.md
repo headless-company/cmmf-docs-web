@@ -38,3 +38,7 @@ Checking a model does not establish that real articles or assets satisfy its dec
 A translator should preserve supported constraints and record unsupported or lossy mappings. Editorial usefulness, relationship choices and platform fit still need a review.
 
 The site's production build checks both complete example sets for schema validity, manifest version, duplicate model/field IDs, editorial field references, relationship targets and coherent constraint bounds. The [Customer Story project](/examples/customer-story/) includes the same checks as a portable local validator. It does not perform content-instance validation or certify CMS mappings.
+
+## Work with Skills
+
+For agent-assisted checks, use [Validate](/tools/skills/validate/). Keep format/graph validity, team conventions, architecture quality and content/migration safety separate. Natural-language conventions are not automatically enforced by the helper. The downloadable example validator is a separate interface from Skills commands.

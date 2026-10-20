@@ -258,15 +258,6 @@
       "sourceVersion": "1.2.0"
     },
     {
-      "route": "/tools/",
-      "title": "CMMF Skills",
-      "source": "src/content/owned/tools/index.md",
-      "owner": "site",
-      "status": "implemented-prototype",
-      "role": "site-authored",
-      "sourceVersion": "1.2.0"
-    },
-    {
       "route": "/learn/glossary/",
       "title": "Glossary",
       "owner": "site",
@@ -359,15 +350,6 @@
       "notes": "Temporarily unpublished at the owner\u2019s request until nearer the talk. Source retained outside the public content loader."
     },
     {
-      "route": "/tools/skills/",
-      "title": "Skills development-release installation",
-      "owner": "site",
-      "status": "implemented-guide",
-      "role": "site-authored",
-      "sourceVersion": "1.2.0",
-      "source": "src/content/owned/tools/skills.md"
-    },
-    {
       "route": "/examples/customer-story/",
       "title": "Customer Story",
       "owner": "site",
@@ -438,6 +420,132 @@
       "role": "generated-example-download",
       "sourceVersion": "1.2.0",
       "source": "vendor/cmmf/examples/"
+    },
+    {
+      "route": "/tools/",
+      "title": "CMMF Skills",
+      "description": "Six modelling workflows for your coding agent, with local checks and explicit compatibility limits.",
+      "source": "src/content/owned/tools/index.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/author/",
+      "title": "Author: create or extend model YAML",
+      "description": "Create or extend model YAML.",
+      "source": "src/content/owned/tools/skills/author.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/discover/",
+      "title": "Discover: turn requirements into modelling decisions",
+      "description": "Turn requirements into modelling decisions.",
+      "source": "src/content/owned/tools/skills/discover.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/document/",
+      "title": "Document: explain the actual model set",
+      "description": "Explain the actual model set.",
+      "source": "src/content/owned/tools/skills/document.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/evolve/",
+      "title": "Evolve: plan or implement intentional change",
+      "description": "Plan or implement intentional change.",
+      "source": "src/content/owned/tools/skills/evolve.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/local-tools/",
+      "title": "Local tool reference",
+      "description": "Run inspect, source, validate, document and diff with the correct flags and exit codes.",
+      "source": "src/content/owned/tools/skills/local-tools.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/migration/",
+      "title": "Migrate to CMMF Skills",
+      "description": "Replace standalone agent setup with host skills and explicit local tools.",
+      "source": "src/content/owned/tools/skills/migration.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/review/",
+      "title": "Review: assess architecture and editorial usability",
+      "description": "Assess architecture and editorial usability.",
+      "source": "src/content/owned/tools/skills/review.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/sources-and-versions/",
+      "title": "Sources and versions",
+      "description": "Choose matching canonical source, preserve manifest versions and report cache freshness.",
+      "source": "src/content/owned/tools/skills/sources-and-versions.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/team-adoption/",
+      "title": "Team adoption and assurance",
+      "description": "Assess fit, run bounded host trials and distinguish validation from architecture and migration safety.",
+      "source": "src/content/owned/tools/skills/team-adoption.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/troubleshooting/",
+      "title": "Skills troubleshooting",
+      "description": "Diagnose installation, source, validation and semantic diff problems.",
+      "source": "src/content/owned/tools/skills/troubleshooting.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/validate/",
+      "title": "Validate: check format and cross-model integrity",
+      "description": "Check format and cross-model integrity.",
+      "source": "src/content/owned/tools/skills/validate.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/workflows/",
+      "title": "Worked modelling journeys",
+      "description": "Move from brief to reviewed models, evolve existing sets and run review-only audits.",
+      "source": "src/content/owned/tools/skills/workflows.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
+    },
+    {
+      "route": "/tools/skills/",
+      "title": "Install CMMF Skills",
+      "description": "Build, install, verify, update and remove complete independent skill packages.",
+      "source": "src/content/owned/tools/skills.md",
+      "owner": "site",
+      "role": "site-authored",
+      "status": "implemented-guide"
     }
   ]
 }

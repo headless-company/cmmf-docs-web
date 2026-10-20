@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "source": {
+    "root": "<docs-site>/vendor/cmmf",
+    "version": "1.2.0",
+    "revision": null,
+    "remote": null,
+    "dirty": false,
+    "schemaSha256": "286fff8d91593503e94a3616de931a902caddc9f56283fd54471b59853d7fc5b",
+    "specSha256": "577fff5d5bfda966a9926c612d58aab7de9d0ded6b1ddde98aa6554ea983e9f1",
+    "specFile": "<docs-site>/vendor/cmmf/spec/cmmf-v1.2.0.md",
+    "schemaFile": "<docs-site>/vendor/cmmf/schemas/model.schema.json",
+    "freshness": "local"
+  },
+  "diagnostics": []
+}

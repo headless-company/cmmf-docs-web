@@ -1,0 +1,222 @@
+{
+  "root": "<trial>/customer-story",
+  "manifest": {
+    "specVersion": "1.2.0",
+    "namespace": "example.customer-story",
+    "modelsPath": "./models",
+    "defaults": {
+      "required": false,
+      "localisation": false
+    }
+  },
+  "manifestFile": "<trial>/customer-story/manifest.yaml",
+  "models": [
+    {
+      "file": "<trial>/customer-story/models/customer-story.yaml",
+      "data": {
+        "id": "customer-story",
+        "name": "Customer Story",
+        "kind": "entry",
+        "description": "Evidence of a customer outcome, told through a specific challenge, response and result.",
+        "fields": [
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "string",
+            "required": true,
+            "validations": {
+              "minLength": 5,
+              "maxLength": 100
+            },
+            "editorial": {
+              "helpText": "Lead with the outcome rather than the name of a product."
+            }
+          },
+          {
+            "id": "slug",
+            "name": "Slug",
+            "type": "slug",
+            "required": true,
+            "editorial": {
+              "helpText": "A readable identifier for this story's URL. Agree uniqueness rules with the implementation."
+            }
+          },
+          {
+            "id": "summary",
+            "name": "Summary",
+            "type": "text",
+            "validations": {
+              "maxLength": 250
+            },
+            "editorial": {
+              "helpText": "Explain the result in a sentence or two for listings and previews."
+            }
+          },
+          {
+            "id": "story",
+            "name": "Story",
+            "type": "richText",
+            "required": true,
+            "richTextConfig": {
+              "marks": [
+                "bold",
+                "italic",
+                "link"
+              ],
+              "blocks": [
+                "paragraph",
+                "heading-2",
+                "unordered-list",
+                "quote"
+              ]
+            },
+            "editorial": {
+              "helpText": "Describe the challenge, the response and the evidence for the outcome."
+            }
+          },
+          {
+            "id": "customer",
+            "name": "Customer",
+            "type": "reference",
+            "required": true,
+            "list": false,
+            "targets": [
+              "customer"
+            ],
+            "relation": {
+              "ownership": "linked"
+            },
+            "editorial": {
+              "helpText": "Choose the reusable customer profile behind this story."
+            }
+          },
+          {
+            "id": "quote",
+            "name": "Quote",
+            "type": "object",
+            "objectType": "quote",
+            "editorial": {
+              "helpText": "Include an approved quote in its original context. Omit the quote when none is available."
+            }
+          }
+        ],
+        "editorial": {
+          "labelField": "title",
+          "preview": {
+            "title": "title",
+            "description": "summary"
+          }
+        },
+        "governance": {
+          "owner": "content-team",
+          "maturity": "proposed"
+        }
+      }
+    },
+    {
+      "file": "<trial>/customer-story/models/customer.yaml",
+      "data": {
+        "id": "customer",
+        "name": "Customer",
+        "kind": "entry",
+        "description": "A reusable organisation profile that can be linked from more than one customer story.",
+        "fields": [
+          {
+            "id": "name",
+            "name": "Name",
+            "type": "string",
+            "required": true,
+            "validations": {
+              "maxLength": 100
+            }
+          },
+          {
+            "id": "website",
+            "name": "Website",
+            "type": "string",
+            "editorial": {
+              "helpText": "The customer's public website. URL validation is an implementation decision."
+            }
+          },
+          {
+            "id": "logo",
+            "name": "Logo",
+            "type": "asset",
+            "validations": {
+              "mimeTypes": [
+                "image/png",
+                "image/svg+xml"
+              ]
+            }
+          }
+        ],
+        "editorial": {
+          "labelField": "name",
+          "preview": {
+            "title": "name",
+            "image": "logo"
+          }
+        }
+      }
+    },
+    {
+      "file": "<trial>/customer-story/models/quote.yaml",
+      "data": {
+        "id": "quote",
+        "name": "Quote",
+        "kind": "object",
+        "description": "A quotation and attribution embedded in one customer story, rather than a separately maintained content item.",
+        "fields": [
+          {
+            "id": "text",
+            "name": "Text",
+            "type": "text",
+            "required": true,
+            "validations": {
+              "maxLength": 500
+            }
+          },
+          {
+            "id": "attribution",
+            "name": "Attribution",
+            "type": "string",
+            "required": true,
+            "validations": {
+              "maxLength": 100
+            }
+          },
+          {
+            "id": "role",
+            "name": "Role",
+            "type": "string",
+            "validations": {
+              "maxLength": 100
+            }
+          }
+        ],
+        "editorial": {
+          "labelField": "attribution"
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "customer-story",
+      "field": "customer",
+      "list": false,
+      "ownership": "linked",
+      "to": "customer",
+      "kind": "reference"
+    },
+    {
+      "from": "customer-story",
+      "field": "quote",
+      "list": false,
+      "to": "quote",
+      "kind": "object"
+    }
+  ],
+  "instructions": [],
+  "diagnostics": []
+}
