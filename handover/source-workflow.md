@@ -48,3 +48,7 @@ node scripts/sync-cmmf.mjs --source /path/to/content-model-master-format --revis
 ```
 
 The helper now accepts exact prerelease versions and independently named snapshots/locks. The beta snapshot also includes its declaration checker, regression tests and package metadata from the same Git commit. `npm run source:check` verifies both pins. See [the documentation versioning policy](documentation-versioning.md) before adding an edition or promoting stable.
+
+## Refresh Skills evidence
+
+Skills evidence is independent of the normative format pins. Select a reviewed full revision in `headless-company/cmmf-skills`, export committed README, quickstart, migration/project guide, six skill files, shared references, evaluation cases and licence to `reference/skills/<full-sha>/`, then record each source path, bundled path and SHA-256 in `source-provenance.json` with `snapshotKind: git-commit-files`. Keep superseded evidence clearly historical. Record suite version separately from format versions; record uncommitted bytes explicitly if used. Update public guides and support boundaries together, run the source suite checks in isolation, and run the site build/browser checks. Ordinary site builds use bundled evidence and require no sibling checkout or network fetch.

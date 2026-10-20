@@ -55,3 +55,7 @@ Editors and other consumers need explicit version selection, the matching schema
 For every translated hint, record `mapped`, `degraded` or `unmapped`, with a reason identifying the model and hint. Preserving guidance without the checks is degraded. Never use a hint to weaken field-level requirements, and never treat `forbid` as permission to delete content.
 
 Report beta findings against the [upstream RFC](https://github.com/headless-company/content-model-master-format/issues/1). A later beta needs a new exact version; stable promotion is a separate release decision.
+
+## Skills compatibility
+
+The current [CMMF Skills helpers](/tools/skills/sources-and-versions/) do not support beta source requests or beta semantics. An explicit beta checkout does not bypass this limit. Use the matching downloadable beta project validator described above; its checks do not establish Skills compatibility.

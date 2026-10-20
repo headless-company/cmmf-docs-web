@@ -1,78 +1,97 @@
 ---
-title: Work with CMMF Skills
-description: Build and install complete development packages, then try a modelling workflow with explicit source and validation boundaries.
+title: "Install CMMF Skills"
+description: "Build, install, verify, update and remove complete independent skill packages."
 editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills.md
 ---
 
-Skills give a coding agent CMMF-specific instructions and local tools. Begin with a content brief or an existing model set; use the agent to propose and review changes, then inspect the files and validation evidence yourself.
-
-:::caution[Development release]
-The supplied CMMF evidence verifies packaged helper execution. Discovery and realistic modelling behaviour in Codex, Claude Code and GitHub Copilot still need host evaluation. Host skill support does not establish that this particular suite has passed that evaluation.
+:::caution[Implementation and compatibility status]
+Six packaged skills and deterministic helpers are implemented at suite baseline 0.2.0. Automated helper/package checks are recorded in the source handover. Installed-skill discovery and realistic modelling behaviour in Codex, Claude Code and GitHub Copilot remain pending evaluation. The helpers recognise legacy `1`, `1.1.0` and `1.2.0`; they do not support the experimental 1.3 beta. See [sources and versions](/tools/skills/sources-and-versions/).
 :::
 
-## Choose a workflow
+## Who needs what
 
-| Skill | Job |
+| Reader | Requirements |
 | --- | --- |
-| `cmmf-discover` | Turn workshop notes into a modelling brief |
-| `cmmf-author` | Create model files from an agreed brief |
-| `cmmf-validate` | Inspect structure and whole-model errors |
-| `cmmf-review` | Review modelling choices and editorial usability |
-| `cmmf-document` | Produce a catalogue and relationship documentation |
-| `cmmf-evolve` | Assess a proposed model change and its impact |
+| Person building the suite from source | Git, Node.js 22+, pinned `npm@11.11.0`, source checkout, dependency-download access for `npm ci` |
+| Person using an assembled skill | A host/environment that can load local skills, read/edit the project and run Node.js 22+; no npm installation in the model project |
+| Person retrieving a canonical source | Git, writable cache outside the model directory and permitted access to the canonical remote, or an already identified exact-version cache/local source |
+| Team running deterministic checks | Node runtime, built helper, model repository and an explicitly supplied matching canonical source; no LLM session required |
 
-The host supplies reasoning, authentication and file access. The local helpers do not require another LLM provider key. Host permissions, subscriptions and usage limits still apply.
+The package declares npm `>=11.10.0`, while `packageManager` pins `11.11.0`. Use the pin for reproducible contributor instructions. `.nvmrc` currently says `22`; use the site's separate Node requirement for the website itself. Do not instruct readers to disable dependency policy to get a successful install.
 
-## Build a reviewed package
+## Build from source
 
-Obtain the [Skills repository](https://github.com/headless-company/cmmf-creation-agent), review its current README and select the revision you intend to evaluate. Use its reviewed Node/npm requirements; the documented helper runtime needs Node 22 or newer.
-
-Run these commands inside that checkout:
+Run in a location chosen for the Skills checkout, separate from the model project:
 
 ```sh
+git clone https://github.com/headless-company/cmmf-skills.git
+cd cmmf-skills
+git switch --detach 68ec28d3993eb08298ebf9a896f6a9d51b425bf0
+node --version
+npm --version
 npm ci
 npm run check
-npm run skills:package
-npm run skills:verify
 ```
 
-Packaging creates self-contained directories under `release/skills/`, plus `release/cmmf-skills.tar.gz` and a file-hash manifest. Dependencies and their licences are included in the packages; installed helpers do not need a separate npm installation.
+To reproduce this source baseline, select `68ec28d3993eb08298ebf9a896f6a9d51b425bf0` with `git switch --detach` in this fresh checkout. This is a source baseline, not a published release.
 
-This site does not offer a Skills binary download: its evidence includes working-tree documentation at base commit `53cf3928`, rather than a reproducible published suite release. Review the source checkout and its generated manifest before installation.
+`npm run check` builds, runs tests and dependency checks, packages all six skills, and verifies every package separately. It already includes packaging/verification. For a focused rebuild use `npm run skills:package` followed by `npm run skills:verify`.
 
-## Install the complete directory
+| Build output | Meaning |
+| --- | --- |
+| `dist/` | Compiled local tools and programmatic exports |
+| `release/skills/<skill-name>/` | Complete independently installable skill |
+| `release/cmmf-skills.tar.gz` | Suite archive containing `skills/` and `manifest.json` |
+| `release/manifest.json` | `formatVersion`, product `name`/`version`, skill names and per-file `sha256` map |
 
-Copy the entire packaged skill, including references, licences and helpers. Copying only `SKILL.md` or the development source directory leaves out the packaged runtime.
+Each packaged skill includes `SKILL.md`, shared `references/`, `LICENSE.md`, and `scripts/cmmf-tools/` containing the local runtime, JavaScript dependencies and dependency licences. The source `skills/` directories alone are not installable equivalents. The suite manifest is outside individual skill directories: preserve it separately as installation evidence. Hashes identify/check bytes; they are not a signed publisher attestation. The current manifest does not contain the source Git SHA; record that separately.
 
-| Host | Project directory | Personal directory |
-| --- | --- | --- |
-| Codex | `.agents/skills/` | `~/.agents/skills/` |
-| Claude Code | `.claude/skills/` | `~/.claude/skills/` |
-| GitHub Copilot | `.github/skills/` | `~/.copilot/skills/` |
+These outputs are ignored by Git and generated locally. No globally available `cmmf-tools` command is established merely by cloning, building, or copying a skill. No npm package publication is implemented by these commands.
 
-These local directory conventions are documented by [OpenAI](https://learn.chatgpt.com/docs/build-skills), [Anthropic](https://code.claude.com/docs/en/skills) and [GitHub](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills), checked on 15 October 2026. Check the instructions for your specific host and environment when installing.
+## Install complete folders
 
-For example, from the Skills checkout, copy Author into a model project's Codex directory:
+Choose one scope and host destination. Add `<skill-name>/` beneath the listed parent.
+
+| Host | Project parent | Personal parent | Official reference |
+| --- | --- | --- | --- |
+| Codex | `.agents/skills/` | `~/.agents/skills/` | [Build skills](https://learn.chatgpt.com/docs/build-skills) |
+| Claude Code | `.claude/skills/` | `~/.claude/skills/` | [Extend Claude with skills](https://code.claude.com/docs/en/skills) |
+| GitHub Copilot | `.github/skills/` | `~/.copilot/skills/` | [Adding agent skills](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) |
+
+The source handover records these documented paths as checked against official pages on 20 October 2026. They are installation locations, not evidence that this suite has passed host-specific evaluation. Check the chosen host surface and settings when installing. Personal files on a laptop should not be assumed present in a cloud session; provision the complete package in the environment that actually executes it. [Claude Code's documentation](https://code.claude.com/docs/en/skills) specifically distinguishes local personal skills from cloud-session project skills.
+
+For a fresh Codex project destination, run from the Skills checkout:
 
 ```sh
 mkdir -p /path/to/model-project/.agents/skills
 cp -R release/skills/cmmf-author /path/to/model-project/.agents/skills/
 ```
 
-Replace the example path with your project's location. Inspect an existing destination before copying. Preserve local customisations when updating; uninstall by removing only the installed directory you own. Use the host's skill selector to confirm discovery before expecting a workflow to run.
+Replace `/path/to/model-project` with the actual target path. Inspect any existing destination before copying. Use the same pattern for another skill or host parent. Installing all six is optional: each package has its own references/runtime and no dependency on another installed skill.
 
-## Try a bounded task
+## Verify installation and run a bounded first task
 
-Extract the [Customer Story project](/downloads/examples/1.2.0/customer-story.zip) into a working directory. Install `cmmf-review` and `cmmf-validate` there, then ask:
+1. Check that the installed directory directly contains `SKILL.md`, `references/` and `scripts/cmmf-tools/tools/cli.js`; avoid an extra nested `<name>/<name>/` directory.
+2. Use the host's documented skill list/selector or start a new session as appropriate. Confirm the named skill is visible in the intended project/environment. Visibility is an observation to record, not an assumed outcome.
+3. Check helper execution independently:
 
-> Use cmmf-review to assess this Customer Story set against its README brief. Explain the linked customer and embedded quote decisions. Propose improvements without changing files.
+```sh
+node /absolute/path/to/installed/cmmf-author/scripts/cmmf-tools/tools/cli.js --help
+```
 
-Inspect the proposed changes. When authorising an edit, state its scope and ask for complete-set validation, the source version/revision, changed files and remaining uncertainty. Run the project's `npm run validate` yourself after installing its dependencies.
+4. In an empty disposable model project, ask:
 
-## Keep source resolution explicit
+> Use cmmf-author to create an Article with a required title, reusable Authors and SEO metadata embedded within each Article. Authors are shared across articles; SEO has no independent lifecycle. Use CMMF 1.2.0 for this trial. Put models in models/. Validate the complete repository and report the source revision, files changed, assumptions and actual validation result.
 
-New projects default to the latest CMMF source. Existing projects use the manifest-declared version. An explicit historical request needs matching schema, specification and revision evidence. Offline cache reuse does not establish that “latest” is still fresh.
+5. Confirm the agent used a matching canonical source and produced a manifest plus all referenced model files. Confirm that Author is referenced and SEO is embedded, and that validation used the installed helper or another identified executable validator.
+6. Review the actual files and result. A clean validator establishes the checked format/graph properties; have the content team assess whether the boundaries and editing behaviour satisfy the brief.
 
-The documented helper semantics recognise legacy `1`, `1.1.0` and `1.2.0`; unsupported versions must be reported rather than silently upgraded. Keep source caches outside model directories.
+Use an explicit known version for the repeatable onboarding trial. Separately test a `latest` request and record what it actually resolves to; do not hard-code an assertion that latest always means 1.2.0.
 
-Helpers inspect, resolve sources, validate, compare and document models. They do not validate actual content instances, transfer content, run live CMS migrations or provide CMS import/export adapters. Review those implementation decisions separately. See the [validation guide](/docs/guides/validation/) and [tool evidence](/tools/#evidence-and-release-status).
+## Update, rollback and uninstall
+
+Record the source SHA, suite version, package manifest and installed file hashes before rollout. Inspect the destination for local customisations and preserve them. Build/verify the selected update, compare its manifest and instructions, replace only the owned installed skill directory, and repeat the bounded task. Avoid recursive copy over an existing folder that leaves obsolete runtime files behind. Keep project conventions in project files where possible, rather than editing every installed package.
+
+For rollback, restore the previously recorded complete package and rerun the relevant trial. Removing or rolling back a skill does not revert model edits. To uninstall, remove only that installed skill's directory; retain model files, conventions and source caches unless their removal is explicitly intended. Builds/extraction do not configure provider credentials.
+
+Continue with [worked journeys](/tools/skills/workflows/), [local commands](/tools/skills/local-tools/) and [troubleshooting](/tools/skills/troubleshooting/).

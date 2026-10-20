@@ -50,7 +50,7 @@ Use [the explicit source workflow](handover/source-workflow.md) for reviewed upd
 
 ## Verification and review
 
-After a production build, `npm run test:browser` launches a local static server and reviews ten pages at 390 and 1440 px in both themes. It checks five representative pages with axe, verifies diagram scrolling, version switching and 404 recovery, and tests the learning journey. It uses an installed Microsoft Edge by default on macOS; set `CMMF_BROWSER_EXECUTABLE` to another Chromium executable or install Playwright Chromium with `npx playwright install chromium`. Screenshots and a JSON report are written to ignored `artifacts/site-review/`.
+After a production build, `npm run test:browser` launches a local static server and reviews 25 pages at 390 and 1440 px in both themes. It checks eleven representative pages with axe, verifies diagram scrolling, version switching and 404 recovery, and tests the learning journey. It uses an installed Microsoft Edge by default on macOS; set `CMMF_BROWSER_EXECUTABLE` to another Chromium executable or install Playwright Chromium with `npx playwright install chromium`. Screenshots and a JSON report are written to ignored `artifacts/site-review/`.
 
 For a second engine, install `npx playwright install webkit` and run `CMMF_BROWSER_ENGINE=webkit npm run test:browser`. Its evidence is saved in `artifacts/site-review/webkit/`. CI runs both engines. Automated checks supplement visual and assistive-technology review; they do not establish complete accessibility conformance.
 
@@ -69,3 +69,7 @@ See [licence and provenance notes](LICENSES.md). The upstream format's Apache-2.
 Unversioned articles remain on stable CMMF 1.2.0. Explicit editions live at `/versions/1.2.0/` and `/versions/1.3.0-beta.1/` before the usual `docs/`, `learn/` and `examples/` paths. The selector preserves topics, labels the beta as experimental and scopes search by edition. Specifications and machine assets keep their existing exact-version route structure.
 
 Read [the versioning decision and release workflow](handover/documentation-versioning.md) for canonical URLs, sitemap/search treatment, source ownership and stable promotion. The beta is independently pinned in `cmmf-beta-source.lock.json`; update it only through the sync helper with `--snapshot vendor/cmmf-beta --lock cmmf-beta-source.lock.json`, a full revision and exact version. Beta-only articles are authored under `src/content/beta/`. The original stable snapshot is unchanged.
+
+## Skills documentation
+
+CMMF Skills guidance is shared by stable and beta format editions at `/tools/`. All six workflow pages and operational guides use the pinned source baseline recorded in `source-provenance.json`. Helpers do not support beta semantics; the beta example validator is separate. `scripts/check-skills.mjs` checks evidence hashes, generated routes/raw/index entries and compatibility notices during the build. See [the Skills update record](handover/skills-documentation-update.md) for scope and verification.

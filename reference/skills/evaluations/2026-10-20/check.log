@@ -1,0 +1,98 @@
+
+> cmmf-skills@0.2.0 check
+> npm run build && npm run test && npm run deps:verify && node ./scripts/package-skills.mjs && npm run skills:verify
+
+
+> cmmf-skills@0.2.0 build
+> node ./scripts/build.mjs
+
+
+> cmmf-skills@0.2.0 test
+> node ./scripts/test.mjs
+
+TAP version 13
+# Subtest: verifyDependencyPolicy passes when npm policy is present and axios is absent
+ok 1 - verifyDependencyPolicy passes when npm policy is present and axios is absent
+  ---
+  duration_ms: 12.722708
+  type: 'test'
+  ...
+# Subtest: verifyDependencyPolicy fails when axios is present in the lockfile
+ok 2 - verifyDependencyPolicy fails when axios is present in the lockfile
+  ---
+  duration_ms: 7.59675
+  type: 'test'
+  ...
+# Subtest: raw loader preserves extensions and aggregates parse/graph failures without overwriting models
+ok 3 - raw loader preserves extensions and aggregates parse/graph failures without overwriting models
+  ---
+  duration_ms: 168.241917
+  type: 'test'
+  ...
+# Subtest: 1.2.0 rich text and valid reference cycles validate and appear in generated diagrams
+ok 4 - 1.2.0 rich text and valid reference cycles validate and appear in generated diagrams
+  ---
+  duration_ms: 75.855
+  type: 'test'
+  ...
+# Subtest: source mismatch and future helper semantics cannot be presented as fully validated
+ok 5 - source mismatch and future helper semantics cannot be presented as fully validated
+  ---
+  duration_ms: 152.519458
+  type: 'test'
+  ...
+# Subtest: path escape and model directory symlinks do not read outside the selected repository
+ok 6 - path escape and model directory symlinks do not read outside the selected repository
+  ---
+  duration_ms: 10.063917
+  type: 'test'
+  ...
+# Subtest: semantic diff recognises additive targets, effective defaults, and transitive dependents
+ok 7 - semantic diff recognises additive targets, effective defaults, and transitive dependents
+  ---
+  duration_ms: 26.164459
+  type: 'test'
+  ...
+# Subtest: inspection preserves repository conventions through the skills workflow
+ok 8 - inspection preserves repository conventions through the skills workflow
+  ---
+  duration_ms: 8.237458
+  type: 'test'
+  ...
+# Subtest: the local CLI works without provider configuration and reports actionable failure exit codes
+ok 9 - the local CLI works without provider configuration and reports actionable failure exit codes
+  ---
+  duration_ms: 939.066875
+  type: 'test'
+  ...
+# Subtest: canonical snapshots resolve latest, historical and numeric legacy sources and reuse caches offline
+ok 10 - canonical snapshots resolve latest, historical and numeric legacy sources and reuse caches offline
+  ---
+  duration_ms: 3584.256208
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5256.05975
+
+> cmmf-skills@0.2.0 deps:verify
+> node ./scripts/verify-dependencies.mjs
+
+Dependency policy verification passed.
+Packaged 6 independent skills in release/skills and release/cmmf-skills.tar.gz.
+
+> cmmf-skills@0.2.0 skills:verify
+> node ./scripts/verify-skills.mjs
+
+Verified cmmf-author: metadata, references and isolated credential-free runtime.
+Verified cmmf-discover: metadata, references and isolated credential-free runtime.
+Verified cmmf-document: metadata, references and isolated credential-free runtime.
+Verified cmmf-evolve: metadata, references and isolated credential-free runtime.
+Verified cmmf-review: metadata, references and isolated credential-free runtime.
+Verified cmmf-validate: metadata, references and isolated credential-free runtime.

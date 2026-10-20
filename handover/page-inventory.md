@@ -28,7 +28,6 @@ Working inventory for `cmmf-docs-web`. Held-for-release routes are retained in s
 | `/downloads/examples/1.2.0/models/seo-metadata.yaml` | vendor/cmmf/examples/models/seo-metadata.yaml | upstream | implemented-prototype | `vendor/cmmf/examples/models/seo-metadata.yaml` |
 | `/` | Home | site | implemented-prototype | `src/pages/index.astro` |
 | `/examples/` | Example model sets | site | implemented-prototype | `src/content/owned/examples/index.md` |
-| `/tools/` | CMMF Skills | site | implemented-prototype | `src/content/owned/tools/index.md` |
 | `/learn/glossary/` | Glossary | site | implemented-guide | `src/content/owned/learn/glossary.md` |
 | `/docs/get-started/first-model/` | Create your first model set | site | implemented-tutorial | `src/content/owned/docs/get-started/first-model.md` |
 | `/docs/get-started/visual-modelling/` | Follow the model visually | site | held-for-release | `src/content/held/docs/get-started/visual-modelling.md` |
@@ -39,7 +38,6 @@ Working inventory for `cmmf-docs-web`. Held-for-release routes are retained in s
 | `/docs/guides/errors/` | Validation errors and fixes | site | implemented-guide | `src/content/owned/docs/guides/errors.md` |
 | `/docs/guides/migrate-to-1-2/` | Migration to 1.2.0 | site | implemented-guide | `src/content/owned/docs/guides/migrate-to-1-2.md` |
 | `/tools/studio/` | Studio walkthrough | site | held-for-release | `src/content/held/tools/studio.md` |
-| `/tools/skills/` | Skills development-release installation | site | implemented-guide | `src/content/owned/tools/skills.md` |
 | `/examples/customer-story/` | Customer Story | site | implemented-tutorial | `src/content/owned/examples/customer-story.mdx` |
 | `/contributing/` | Contribution and publishing guidance | site | implemented-guide | `src/content/owned/contributing.md` |
 | `/404.html` | Not found | site | implemented-prototype | `src/content/owned/404.md` |
@@ -48,24 +46,21 @@ Working inventory for `cmmf-docs-web`. Held-for-release routes are retained in s
 | `/downloads/examples/1.2.0/customer-story/customer-story.models.json` | Customer Story combined model JSON | site | implemented-tutorial | `examples/customer-story/` |
 | `/downloads/examples/1.2.0/article.zip` | Article project ZIP | site | implemented-tutorial | `vendor/cmmf/examples/` |
 | `/downloads/examples/1.2.0/article.models.json` | Article combined model JSON | site | implemented-tutorial | `vendor/cmmf/examples/` |
+| `/tools/` | CMMF Skills | site | implemented-guide | `src/content/owned/tools/index.md` |
+| `/tools/skills/author/` | Author: create or extend model YAML | site | implemented-guide | `src/content/owned/tools/skills/author.md` |
+| `/tools/skills/discover/` | Discover: turn requirements into modelling decisions | site | implemented-guide | `src/content/owned/tools/skills/discover.md` |
+| `/tools/skills/document/` | Document: explain the actual model set | site | implemented-guide | `src/content/owned/tools/skills/document.md` |
+| `/tools/skills/evolve/` | Evolve: plan or implement intentional change | site | implemented-guide | `src/content/owned/tools/skills/evolve.md` |
+| `/tools/skills/local-tools/` | Local tool reference | site | implemented-guide | `src/content/owned/tools/skills/local-tools.md` |
+| `/tools/skills/migration/` | Migrate to CMMF Skills | site | implemented-guide | `src/content/owned/tools/skills/migration.md` |
+| `/tools/skills/review/` | Review: assess architecture and editorial usability | site | implemented-guide | `src/content/owned/tools/skills/review.md` |
+| `/tools/skills/sources-and-versions/` | Sources and versions | site | implemented-guide | `src/content/owned/tools/skills/sources-and-versions.md` |
+| `/tools/skills/team-adoption/` | Team adoption and assurance | site | implemented-guide | `src/content/owned/tools/skills/team-adoption.md` |
+| `/tools/skills/troubleshooting/` | Skills troubleshooting | site | implemented-guide | `src/content/owned/tools/skills/troubleshooting.md` |
+| `/tools/skills/validate/` | Validate: check format and cross-model integrity | site | implemented-guide | `src/content/owned/tools/skills/validate.md` |
+| `/tools/skills/workflows/` | Worked modelling journeys | site | implemented-guide | `src/content/owned/tools/skills/workflows.md` |
+| `/tools/skills/` | Install CMMF Skills | site | implemented-guide | `src/content/owned/tools/skills.md` |
 
-The public learning and reference routes are implemented, including the glossary, modelling guides, errors/migration, Skills installation and contributing. Customer Story and Article downloads include the pinned schema, portable validator and a bundle command for edited YAML.
+The public learning and reference routes are implemented, including the glossary, modelling guides, errors/migration, the six Skills workflows, installation, sources/tools, adoption, migration, troubleshooting and contributing. Customer Story and Article downloads include the pinned schema, portable validator and a bundle command for edited YAML.
 
 Static Mermaid-to-SVG diagrams, social preview, llms.txt with raw site Markdown, specification/contract version links, and automated accessibility checks are implemented. The deployment runbook records Cloudflare settings and external verification. Studio and visual-modelling tutorials are temporarily held outside the public content loader until nearer the talk. Production deployment and verification are recorded in deployment-status.md. Wider assistive-technology review remains separate work.
-
-## CMMF 1.3.0-beta.1 edition
-
-The stable inventory above remains published. The versioning implementation additionally generates explicit `/versions/1.2.0/` and `/versions/1.3.0-beta.1/` editions of the `docs/`, `learn/` and `examples/` routes. `.generated/versions.json` records the complete generated topic inventory; `scripts/check-versions.mjs` verifies it against production output.
-
-Beta-specific content includes:
-
-| Route beneath `/versions/1.3.0-beta.1/` | Source/ownership |
-| --- | --- |
-| `docs/guides/adopt-1-3-beta/` | Site-owned adoption, migration and RFC resolution guide |
-| `docs/guides/document-validation-hints/` | Pinned beta upstream explanation |
-| `docs/guides/validation/` | Pinned beta upstream explanation of schema, semantic and content checks |
-| `docs/concepts/translation/` | Pinned beta upstream explanation and disposition examples |
-| `examples/article/` | Site-owned presentation of all five exact upstream models |
-| Other learning/tutorial/reference pages | Shared site-owned explanation or corresponding pinned beta upstream source |
-
-The exact beta normative routes are `/spec/1.3.0-beta.1/` and `/spec/1.3.0-beta.1/translation-contract/`. Beta schemas, both complete projects, individual model files, combined JSON, raw Markdown and diagrams have exact-version asset routes. The 1.1.0 specification archive and existing release hold remain in place. No unversioned page changes its target release to beta.

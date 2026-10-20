@@ -1,0 +1,120 @@
+[
+  {
+    "name": "article-inspect",
+    "args": [
+      "inspect",
+      "--repo",
+      "<trial>/article",
+      "--format",
+      "json"
+    ],
+    "exitCode": 0,
+    "stdout": "article-inspect.stdout",
+    "stderr": "article-inspect.stderr"
+  },
+  {
+    "name": "article-validate",
+    "args": [
+      "validate",
+      "--repo",
+      "<trial>/article",
+      "--cmmf-repo",
+      "<docs-site>/vendor/cmmf",
+      "--format",
+      "json"
+    ],
+    "exitCode": 0,
+    "stdout": "article-validate.stdout",
+    "stderr": "article-validate.stderr"
+  },
+  {
+    "name": "article-document",
+    "args": [
+      "document",
+      "--repo",
+      "<trial>/article",
+      "--cmmf-repo",
+      "<docs-site>/vendor/cmmf",
+      "--format",
+      "json"
+    ],
+    "exitCode": 0,
+    "stdout": "article-document.stdout",
+    "stderr": "article-document.stderr"
+  },
+  {
+    "name": "customer-story-inspect",
+    "args": [
+      "inspect",
+      "--repo",
+      "<trial>/customer-story",
+      "--format",
+      "json"
+    ],
+    "exitCode": 0,
+    "stdout": "customer-story-inspect.stdout",
+    "stderr": "customer-story-inspect.stderr"
+  },
+  {
+    "name": "customer-story-validate",
+    "args": [
+      "validate",
+      "--repo",
+      "<trial>/customer-story",
+      "--cmmf-repo",
+      "<docs-site>/vendor/cmmf",
+      "--format",
+      "json"
+    ],
+    "exitCode": 0,
+    "stdout": "customer-story-validate.stdout",
+    "stderr": "customer-story-validate.stderr"
+  },
+  {
+    "name": "customer-story-document",
+    "args": [
+      "document",
+      "--repo",
+      "<trial>/customer-story",
+      "--cmmf-repo",
+      "<docs-site>/vendor/cmmf",
+      "--format",
+      "json"
+    ],
+    "exitCode": 0,
+    "stdout": "customer-story-document.stdout",
+    "stderr": "customer-story-document.stderr"
+  },
+  {
+    "name": "required-field-diff",
+    "args": [
+      "diff",
+      "--before",
+      "<trial>/customer-story",
+      "--after",
+      "<trial>/customer-story-after",
+      "--cmmf-repo",
+      "<docs-site>/vendor/cmmf",
+      "--format",
+      "json"
+    ],
+    "exitCode": 1,
+    "stdout": "required-field-diff.stdout",
+    "stderr": "required-field-diff.stderr"
+  },
+  {
+    "name": "beta-source-rejected",
+    "args": [
+      "source",
+      "--version",
+      "1.3.0-beta.1",
+      "--cache",
+      "<trial>/cache",
+      "--format",
+      "json"
+    ],
+    "exitCode": 2,
+    "stdout": "beta-source-rejected.stdout",
+    "stderr": "beta-source-rejected.stderr"
+  }
+]

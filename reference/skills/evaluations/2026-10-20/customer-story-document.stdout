@@ -1,0 +1,17 @@
+{
+  "valid": true,
+  "source": {
+    "root": "<docs-site>/vendor/cmmf",
+    "version": "1.2.0",
+    "revision": null,
+    "remote": null,
+    "dirty": false,
+    "schemaSha256": "286fff8d91593503e94a3616de931a902caddc9f56283fd54471b59853d7fc5b",
+    "specSha256": "577fff5d5bfda966a9926c612d58aab7de9d0ded6b1ddde98aa6554ea983e9f1",
+    "specFile": "<docs-site>/vendor/cmmf/spec/cmmf-v1.2.0.md",
+    "schemaFile": "<docs-site>/vendor/cmmf/schemas/model.schema.json",
+    "freshness": "local"
+  },
+  "diagnostics": [],
+  "markdown": "# Content model catalogue\n\nNamespace: example.customer-story\nCMMF version: 1.2.0\n\n## Relationships\n\n```mermaid\nflowchart LR\n  m0[\"customer (entry)\"]\n  m1[\"customer-story (entry)\"]\n  m2[\"quote (object)\"]\n  m1 -->|\"customer / reference / singular / linked\"| m0\n  m1 -.->|\"quote / object / singular\"| m2\n```\n\n## Customer (customer)\n\nKind: entry\n\nA reusable organisation profile that can be linked from more than one customer story.\n\n| Field | Type | Required | Localised | Repeatable | Description |\n| --- | --- | --- | --- | --- | --- |\n| name | string | true | false | false |  |\n| website | string | false | false | false |  |\n| logo | asset | false | false | false |  |\n\neditorial:\n\n```json\n{\n  \"labelField\": \"name\",\n  \"preview\": {\n    \"title\": \"name\",\n    \"image\": \"logo\"\n  }\n}\n```\n\n## Customer Story (customer-story)\n\nKind: entry\n\nEvidence of a customer outcome, told through a specific challenge, response and result.\n\n| Field | Type | Required | Localised | Repeatable | Description |\n| --- | --- | --- | --- | --- | --- |\n| title | string | true | false | false |  |\n| slug | slug | true | false | false |  |\n| summary | text | false | false | false |  |\n| story | richText | true | false | false |  |\n| customer | reference | true | false | false |  |\n| quote | object | false | false | false |  |\n\neditorial:\n\n```json\n{\n  \"labelField\": \"title\",\n  \"preview\": {\n    \"title\": \"title\",\n    \"description\": \"summary\"\n  }\n}\n```\n\ngovernance:\n\n```json\n{\n  \"owner\": \"content-team\",\n  \"maturity\": \"proposed\"\n}\n```\n\n## Quote (quote)\n\nKind: object\n\nA quotation and attribution embedded in one customer story, rather than a separately maintained content item.\n\n| Field | Type | Required | Localised | Repeatable | Description |\n| --- | --- | --- | --- | --- | --- |\n| text | text | true | false | false |  |\n| attribution | string | true | false | false |  |\n| role | string | false | false | false |  |\n\neditorial:\n\n```json\n{\n  \"labelField\": \"attribution\"\n}\n```\n\n"
+}

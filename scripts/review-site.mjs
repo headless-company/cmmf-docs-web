@@ -44,7 +44,7 @@ try {
     page.on('pageerror', e => report.errors.push(`${page.url()}: ${e.message}\n${e.stack || ''}`));
     page.on('requestfailed', request => report.failedRequests.push({ page: page.url(), url: request.url(), error: request.failure()?.errorText }));
     page.on('response', r => { if (r.status() >= 400) report.errors.push(`${r.status()} ${r.url()}`); });
-    for (const [name, route] of [['home', '/'], ['article', '/learn/why-cmmf/'], ['reference', '/docs/reference/canonical-types/'], ['first-model', '/docs/get-started/first-model/'], ['customer-story', '/examples/customer-story/'], ['tools', '/tools/'], ['skills', '/tools/skills/'], ['diagrams', '/docs/guides/visualisation/'], ['migration', '/docs/guides/migrate-to-1-2/'], ['beta-overview', '/versions/1.3.0-beta.1/docs/'], ['beta-guide', '/versions/1.3.0-beta.1/docs/guides/document-validation-hints/'], ['beta-spec', '/spec/1.3.0-beta.1/'], ['stable-pinned', '/versions/1.2.0/docs/']]) {
+    for (const [name, route] of [['home', '/'], ['article', '/learn/why-cmmf/'], ['reference', '/docs/reference/canonical-types/'], ['first-model', '/docs/get-started/first-model/'], ['customer-story', '/examples/customer-story/'], ['tools', '/tools/'], ['skills', '/tools/skills/'], ['skills-discover', '/tools/skills/discover/'], ['skills-author', '/tools/skills/author/'], ['skills-validate', '/tools/skills/validate/'], ['skills-review', '/tools/skills/review/'], ['skills-document', '/tools/skills/document/'], ['skills-evolve', '/tools/skills/evolve/'], ['skills-workflows', '/tools/skills/workflows/'], ['skills-sources-and-versions', '/tools/skills/sources-and-versions/'], ['skills-local-tools', '/tools/skills/local-tools/'], ['skills-team-adoption', '/tools/skills/team-adoption/'], ['skills-migration', '/tools/skills/migration/'], ['skills-troubleshooting', '/tools/skills/troubleshooting/'], ['diagrams', '/docs/guides/visualisation/'], ['migration', '/docs/guides/migrate-to-1-2/'], ['beta-overview', '/versions/1.3.0-beta.1/docs/'], ['beta-guide', '/versions/1.3.0-beta.1/docs/guides/document-validation-hints/'], ['beta-spec', '/spec/1.3.0-beta.1/'], ['stable-pinned', '/versions/1.2.0/docs/']]) {
       await page.goto(base + route, { waitUntil: 'networkidle' });
       await searchReady(page);
       await page.evaluate(async () => {
@@ -104,7 +104,7 @@ try {
       if (name !== 'home' && name !== 'reference' && name !== 'beta-spec') assert.match(metrics.prose.font, /Quattrocento/);
       if (['reference', 'beta-spec'].includes(name)) assert.match(metrics.articleFont, /Source Sans 3/);
       report.templates.push({ name, width, theme, ...metrics });
-      if (['home', 'article', 'reference', 'skills', 'diagrams', 'beta-guide', 'beta-spec', 'stable-pinned'].includes(name)) {
+      if (['home', 'article', 'reference', 'skills', 'skills-author', 'skills-local-tools', 'skills-team-adoption', 'diagrams', 'beta-guide', 'beta-spec', 'stable-pinned'].includes(name)) {
         const { violations } = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
         report.accessibility.push({ name, width, theme, violations: violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) })) });
       }
@@ -154,13 +154,26 @@ try {
   await page.locator('.pagefind-ui__search-input').fill('validation');
   await page.locator('.pagefind-ui__result-link').first().waitFor();
   const betaResults = await page.locator('.pagefind-ui__result-link').evaluateAll(links => links.map(a => a.getAttribute('href')));
-  assert.ok(betaResults.every(href => href.includes('/versions/1.3.0-beta.1/') || href.includes('/spec/1.3.0-beta.1/')), JSON.stringify(betaResults));
+  assert.ok(betaResults.every(href => href.includes('/versions/1.3.0-beta.1/') || href.includes('/spec/1.3.0-beta.1/') || href.includes('/tools/')), JSON.stringify(betaResults));
   await page.keyboard.press('Escape');
   await page.goto(base + '/versions/1.3.0-beta.1/docs/guides/document-validation-hints/');
   await page.locator('.version-selector summary').click();
   await page.locator('.version-selector a').filter({ hasText: '1.2.0' }).click();
   assert.ok(page.url().endsWith('/versions/1.2.0/docs/'));
   report.interactions.push('Edition switching preserves topics, new beta topics fall back to stable overview, beta search stays within beta');
+  for (const prefix of ['', '/versions/1.3.0-beta.1']) {
+    await page.goto(base + prefix + '/docs/');
+    await searchReady(page);
+    await page.locator('button[data-open-modal]').click();
+    await page.locator('.pagefind-ui__search-input').fill('cmmf-evolve');
+    await page.waitForFunction(() => [...document.querySelectorAll('.pagefind-ui__result-link')].some(a => a.getAttribute('href')?.includes('/tools/skills/evolve/')));
+    await page.keyboard.press('Escape');
+    await page.locator('.sl-markdown-content a[href="/tools/skills/workflows/"]').click();
+    assert.ok(page.url().endsWith('/tools/skills/workflows/'));
+    await searchReady(page);
+    assert.equal(await page.locator('.version-selector').count(), 0);
+  }
+  report.interactions.push('Stable and beta search find shared Skills; both edition overviews reach workflows without a format selector');
   await page.goto(base + '/404.html');
   assert.equal(await page.locator('h1').textContent(), 'This page could not be found');
   await page.getByRole('link', { name: 'Browse documentation', exact: true }).click();

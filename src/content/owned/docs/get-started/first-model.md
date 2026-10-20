@@ -133,3 +133,7 @@ For each relationship or capability, record what your target system will do:
 | An approved quotation | The editorial approval process outside this model definition |
 
 These are decisions to make with your implementation team, rather than claims that a CMS adapter has performed the work. [Read about translation](/docs/concepts/translation/).
+
+## Work with Skills
+
+For an assisted alternative, use [Author](/tools/skills/author/) with the same ownership brief, then validate the complete set. Skills checkout commands, installed helper commands and this example project’s `npm run validate` have different invocation contexts; see [local tools](/tools/skills/local-tools/).

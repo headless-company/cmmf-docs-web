@@ -1,5 +1,7 @@
 # CMMF documentation site handover
 
+Privacy redaction, 20 October 2026: private brand repository identifiers were removed from the repository-decision and provenance metadata. The corresponding checksums and this README checksum were updated deliberately. Bundled artwork and canonical source bytes are unchanged.
+
 Start here. This directory can become the root of a new `cmmf-site` repository. It is a verified handover and source seed, not an implemented website.
 
 The user chose `cmmf.dev`, a balanced audience with a plain-language entry point, Cloudflare Pages, and Markdown/Git maintenance. Studio belongs at `studio.cmmf.dev` and remains a separately deployed application.

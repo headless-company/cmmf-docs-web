@@ -37,3 +37,7 @@ Production uses the existing repository and Cloudflare Pages static `dist/` outp
 ## Review decisions
 
 The user remains the initial editorial reviewer. Optional Headless Company attribution is left out of the initial prototype pending a preference. No CMS adapters, host certifications or hosted Studio collaboration are claimed. Website licensing beyond the supplied format/font licences remains to be decided.
+
+## Skills migration, October 2026
+
+Current tool ownership is `headless-company/cmmf-skills`. The public site now documents all six independent skills and shared operational workflows; the original handover archive remains historical. Stable and beta editions link to shared Skills pages and disclose unsupported beta helper semantics. See [the update record](skills-documentation-update.md) and issue #2.

@@ -41,6 +41,10 @@ The [example catalogue](/examples/) contains complete downloads for Customer Sto
 
 ## Work with the tools
 
-The [tool overview](/tools/) explains the CMMF Skills development release. Tool capabilities and validation boundaries are described separately from format rules.
+The [tool overview](/tools/) explains the CMMF Skills workflows. Tool capabilities and validation boundaries are described separately from format rules.
 
 Current learning material targets **CMMF 1.2.0**. [Historical 1.1.0 specification text](/spec/1.1.0/) is available with an archive notice; the current schema does not establish validation for that version.
+
+## Work with Skills
+
+The six [Skills workflows](/tools/skills/workflows/) share installation and tool documentation across editions. Check [helper compatibility](/tools/skills/sources-and-versions/) before using them: experimental beta semantics are not supported.
