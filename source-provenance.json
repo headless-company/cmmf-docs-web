@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-14T15:03:41.944799+00:00",
   "sources": [
     {
-      "name": "cmmf-branding",
+      "name": "private-brand-assets",
       "baseGitRevision": "029fa851a47ee8929b721b5ea3fc42ad457768df",
       "snapshotKind": "working-tree",
       "note": "Includes the current identity v1.2 working-tree assets. The base commit alone cannot recreate uncommitted changes. Logos/fonts/runtime are byte-identical; two guide files and one study footer have local-link adjustments. No new artwork licence is assigned.",

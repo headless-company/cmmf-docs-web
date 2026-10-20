@@ -59,6 +59,11 @@ for (const file of files(dist).filter(file => file.endsWith('.html') ||
   (file.startsWith(resolve(dist, 'downloads') + '/') && /\.(md|mjs)$/.test(file)))) {
   if (/\bstudio\b|cmmf-visual-editor/i.test(readFileSync(file, 'utf8'))) errors.push(`Held tool mentioned in public content: ${file.slice(dist.length)}`);
 }
+// Private repository identifiers must never enter deployed pages, raw content, assets or search files.
+const privateBrandRepository = /\bcmmf[-_]brand(?:ing)?(?![-\w])/i;
+for (const file of files(dist)) {
+  if (privateBrandRepository.test(readFileSync(file, 'utf8'))) errors.push(`Private repository reference in public output: ${file.slice(dist.length)}`);
+}
 const lock = JSON.parse(readFileSync(resolve(root, 'cmmf-source.lock.json'), 'utf8'));
 const png = readFileSync(resolve(dist, 'images/social/cmmf-social-preview.png'));
 if (png.readUInt32BE(16) !== 1280 || png.readUInt32BE(20) !== 640) errors.push('Social preview must be 1280 × 640.');

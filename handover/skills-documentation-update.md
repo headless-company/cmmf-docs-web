@@ -4,7 +4,7 @@ Tracking: [issue #2](https://github.com/headless-company/cmmf-docs-web/issues/2)
 
 ## Scope and source
 
-Implements the 20 October 2026 `cmmf-skills/docs/docs-site-handover.md`, based on Skills commit `68ec28d3993eb08298ebf9a896f6a9d51b425bf0`, suite workspace version 0.2.0. The full revision was verified on GitHub during implementation. Nineteen committed source files are preserved under `reference/skills/<sha>/` with exact source/bundled SHA-256 values in `source-provenance.json`. Earlier working-tree evidence remains explicitly historical. Format pins and vendored source bytes are unchanged; the original integrity-checked archive is unchanged.
+Implements the 20 October 2026 `cmmf-skills/docs/docs-site-handover.md`, based on Skills commit `68ec28d3993eb08298ebf9a896f6a9d51b425bf0`, suite workspace version 0.2.0. The full revision was verified on GitHub during implementation. Nineteen committed source files are preserved under `reference/skills/<sha>/` with exact source/bundled SHA-256 values in `source-provenance.json`. Earlier working-tree evidence remains explicitly historical. Format pins and vendored source bytes are unchanged; the original archive has a separately recorded privacy redaction of private brand repository identifiers, with deliberately refreshed metadata checksums.
 
 The existing `/tools/` and `/tools/skills/` routes now lead to twelve additional pages: six individual workflows, worked journeys, sources/versions, local commands, adoption, migration and troubleshooting. The manual learning route remains useful. Contribution/source links use `headless-company/cmmf-skills`. Legacy command names occur only in the migration comparison; `.cmmf-agent/` retains its supported convention-directory meaning.
 
@@ -17,7 +17,7 @@ Navigation, inventory, raw Markdown/retrieval index, canonical URLs and sitemap 
 - `npm run check`: zero errors/warnings; existing deprecated `navigator.platform` hint remains.
 - `npm run build`: both canonical pins, complete stable/beta example sets, negative semantic fixtures, beta declaration tests, internal links/anchors, exact downloads and edition checks pass.
 - New `scripts/check-skills.mjs`, included in build: nineteen evidence hashes, fourteen shared tool routes and raw/index entries, canonical URLs, no active old repo URLs, and stable/beta compatibility notices pass.
-- `npm run handover:check`: all 239 original archive files pass without rewriting hashes.
+- `npm run handover:check`: all 239 archive files pass; the subsequent privacy redaction explicitly records its three metadata checksum updates.
 - Isolated export of the pinned Skills source: `npm run check` passes ten tests, dependency policy and all six independent packages using Node 22.23.3/npm 10.8.2 with existing dependencies reused. This is not a clean install under the recommended npm 11.11.0 pin.
 - Complete Article and Customer Story copies: packaged `inspect`, `validate` and `document` pass. A controlled required-field addition yields valid input, a breaking semantic diff and exit 1. A beta source request yields exit 2. Durable normalised stdout/stderr, commands, source hashes and package manifest are in [trial evidence](../reference/skills/evaluations/2026-10-20/README.md).
 
@@ -26,3 +26,7 @@ Navigation, inventory, raw Markdown/retrieval index, canonical URLs and sitemap 
 ## Limits
 
 Codex, Claude Code and Copilot installation/discovery/realistic behavioural evaluations were not run; they remain pending. No live canonical retrieval/cache trial, content-instance validation, CMS translation or content migration was performed. Local exported-source validation honestly reports `revision: null`, retaining schema/spec hashes; the site’s independent source lock identifies its upstream revision. No deployment or production verification is claimed by this change.
+
+## Private brand source redaction
+
+Removed the private brand repository link from the public contribution guide and its generated raw copy. Also redacted its identifier from repository ownership and provenance metadata, including the archived handover because this website repository is public. The archive README records this privacy change; only its own checksum and the two redacted metadata checksums were refreshed. Source asset hashes, artwork, specification pins and normative downloads are unchanged. The production-output checker now rejects private brand repository identifiers across every generated file, including search assets. This redacts current files; it does not rewrite existing Git history or establish a production deployment.
