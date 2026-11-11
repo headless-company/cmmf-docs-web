@@ -14,7 +14,7 @@ const suffix = Astro.url.pathname.endsWith('/translation-contract/') ? 'translat
 <span hidden data-pagefind-filter={`version:${sharedTools ? 'shared' : edition.version}`}></span>
 {sharedTools && editions.map(({ version }) => <span hidden data-pagefind-filter={`version:${version}`}></span>)}
 {!home && <div class:list={['page-heading', reference ? 'reference-title' : 'reading-title']}>
-  <div class="page-eyebrow"><span>{sharedTools ? 'CMMF Skills' : reference ? 'Format reference' : 'Content modelling'}</span><span class="version-badge">{sharedTools ? 'Shared tool guidance' : archive ? '1.1.0 · Archived' : `CMMF ${edition.version}${edition.version.includes('beta') ? ' · Experimental' : ''}`} </span></div>
+  <div class="page-eyebrow"><span>{sharedTools ? (Astro.url.pathname.includes('/tools/skills') ? 'CMMF Skills' : 'CMMF tools') : reference ? 'Format reference' : 'Content modelling'}</span><span class="version-badge">{sharedTools ? 'Shared tool guidance' : archive ? '1.1.0 · Archived' : `CMMF ${edition.version}${edition.version.includes('beta') ? ' · Experimental' : ''}`} </span></div>
   <h1 id="_top">{entry.data.title}</h1>
   {entry.data.description && <p class="page-description">{entry.data.description}</p>}
   {!sharedTools && <VersionSelector />}

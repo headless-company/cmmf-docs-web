@@ -1,10 +1,18 @@
 ---
-title: "CMMF Skills"
-description: "Six modelling workflows for your coding agent, with local checks and explicit compatibility limits."
+title: "Studio and CMMF Skills"
+description: "Work visually in Studio or use six CMMF Skills workflows with your coding agent."
 editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/index.md
 ---
 
 A customer can appear in several stories, while a quote may belong to just one. Those ownership decisions need to survive the move from workshop notes into model files and implementation.
+
+## Studio
+
+[Open Studio](https://studio.cmmf.dev) to arrange model definitions, edit fields and inspect relationships. Start with the [Customer Story walkthrough](/tools/studio/) or [follow the model visually](/docs/get-started/visual-modelling/). Save workspace backups to retain your layout, and export model YAML for the file-based workflow.
+
+The walkthrough covers CMMF 1.2.0. It does not establish support for experimental 1.3 beta semantics.
+
+## Work with CMMF Skills
 
 CMMF Skills adds six content-modelling workflows to your existing coding agent. The host supplies conversation, authentication, permissions and file editing. Skills supply CMMF guidance, canonical source retrieval and deterministic checks. No additional LLM provider key is required; your host’s subscriptions and usage rules still apply.
 

@@ -27,8 +27,7 @@ Inspect `git status` before editing and preserve unrelated work. Use the existin
 
 ## Publication exclusions and privacy
 
-- **Studio remains unpublished on this website until the owner explicitly lifts the hold.** Do not restore or mention it in public pages, navigation, tool lists, metadata, raw Markdown, retrieval indexes, search, download instructions, screenshots or published logos merely because it exists elsewhere or older handovers describe it.
-- Keep retained Studio pages/screenshots under `src/content/held/` outside generated output. Preserve temporary retired-route redirects and the release-hold checks in `scripts/check-site.mjs`. Follow the held README for an authorised restoration, including full build/browser review. Tool-neutral JSON model bundles may remain available and validated without advertising the held app.
+- **Studio is published.** The owner lifted the publication hold on 11 November 2026. Maintain its walkthroughs, navigation, screenshots, logos, raw Markdown and search coverage. Keep source-baseline and format-compatibility limits beside the relevant operations.
 - Supplied Generator artwork and historical tooling evidence are not a mandate to list or promote another public product. Publish tools/capabilities only when supported by current evidence and agreed publication scope.
 - **The brand source repository is private.** Refer to it generically as the private brand asset source; do not expose its repository identifier, URL or local source path in public copy, contribution links, provenance, repository metadata or generated files. The prior redaction includes archived handover metadata. Preserve the output privacy guard, including search-asset coverage.
 - Do not undo the archive's recorded privacy redaction by restoring old metadata or checksums. Removing current references does not erase Git history or old deployments; never claim otherwise.
@@ -36,7 +35,7 @@ Inspect `git status` before editing and preserve unrelated work. Use the existin
 
 ## Ownership, sources and implementation
 
-- Use Astro/Starlight static output, Markdown/Git authoring and Cloudflare Pages. Studio remains a separate application/deployment even while unpublished here. Builds must work without sibling repositories, network source fetches or private-repository access.
+- Use Astro/Starlight static output, Markdown/Git authoring and Cloudflare Pages. Studio remains a separate application/deployment with its own release lifecycle. Builds must work without sibling repositories, network source fetches or private-repository access.
 - The upstream format repository owns normative specifications, translation contracts, schemas and canonical examples. This site owns tutorials, explanatory adaptations, tutorial models, presentation, navigation, search, packaging and deployment.
 - Treat both `vendor/cmmf/` and `vendor/cmmf-beta/` as read-only exact snapshots. Normative fixes go upstream first. Refresh only through `scripts/sync-cmmf.mjs` with an explicit full revision and exact version; select the corresponding `--snapshot` and `--lock` for beta. Never silently track upstream `main`, move an old release pin or edit vendored bytes to fix the site.
 - Author site pages under `src/content/owned/` and beta-specific explanations under `src/content/beta/`. Use `content-map.json` for route ownership/status and `node scripts/inventory.mjs` when changing that inventory. A substantially adapted imported explanation becomes site-owned; remove its competing duplicate route. Source/edit links target the actual owning file and repository.

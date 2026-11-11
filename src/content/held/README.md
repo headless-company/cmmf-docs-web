@@ -1,17 +1,5 @@
-# Temporarily unpublished material
+# Studio publication hold lifted
 
-Studio is being held back until nearer the talk, at the owner's request. Only `src/content/owned/` is copied into the generated content collection; this directory is never published.
+The owner authorised restoration on 11 November 2026 after Studio launched. The walkthroughs now live under `src/content/owned/`, screenshots under `public/images/tutorials/`, and Studio logos are published from approved bundled assets. Temporary redirects and exclusion guards were removed. Privacy checks and stable/beta compatibility boundaries remain in force.
 
-To restore the feature in a reviewed change:
-
-1. Move the two Markdown files back to their matching paths under `src/content/owned/` and the screenshots back to `public/images/tutorials/`.
-2. Restore their `content-map.json` source paths and implemented statuses, navigation and relevant public explanations from Git history.
-3. Restore Studio logo publication in `scripts/prepare-content.mjs` if the restored pages use those assets. Approved originals remain under `brand/`.
-4. Remove the temporary retired-URL redirects from `public/_redirects`.
-5. Remove the release-hold guard in `scripts/check-site.mjs`, restore the corresponding browser journeys and run the full build/browser checks before publishing.
-
-Shared public pages and downloadable project instructions currently describe file-based modelling and CMMF Skills. Complete example JSON bundles remain tool-neutral and validated against the YAML models. The canonical snapshot and supplied brand assets are unchanged.
-
-This hold removes material from the current website output. Existing Git history and older deployment URLs are not erased.
-
-Retired URLs temporarily redirect to the current tools overview, relationship diagrams or CMMF artwork. This avoids serving retained copies of deleted assets through Pages caches and gives existing links a useful destination. The files themselves remain absent from the build.
+Historical holds did not erase Git history or older deployments.

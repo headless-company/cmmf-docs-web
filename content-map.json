@@ -279,11 +279,11 @@
       "route": "/docs/get-started/visual-modelling/",
       "title": "Follow the model visually",
       "owner": "site",
-      "status": "held-for-release",
+      "status": "implemented",
       "role": "site-authored",
       "sourceVersion": "1.2.0",
-      "source": "src/content/held/docs/get-started/visual-modelling.md",
-      "notes": "Temporarily unpublished at the owner\u2019s request until nearer the talk. Source retained outside the public content loader."
+      "source": "src/content/owned/docs/get-started/visual-modelling.md",
+      "notes": "Restored after the owner lifted the Studio publication hold on 11 November 2026."
     },
     {
       "route": "/docs/guides/embed-or-reference/",
@@ -343,11 +343,11 @@
       "route": "/tools/studio/",
       "title": "Studio walkthrough",
       "owner": "site",
-      "status": "held-for-release",
+      "status": "implemented",
       "role": "site-authored",
       "sourceVersion": "1.2.0",
-      "source": "src/content/held/tools/studio.md",
-      "notes": "Temporarily unpublished at the owner\u2019s request until nearer the talk. Source retained outside the public content loader."
+      "source": "src/content/owned/tools/studio.md",
+      "notes": "Restored after the owner lifted the Studio publication hold on 11 November 2026."
     },
     {
       "route": "/examples/customer-story/",

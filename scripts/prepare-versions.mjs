@@ -42,7 +42,7 @@ function relinkImports(text, sourceFile, destinationFile) {
   return text.replace(/(import \w+ from ')([^']+)(';)/g, (match, start, path, end) =>
     path.startsWith('.') ? start + relative(dirname(destinationFile), resolve(dirname(sourceFile), path)) + end : match);
 }
-function imported(source, title, normative = false) {
+function imported(source, title) {
   let text = readFileSync(resolve(root, beta.snapshot, source), 'utf8').replace(/^# [^\n]+\n+/, '');
   text = text.replace(/\]\(([^\s)]+)\)/g, (match, target) => {
     if (/^(?:[a-z]+:|\/|#)/i.test(target)) return match;
@@ -54,7 +54,6 @@ function imported(source, title, normative = false) {
   });
   if (source === 'docs/validations.md') text += '\n\n## Skills compatibility\n\n[CMMF Skills](/tools/skills/sources-and-versions/) does not support beta source requests or beta helper semantics. Use the matching beta example validator for the checks described here; do not treat those checks as Skills support.\n';
   // Site publication deliberately retains the existing release hold on tool promotion.
-  if (!normative) text = text.replace(/Studio and other editors/g, 'Editors');
   const sourceUrl = `${lock.repository.replace(/\.git$/, '')}/blob/${lock.revision}/${source}`;
   return `---\n${stringify({ title, description: `${title} for experimental CMMF ${betaVersion}.`, editUrl: sourceUrl })}---\n\n${text}\n\n<div class="source-note">Source: <a href="${sourceUrl}">CMMF ${betaVersion} at ${lock.revision.slice(0, 8)}</a> · <a href="/raw/${betaVersion}/${source}">Download original Markdown</a></div>\n`;
 }
@@ -91,6 +90,7 @@ for (const edition of editions) {
       if (route === '/docs/') text += `\n## Experimental additions\n\nStart with [adopting the beta](/docs/guides/adopt-1-3-beta/), then read [document-level validation hints](/docs/guides/document-validation-hints/). Field constraints remain unchanged; the new declarations record conditional and cross-field intent.\n`;
       if (route === '/learn/glossary/') text += '\n## Validation hint\n\nA model-level declaration of conditional or cross-field intent, introduced in experimental 1.3.0-beta.1. Structured, expression and prose forms are exclusive. A valid declaration does not itself evaluate content. Read [document-level hints](/docs/guides/document-validation-hints/).\n';
       if (route === '/docs/guides/errors/') text += '\n## A beta hint declaration fails\n\nEvery hint needs an ID unique within its model and a non-blank description. Use exactly one representation: structured `then` with an optional `when`, an `expression` alone, or prose. Structured field IDs must exist in the same model; scalar operators cannot inspect lists and numeric comparisons require number fields. Declaration errors remain errors even with `severity: info`. These checks do not evaluate content. See [hint syntax and semantics](/docs/guides/document-validation-hints/).\n';
+      if (/\bStudio\b/.test(text)) text = '\n:::caution[Studio compatibility]\nStudio steps are documented for the stable format only. Compatibility with experimental beta semantics is not established. Use the [stable Studio walkthrough](/tools/studio/) and its stable example downloads for visual editing; keep beta projects on the file-based route.\n:::\n\n' + text;
       if (route === '/examples/') text += '\nThe beta Article project also includes Subscription, showing a named expression dialect. [Inspect the complete beta set](/examples/article/).\n';
     } else text = body;
     write(target, `---\n${stringify(meta)}---\n${edition === beta && route.includes('migrate-to-1-2') ? text : versionLinks(text, edition)}`);
@@ -105,7 +105,7 @@ for (const [route, source] of Object.entries(betaOverrides)) {
 for (const [source, route, title] of [
   [`spec/cmmf-v${betaVersion}.md`, `/spec/${betaVersion}/`, `CMMF ${betaVersion} specification`],
   [`spec/translation-contract-v${betaVersion}.md`, `/spec/${betaVersion}/translation-contract/`, `Translation contract ${betaVersion}`],
-]) write(resolve(output, route.slice(1).replace(/\/$/, '') + '.md'), versionLinks(imported(source, title, true), beta));
+]) write(resolve(output, route.slice(1).replace(/\/$/, '') + '.md'), versionLinks(imported(source, title), beta));
 const authored = files(resolve(root, 'src/content/beta'));
 for (const file of authored) {
   let text = readFileSync(file, 'utf8');

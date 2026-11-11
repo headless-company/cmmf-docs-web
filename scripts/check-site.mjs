@@ -47,18 +47,13 @@ for (const file of pages) {
     }
   }
 }
-// Release hold: these pages/assets must be absent, including their raw copies.
+// Studio is published: retain walkthroughs, raw guidance and approved artwork.
 for (const path of [
   'tools/studio/index.html', 'docs/get-started/visual-modelling/index.html',
   'raw/site/tools/studio.md', 'raw/site/docs/get-started/visual-modelling.md',
   'images/tutorials/customer-story-studio.png', 'images/tutorials/customer-story-summary-rules.png',
   'brand/logos/studio',
-]) if (existsSync(resolve(dist, path))) errors.push(`Held release material was published: ${path}`);
-for (const file of files(dist).filter(file => file.endsWith('.html') ||
-  (file.startsWith(resolve(dist, 'raw/site') + '/') && file.endsWith('.md')) ||
-  (file.startsWith(resolve(dist, 'downloads') + '/') && /\.(md|mjs)$/.test(file)))) {
-  if (/\bstudio\b|cmmf-visual-editor/i.test(readFileSync(file, 'utf8'))) errors.push(`Held tool mentioned in public content: ${file.slice(dist.length)}`);
-}
+]) if (!existsSync(resolve(dist, path))) errors.push(`Missing Studio publication material: ${path}`);
 // Private repository identifiers must never enter deployed pages, raw content, assets or search files.
 const privateBrandRepository = /\bcmmf[-_]brand(?:ing)?(?![-\w])/i;
 for (const file of files(dist)) {

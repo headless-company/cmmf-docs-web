@@ -19,7 +19,7 @@ export function exampleFiles(root, example, lock) {
     'package.json': readFileSync(resolve(template, 'package.json')),
     'package-lock.json': readFileSync(resolve(template, 'package-lock.json')),
     [example.bundleFile]: Buffer.from(`${JSON.stringify({ name: `${example.name} tutorial`, models: set.models }, null, 2)}\n`),
-    'SOURCE.md': Buffer.from(`# Source evidence\n\nModel set: ${example.name}. Format: CMMF ${lock.specVersion}.\n\nSchema source: ${lock.repository}\nRevision: ${lock.revision}\nSchema SHA-256: ${lock.files['schemas/model.schema.json']}\n\n${example.id === 'customer-story' ? 'Tutorial model files are owned by the CMMF documentation website.' : 'Canonical model/manifest files retain exact upstream bytes and the upstream Apache-2.0 licence.'}\nCombined model JSON is generated from those same YAML models. Its root is a model bundle, not a normative manifest.\nSCHEMA-LICENSE.md covers the upstream schema; it does not assign a licence to the whole website.\n`),
+    'SOURCE.md': Buffer.from(`# Source evidence\n\nModel set: ${example.name}. Format: CMMF ${lock.specVersion}.\n\nSchema source: ${lock.repository}\nRevision: ${lock.revision}\nSchema SHA-256: ${lock.files['schemas/model.schema.json']}\n\n${example.id === 'customer-story' ? 'Tutorial model files are owned by the CMMF documentation website.' : 'Canonical model/manifest files retain exact upstream bytes and the upstream Apache-2.0 licence.'}\nCombined model JSON is generated from those same YAML models. Studio import is documented for CMMF 1.2.0 only; beta compatibility is not established. Its root is a tool import bundle, not a normative manifest or saved Studio workspace.\nSCHEMA-LICENSE.md covers the upstream schema; it does not assign a licence to the whole website.\n`),
   };
   const packageJson = JSON.parse(inputs['package.json']);
   const packageLock = JSON.parse(inputs['package-lock.json']);
@@ -33,7 +33,7 @@ export function exampleFiles(root, example, lock) {
     for (const name of ['validate.mjs', 'bundle.mjs']) {
       inputs[name] = Buffer.from("import { validateModel } from './scripts/validate-models.mjs';\n" + inputs[name].toString().replace('  validateModelSet({ manifest, models }, schema);', '  validateModelSet({ manifest, models }, schema);\n  for (const model of models) { const errors = validateModel(model); if (errors.length) throw new Error(JSON.stringify(errors)); }'));
     }
-    inputs['README.md'] = Buffer.from(inputs['README.md'].toString() + '\nExperimental prerelease. Declaration checks include hint semantics; content and expressions are never evaluated.\n');
+    inputs['README.md'] = Buffer.from(inputs['README.md'].toString() + '\nExperimental prerelease. Studio import/export compatibility is not established for this edition. Declaration checks include hint semantics; content and expressions are never evaluated.\n');
   }
   for (const file of set.files) inputs[`models/${file}`] = readFileSync(resolve(root, example.source, 'models', file));
   return Object.fromEntries(Object.entries(inputs).sort(([a], [b]) => a.localeCompare(b)));
@@ -67,8 +67,8 @@ export function checkExampleDownloads(root, dist, lock, sets = exampleSets) {
     const schema = JSON.parse(Buffer.from(archive['schemas/model.schema.json']).toString());
     const bundle = JSON.parse(Buffer.from(archive[example.bundleFile]).toString());
     const original = loadModelSet(resolve(root, example.source), lock.specVersion);
-    if (JSON.stringify(bundle.models) !== JSON.stringify(original.models)) throw new Error(`Combined model bundle differs from YAML models: ${example.id}`);
+    if (JSON.stringify(bundle.models) !== JSON.stringify(original.models)) throw new Error(`Studio bundle differs from YAML models: ${example.id}`);
     validateModelSet({ manifest: original.manifest, models: bundle.models }, schema);
   }
-  console.log('Verified both complete example ZIPs, portable validators, schemas and combined JSON model sets against source bytes.');
+  console.log('Verified both complete example ZIPs, portable validators, schemas and Studio model-import bundles against source bytes.');
 }

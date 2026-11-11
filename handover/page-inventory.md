@@ -1,6 +1,6 @@
 # Page inventory
 
-Working inventory for `cmmf-docs-web`. Held-for-release routes are retained in source but are not published. Planned routes are not published as placeholders.
+Working inventory for `cmmf-docs-web`. Planned routes are not published as placeholders.
 
 | Route | Page or asset | Owner | Status | Source |
 | --- | --- | --- | --- | --- |
@@ -30,14 +30,14 @@ Working inventory for `cmmf-docs-web`. Held-for-release routes are retained in s
 | `/examples/` | Example model sets | site | implemented-prototype | `src/content/owned/examples/index.md` |
 | `/learn/glossary/` | Glossary | site | implemented-guide | `src/content/owned/learn/glossary.md` |
 | `/docs/get-started/first-model/` | Create your first model set | site | implemented-tutorial | `src/content/owned/docs/get-started/first-model.md` |
-| `/docs/get-started/visual-modelling/` | Follow the model visually | site | held-for-release | `src/content/held/docs/get-started/visual-modelling.md` |
+| `/docs/get-started/visual-modelling/` | Follow the model visually | site | implemented | `src/content/owned/docs/get-started/visual-modelling.md` |
 | `/docs/guides/embed-or-reference/` | Choosing embeddings and references | site | implemented-guide | `src/content/owned/docs/guides/embed-or-reference.md` |
 | `/docs/guides/rich-text/` | Rich-text capabilities | site | implemented-guide | `src/content/owned/docs/guides/rich-text.md` |
 | `/docs/guides/localisation/` | Localisation and defaults | site | implemented-guide | `src/content/owned/docs/guides/localisation.md` |
 | `/docs/guides/editorial-intent/` | Editorial and governance metadata | site | implemented-guide | `src/content/owned/docs/guides/editorial-intent.md` |
 | `/docs/guides/errors/` | Validation errors and fixes | site | implemented-guide | `src/content/owned/docs/guides/errors.md` |
 | `/docs/guides/migrate-to-1-2/` | Migration to 1.2.0 | site | implemented-guide | `src/content/owned/docs/guides/migrate-to-1-2.md` |
-| `/tools/studio/` | Studio walkthrough | site | held-for-release | `src/content/held/tools/studio.md` |
+| `/tools/studio/` | Studio walkthrough | site | implemented | `src/content/owned/tools/studio.md` |
 | `/examples/customer-story/` | Customer Story | site | implemented-tutorial | `src/content/owned/examples/customer-story.mdx` |
 | `/contributing/` | Contribution and publishing guidance | site | implemented-guide | `src/content/owned/contributing.md` |
 | `/404.html` | Not found | site | implemented-prototype | `src/content/owned/404.md` |
@@ -63,4 +63,4 @@ Working inventory for `cmmf-docs-web`. Held-for-release routes are retained in s
 
 The public learning and reference routes are implemented, including the glossary, modelling guides, errors/migration, the six Skills workflows, installation, sources/tools, adoption, migration, troubleshooting and contributing. Customer Story and Article downloads include the pinned schema, portable validator and a bundle command for edited YAML.
 
-Static Mermaid-to-SVG diagrams, social preview, llms.txt with raw site Markdown, specification/contract version links, and automated accessibility checks are implemented. The deployment runbook records Cloudflare settings and external verification. Studio and visual-modelling tutorials are temporarily held outside the public content loader until nearer the talk. Production deployment and verification are recorded in deployment-status.md. Wider assistive-technology review remains separate work.
+Static Mermaid-to-SVG diagrams, social preview, llms.txt with raw site Markdown, specification/contract version links, and automated accessibility checks are implemented. The deployment runbook records Cloudflare settings and external verification. Studio and visual-modelling tutorials are published following the owner’s release of the hold on 11 November 2026. Production deployment and verification are recorded in deployment-status.md. Wider assistive-technology review remains separate work.

@@ -31,7 +31,7 @@ for (const page of pages) {
   assert.ok(sitemap.includes(`https://cmmf.dev${page.route}<`), page.route);
   assert.ok(llms.includes(`https://cmmf.dev${page.route}`), page.route);
   const raw = read('dist/raw/site/' + page.source.replace('src/content/owned/', ''));
-  assert.ok(raw.includes('Shared CMMF Skills guidance'), page.route);
+  assert.ok(raw.includes(page.route.startsWith('/tools/skills') ? 'Shared CMMF Skills guidance' : 'Shared CMMF tool guidance'), page.route);
   assert.ok(!$.html().includes('github.com/headless-company/cmmf-creation-agent'), page.route);
   if (!page.route.endsWith('/migration/')) assert.ok(!/cmmf-agent generate|npm run generate|CMMF_AGENT_PROVIDER/.test(raw), page.route);
   for (const edition of editions) assert.ok(!existsSync(resolve(root, 'dist' + edition.prefix + page.route)), 'Tool pages must remain shared');
