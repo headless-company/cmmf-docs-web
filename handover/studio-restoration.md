@@ -15,4 +15,12 @@ The walkthrough retains its explicitly dated Studio source baseline. This restor
 - Homepage, reading/reference layouts and Studio walkthrough were visually inspected at mobile/desktop sizes in both themes.
 - The final beta compatibility notice was added after the broad browser run; the final build checks it as part of generated links/content, with a separate targeted two-engine browser review.
 
-These are local checks. No push, deployment or production verification is claimed.
+## Production verification, 11 November 2026
+
+Restoration revision `ab1829c388d7044c14ada8135a2b397d00e3ad8b` was pushed to `main` and deployed by the GitHub integration. Cloudflare Pages check completed successfully for deployment `6843bf42-76d3-4068-936c-29a916ef5324` (https://6843bf42.cmmf-docs-web.pages.dev).
+
+On https://cmmf.dev, 17 files matched the reviewed local output byte for byte: homepage, tools overview, both restored walkthroughs, beta visual guide, retrieval index, raw walkthroughs, both screenshots, social image, stable schema, sitemap and all four project ZIPs. HTTPS and www redirects, a genuine custom 404 response, absence of production noindex headers on checked files and the separate Studio endpoint passed.
+
+Live Chromium/Microsoft Edge review passed 24 page/theme/viewport combinations (six pages at 390/1440 px in both themes), 16 axe scans with zero violations, fonts/logo geometry, overflow, keyboard navigation, theme persistence, edition/shared search, topic switching/fallback, restored Studio journey and downloads. No browser errors or failed requests were recorded. The restored live walkthrough was visually inspected at desktop/mobile sizes. Local WebKit coverage is recorded above; live WebKit was not run. Reports/screenshots are ignored artifacts under `artifacts/site-review/studio-live/`; HTTP byte hashes are in `artifacts/site-review/studio-live-http.json`.
+
+GitHub CI is tracked separately at https://github.com/headless-company/cmmf-docs-web/actions/runs/43047900305; Cloudflare deployment success does not establish its completion.
