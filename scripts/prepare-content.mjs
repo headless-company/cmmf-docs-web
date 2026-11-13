@@ -93,7 +93,7 @@ for (const file of files(resolve(root, 'src/content/owned'))) {
     const metadata = parse(text.match(/^---\n([\s\S]*?)\n---/)[1]);
     const path = file.slice(resolve(root, 'src/content/owned').length + 1).replace(/\.mdx$/, '.md');
     const body = text.replace(/^---\n[\s\S]*?\n---\n/, '').replace(/^import (?:ModelDiagram|DownloadDiagram)[^\n]+\n/gm, '').replace(/<(?:ModelDiagram|DownloadDiagram) variant="([^"]+)" \/>/g, (_, variant) => `Model relationships: https://cmmf.dev/downloads/diagrams/${lock.specVersion}/${variant}-light.svg`);
-    authoredRaw.push({ path, title: metadata.title, text: `# ${metadata.title}\n\n> ${path.startsWith('tools/') ? `${path.startsWith('tools/skills') ? 'Shared CMMF Skills guidance' : 'Shared CMMF tool guidance'}; compatibility is specified in the article.` : `Website-owned explanation for CMMF ${lock.specVersion}.`}\n> Source: ${metadata.editUrl}\n${body}` });
+    authoredRaw.push({ path, title: metadata.title, text: `# ${metadata.title}\n\n> ${path === 'project/use-with-agents.md' ? 'Shared CMMF agent guidance; format selection is specified in the article.' : path.startsWith('tools/') ? `${path.startsWith('tools/skills') ? 'Shared CMMF Skills guidance' : 'Shared CMMF tool guidance'}; compatibility is specified in the article.` : `Website-owned explanation for CMMF ${lock.specVersion}.`}\n> Source: ${metadata.editUrl}\n${body}` });
   }
 }
 for (const directory of ['brand', 'schemas', 'downloads', 'raw']) rmSync(resolve(root, 'public', directory), { recursive: true, force: true });

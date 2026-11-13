@@ -60,6 +60,7 @@ Working inventory for `cmmf-docs-web`. Planned routes are not published as place
 | `/tools/skills/validate/` | Validate: check format and cross-model integrity | site | implemented-guide | `src/content/owned/tools/skills/validate.md` |
 | `/tools/skills/workflows/` | Worked modelling journeys | site | implemented-guide | `src/content/owned/tools/skills/workflows.md` |
 | `/tools/skills/` | Install CMMF Skills | site | implemented-guide | `src/content/owned/tools/skills.md` |
+| `/project/use-with-agents/` | Use CMMF with an agent | site | implemented-guide | `src/content/owned/project/use-with-agents.md` |
 
 The public learning and reference routes are implemented, including the glossary, modelling guides, errors/migration, the six Skills workflows, installation, sources/tools, adoption, migration, troubleshooting and contributing. Customer Story and Article downloads include the pinned schema, portable validator and a bundle command for edited YAML.
 

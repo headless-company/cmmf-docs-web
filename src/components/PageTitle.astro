@@ -5,7 +5,8 @@ const edition = editionFor(Astro.url.pathname);
 const topic = topicPath(Astro.url.pathname);
 const { entry } = Astro.locals.starlightRoute;
 const home = Astro.url.pathname === '/';
-const sharedTools = Astro.url.pathname.startsWith('/tools/');
+const sharedAgentGuide = Astro.url.pathname === '/project/use-with-agents/';
+const sharedTools = Astro.url.pathname.startsWith('/tools/') || sharedAgentGuide;
 const reference = topic.startsWith('/docs/reference/') || Astro.url.pathname.startsWith('/spec/');
 const archive = Astro.url.pathname.startsWith('/spec/1.1.0/');
 const specification = Astro.url.pathname.startsWith('/spec/');
@@ -14,7 +15,7 @@ const suffix = Astro.url.pathname.endsWith('/translation-contract/') ? 'translat
 <span hidden data-pagefind-filter={`version:${sharedTools ? 'shared' : edition.version}`}></span>
 {sharedTools && editions.map(({ version }) => <span hidden data-pagefind-filter={`version:${version}`}></span>)}
 {!home && <div class:list={['page-heading', reference ? 'reference-title' : 'reading-title']}>
-  <div class="page-eyebrow"><span>{sharedTools ? (Astro.url.pathname.includes('/tools/skills') ? 'CMMF Skills' : 'CMMF tools') : reference ? 'Format reference' : 'Content modelling'}</span><span class="version-badge">{sharedTools ? 'Shared tool guidance' : archive ? '1.1.0 · Archived' : `CMMF ${edition.version}${edition.version.includes('beta') ? ' · Experimental' : ''}`} </span></div>
+  <div class="page-eyebrow"><span>{sharedTools ? (sharedAgentGuide ? 'Agent guidance' : Astro.url.pathname.includes('/tools/skills') ? 'CMMF Skills' : 'CMMF tools') : reference ? 'Format reference' : 'Content modelling'}</span><span class="version-badge">{sharedTools ? 'Shared tool guidance' : archive ? '1.1.0 · Archived' : `CMMF ${edition.version}${edition.version.includes('beta') ? ' · Experimental' : ''}`} </span></div>
   <h1 id="_top">{entry.data.title}</h1>
   {entry.data.description && <p class="page-description">{entry.data.description}</p>}
   {!sharedTools && <VersionSelector />}

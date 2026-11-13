@@ -1,3 +1,4 @@
+import retrieval from '../.generated/retrieval.json';
 import { defineRouteMiddleware } from '@astrojs/starlight/route-data';
 import { editions, editionFor, topicPath, versionedTopic } from '../scripts/lib/versions.mjs';
 
@@ -5,6 +6,9 @@ export const onRequest = defineRouteMiddleware((context) => {
   const route = context.locals.starlightRoute;
   const path = context.url.pathname;
   const edition = editionFor(path);
+  const document = retrieval.find(page => page.route === path);
+  route.head.push({ tag: 'link', attrs: { rel: 'describedby', href: 'https://cmmf.dev/llms.txt' } });
+  if (document) route.head.push({ tag: 'link', attrs: { rel: 'alternate', type: 'text/markdown', href: 'https://cmmf.dev' + document.markdown } });
   if (path.startsWith(editions[0].prefix + '/')) {
     const canonical = 'https://cmmf.dev' + topicPath(path);
     for (const tag of route.head) {

@@ -9,3 +9,6 @@ public/downloads/
 public/raw/
 artifacts/site-review/
 .DS_Store
+
+# Generated exact-edition retrieval indexes
+/public/versions/

@@ -546,6 +546,15 @@
       "owner": "site",
       "role": "site-authored",
       "status": "implemented-guide"
+    },
+    {
+      "route": "/project/use-with-agents/",
+      "title": "Use CMMF with an agent",
+      "owner": "site",
+      "status": "implemented-guide",
+      "role": "site-owned",
+      "sourceVersion": "shared",
+      "source": "src/content/owned/project/use-with-agents.md"
     }
   ]
 }

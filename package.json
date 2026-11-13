@@ -7,9 +7,9 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "prepare:content": "node scripts/prepare-content.mjs && node scripts/prepare-versions.mjs",
+    "prepare:content": "node scripts/prepare-content.mjs && node scripts/prepare-versions.mjs && node scripts/prepare-retrieval.mjs",
     "dev": "npm run prepare:content && astro dev --host 127.0.0.1",
-    "build": "npm run source:check && npm run examples:check && npm run test:examples && npm run test:beta && npm run prepare:content && astro build && node scripts/check-site.mjs && node scripts/check-versions.mjs && node scripts/check-skills.mjs",
+    "build": "npm run source:check && npm run examples:check && npm run test:examples && npm run test:beta && npm run prepare:content && astro build && node scripts/check-site.mjs && node scripts/check-versions.mjs && node scripts/check-skills.mjs && node scripts/check-retrieval.mjs",
     "preview": "astro preview --host 127.0.0.1",
     "source:check": "node scripts/sync-cmmf.mjs --check && node scripts/sync-cmmf.mjs --check --snapshot vendor/cmmf-beta --lock cmmf-beta-source.lock.json",
     "handover:check": "node artifacts/cmmf-site-handover/scripts/verify-handover.mjs",

@@ -73,3 +73,9 @@ Read [the versioning decision and release workflow](handover/documentation-versi
 ## Skills documentation
 
 CMMF Skills guidance is shared by stable and beta format editions at `/tools/`. All six workflow pages and operational guides use the pinned source baseline recorded in `source-provenance.json`. Helpers do not support beta semantics; the beta example validator is separate. `scripts/check-skills.mjs` checks evidence hashes, generated routes/raw/index entries and compatibility notices during the build. See [the Skills update record](handover/skills-documentation-update.md) for scope and verification.
+
+## Agent-readable documentation
+
+The `/project/use-with-agents/` guide provides a reading order, source/version rules and links to exact-edition reference packs. `scripts/prepare-retrieval.mjs` runs after content/edition generation and owns the final `/llms.txt`, `/versions/EXACT_VERSION/llms.txt`, article Markdown mappings and `/downloads/documentation/` ZIPs. These outputs are generated from current site inputs and exact pinned upstream snapshots; they are not immutable documentation releases or installable Skills packages. Existing raw download paths remain supported.
+
+The article footer exposes “View Markdown”; HTML link relations identify the Markdown alternative and retrieval index. Edition packs keep shared tools separate, preserve upstream bytes and include payload SHA-256 manifests and source revisions. `scripts/check-retrieval.mjs` checks generated mappings, indexes, archives, hashes, upstream bytes and unpacked privacy during build. Realistic host trials are a separate evaluation: see [the agent evaluation tasks](reference/retrieval/agent-evaluation.md). Automated checks do not certify agent behaviour or index inclusion.

@@ -62,6 +62,7 @@ export default defineConfig({
         { label: 'Example models', slug: 'examples' },
         { label: 'Customer Story', slug: 'examples/customer-story' },
         { label: 'Studio walkthrough', slug: 'tools/studio' },
+        { label: 'Use with an agent', slug: 'project/use-with-agents' },
         { label: 'Contributing', slug: 'contributing' },
       ] },
       { label: 'CMMF Skills', collapsed: true, items: [
