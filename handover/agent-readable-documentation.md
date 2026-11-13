@@ -20,4 +20,10 @@ Local final Astro check passed with zero errors/warnings and the existing deprec
 
 Broad Chromium/Microsoft Edge and WebKit reviews each passed 112 page/theme/viewport combinations and 44 axe scans with zero violations, browser errors or failed requests. After the shared entry label/selector correction, targeted checks in both engines passed all four viewport/theme combinations, including the visible Markdown navigation and shared raw-source label. Representative homepage, reading/entry and dense-reference layouts were visually inspected at mobile/desktop sizes in both themes. Reports and screenshots remain under ignored `artifacts/site-review/` and its WebKit directory.
 
-No commit, push or deployment is claimed by this change.
+## Publication attempt, 13 November 2026
+
+Implementation commit `357fdf909b730882c311dc03a3768001e1644463` was pushed to `main`. GitHub Actions run https://github.com/headless-company/cmmf-docs-web/actions/runs/43452446757 completed successfully, including the build and both browser engines.
+
+Cloudflare deployment `27889691-42ba-442e-bc63-045f14ff6096` passed the build and all validators, uploaded assets, then failed publishing with “Failed to publish your Function. Got error: Unknown internal error occurred.” This repository remains a static site without a Functions directory. An authorised retry of the same revision created deployment `01045d7f-5a1e-4aa8-8bf2-84d1f95d7ef7`, which reached asset publication but remained active at the final check. The production agent entry URL still returned 404. No live success is claimed.
+
+Cloudflare reported an investigating Workers API availability incident at https://www.cloudflarestatus.com/incidents/e7ktq32gphhe during this attempt. It may explain the publishing failure; no causal confirmation is available. Recheck deployment completion and verify the entry page, both edition indexes, raw Markdown and all three reference ZIPs against reviewed bytes after the provider recovers. Prepared verification reports/scripts remain local; no production fetch or host evaluation is represented as successful.
