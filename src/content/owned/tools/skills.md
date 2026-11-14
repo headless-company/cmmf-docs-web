@@ -1,7 +1,7 @@
 ---
 title: "Install CMMF Skills"
 description: "Build, install, verify, update and remove complete independent skill packages."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills.md
 ---
 
 :::caution[Implementation and compatibility status]
@@ -24,7 +24,7 @@ The package declares npm `>=11.10.0`, while `packageManager` pins `11.11.0`. Use
 Run in a location chosen for the Skills checkout, separate from the model project:
 
 ```sh
-git clone https://github.com/headless-company/cmmf-skills.git
+git clone https://github.com/cmmf-project/cmmf-skills.git
 cd cmmf-skills
 git switch --detach 68ec28d3993eb08298ebf9a896f6a9d51b425bf0
 node --version

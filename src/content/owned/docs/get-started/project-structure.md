@@ -1,7 +1,7 @@
 ---
 title: Organise a model project
 description: Keep a manifest alongside the model definitions for your own content project.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/get-started/project-structure.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/get-started/project-structure.md
 ---
 
 A model project contains your manifest and models. You do not need to copy the entire CMMF specification repository into it.

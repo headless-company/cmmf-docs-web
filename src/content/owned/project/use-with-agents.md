@@ -1,7 +1,7 @@
 ---
 title: Use CMMF with an agent
 description: Find the matching specification, schema, examples and modelling workflows for your project.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/project/use-with-agents.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/project/use-with-agents.md
 ---
 
 Start with what your content needs to do. A Customer can appear in several Customer Stories; a Quote can belong inside one story. Agree those decisions before asking an agent to describe fields or translate them into a CMS.

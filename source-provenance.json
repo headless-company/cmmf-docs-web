@@ -1612,7 +1612,7 @@
     },
     {
       "name": "cmmf-skills",
-      "repository": "https://github.com/headless-company/cmmf-skills",
+      "repository": "https://github.com/cmmf-project/cmmf-skills",
       "baseGitRevision": "68ec28d3993eb08298ebf9a896f6a9d51b425bf0",
       "snapshotKind": "git-commit-files",
       "workspaceVersion": "0.2.0",

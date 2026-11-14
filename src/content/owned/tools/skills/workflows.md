@@ -1,7 +1,7 @@
 ---
 title: "Worked modelling journeys"
 description: "Move from brief to reviewed models, evolve existing sets and run review-only audits."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/workflows.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/workflows.md
 ---
 
 These are illustrative teaching scenarios, not recorded host evaluations. Run them in a disposable project and preserve actual outputs before describing them as verified.

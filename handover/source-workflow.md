@@ -1,6 +1,6 @@
 # Pinned source workflow
 
-Canonical repository: https://github.com/headless-company/content-model-master-format
+Canonical repository: https://github.com/cmmf-project/content-model-master-format
 
 Initial commit pin: `32604441aff09a6dbfe2361e97078af5263fd321`. Format version: `1.2.0`.
 
@@ -51,4 +51,4 @@ The helper now accepts exact prerelease versions and independently named snapsho
 
 ## Refresh Skills evidence
 
-Skills evidence is independent of the normative format pins. Select a reviewed full revision in `headless-company/cmmf-skills`, export committed README, quickstart, migration/project guide, six skill files, shared references, evaluation cases and licence to `reference/skills/<full-sha>/`, then record each source path, bundled path and SHA-256 in `source-provenance.json` with `snapshotKind: git-commit-files`. Keep superseded evidence clearly historical. Record suite version separately from format versions; record uncommitted bytes explicitly if used. Update public guides and support boundaries together, run the source suite checks in isolation, and run the site build/browser checks. Ordinary site builds use bundled evidence and require no sibling checkout or network fetch.
+Skills evidence is independent of the normative format pins. Select a reviewed full revision in `cmmf-project/cmmf-skills`, export committed README, quickstart, migration/project guide, six skill files, shared references, evaluation cases and licence to `reference/skills/<full-sha>/`, then record each source path, bundled path and SHA-256 in `source-provenance.json` with `snapshotKind: git-commit-files`. Keep superseded evidence clearly historical. Record suite version separately from format versions; record uncommitted bytes explicitly if used. Update public guides and support boundaries together, run the source suite checks in isolation, and run the site build/browser checks. Ordinary site builds use bundled evidence and require no sibling checkout or network fetch.

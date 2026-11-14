@@ -1,7 +1,7 @@
 ---
 title: Follow the model visually
 description: Inspect the Customer Story example in Studio, make a safe field change and export a workspace backup.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/get-started/visual-modelling.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/get-started/visual-modelling.md
 pagination:
   prev:
     label: First-model tutorial

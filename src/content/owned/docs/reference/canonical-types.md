@@ -1,7 +1,7 @@
 ---
 title: Canonical field types
 description: The thirteen field types in CMMF 1.2.0, their type-specific properties, and the rules shared by every field.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/reference/canonical-types.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/reference/canonical-types.md
 ---
 
 CMMF uses a common vocabulary for fields. Translators map these types to the representations supported by a target CMS. This page is an explanatory lookup guide; the [specification](/spec/1.2.0/) and [model schema](/schemas/1.2.0/model.schema.json) are the authoritative rules.
@@ -76,4 +76,4 @@ Some validation conventions are intentionally open. In particular, agree file-si
 
 [Read the validation guide](/docs/guides/validation/) or [download the current schema](/schemas/1.2.0/model.schema.json).
 
-<div class="source-note">Website-owned reference explanation for CMMF 1.2.0. Source: <a href="https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/canonical-types.md">canonical type guide at 32604441</a>. <a href="/raw/docs/canonical-types.md">Original Markdown</a>.</div>
+<div class="source-note">Website-owned reference explanation for CMMF 1.2.0. Source: <a href="https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/canonical-types.md">canonical type guide at 32604441</a>. <a href="/raw/docs/canonical-types.md">Original Markdown</a>.</div>

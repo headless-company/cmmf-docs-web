@@ -36,7 +36,7 @@ for (const page of map.pages) {
   const meta = {
     title: page.title,
     description: page.description || `${page.title} for CMMF ${page.sourceVersion}. ${isNormative ? 'Authoritative specification text.' : 'Imported from the canonical CMMF repository.'}`,
-    editUrl: `https://github.com/headless-company/content-model-master-format/edit/main/${page.source.replace('vendor/cmmf/', '')}`,
+    editUrl: `https://github.com/cmmf-project/content-model-master-format/edit/main/${page.source.replace('vendor/cmmf/', '')}`,
     pagefind: !archived,
   };
   if (archived) text = `:::caution[Archived specification: ${page.sourceVersion}]\nThis page describes CMMF ${page.sourceVersion}. Current learning material and the bundled model schema target 1.2.0. A matching historical schema is not included.\n:::\n\n${text}`;

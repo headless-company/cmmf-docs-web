@@ -1,7 +1,7 @@
 ---
 title: "Author: create or extend model YAML"
 description: "Create or extend model YAML."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/author.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/author.md
 ---
 
 ## Use when

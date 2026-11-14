@@ -1,7 +1,7 @@
 ---
 title: "Discover: turn requirements into modelling decisions"
 description: "Turn requirements into modelling decisions."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/discover.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/discover.md
 ---
 
 ## Use when

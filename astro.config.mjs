@@ -18,7 +18,7 @@ export default defineConfig({
       PageTitle: './src/components/PageTitle.astro',
       Footer: './src/components/Footer.astro',
     },
-    editLink: { baseUrl: 'https://github.com/headless-company/cmmf-docs-web/edit/main/' },
+    editLink: { baseUrl: 'https://github.com/cmmf-project/cmmf-docs-web/edit/main/' },
     head: [
       { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/brand/web/cmmf/apple-touch-icon.png' } },
       { tag: 'meta', attrs: { name: 'theme-color', content: '#192329' } },

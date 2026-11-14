@@ -1,6 +1,6 @@
 # CMMF documentation website
 
-The public explanation and documentation site for CMMF, built in the existing `headless-company/cmmf-docs-web` repository. The static Astro/Starlight site is live on Cloudflare Pages at [cmmf.dev](https://cmmf.dev). Studio remains a separate app and deployment; its production endpoint is tracked independently.
+The public explanation and documentation site for CMMF, built in the existing `cmmf-project/cmmf-docs-web` repository. The static Astro/Starlight site is live on Cloudflare Pages at [cmmf.dev](https://cmmf.dev). Studio remains a separate app and deployment; its production endpoint is tracked independently.
 
 ## Run locally
 

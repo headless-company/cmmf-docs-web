@@ -1,7 +1,7 @@
 ---
 title: Example model sets
 description: Complete, validated examples with modelling rationale, portable files and Studio import bundles.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/examples/index.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/examples/index.md
 ---
 
 Each example includes all its referenced models and a manifest for CMMF 1.2.0. The ZIP is a file project with a local validator. The separate JSON file imports the same models into Studio.

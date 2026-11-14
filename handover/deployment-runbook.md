@@ -1,12 +1,12 @@
 # Cloudflare Pages deployment
 
-The site is ready for a static Pages build from the existing `headless-company/cmmf-docs-web` repository. This document is a runbook, not deployment evidence. See [deployment-status.md](deployment-status.md) for the current account/zone and repository progress.
+The site is ready for a static Pages build from the existing `cmmf-project/cmmf-docs-web` repository. This document is a runbook, not deployment evidence. See [deployment-status.md](deployment-status.md) for the current account/zone and repository progress.
 
 ## Build settings
 
 | Setting | Value |
 | --- | --- |
-| Repository | `headless-company/cmmf-docs-web` |
+| Repository | `cmmf-project/cmmf-docs-web` |
 | Root directory | Repository root |
 | Production branch | `main` |
 | Framework preset | Astro |

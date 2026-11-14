@@ -1,7 +1,7 @@
 ---
 title: Start with the content, keep the intent
 description: A shared model gives content designers, architects and developers something concrete to agree on before implementation.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/learn/why-cmmf.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/learn/why-cmmf.md
 ---
 
 An editorial team wants to publish articles. Every article needs a title, a body and an author. The author should have a reusable profile. Each article also needs its own search metadata.

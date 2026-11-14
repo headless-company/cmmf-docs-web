@@ -1,7 +1,7 @@
 ---
 title: Embed or reference?
 description: Decide whether information belongs with one piece of content or needs an independent, reusable identity.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/guides/embed-or-reference.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/guides/embed-or-reference.md
 ---
 
 Several stories may concern the same customer. Each story's quote, however, belongs in the context of that particular outcome. Those needs lead to two different relationships.
