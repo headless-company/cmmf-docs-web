@@ -1,7 +1,7 @@
 ---
 title: Documentation
 description: Learn the modelling concepts, inspect complete examples and look up the CMMF 1.2.0 format.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/index.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/index.md
 ---
 
 Start with a content need, describe the model, then decide how to implement it in a CMS. These pages explain the format and make its precise rules easy to find.

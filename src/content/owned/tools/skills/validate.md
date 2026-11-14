@@ -1,7 +1,7 @@
 ---
 title: "Validate: check format and cross-model integrity"
 description: "Check format and cross-model integrity."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/validate.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/validate.md
 ---
 
 ## Use when

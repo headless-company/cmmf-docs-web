@@ -1,7 +1,7 @@
 ---
 title: Adopting the 1.3 beta
 description: Select the experimental version explicitly and preserve document-level validation intent.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/beta/docs/guides/adopt-1-3-beta.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/beta/docs/guides/adopt-1-3-beta.md
 ---
 
 An external article needs a source URL. An article needs an author or a source. Those are rules about a whole document, rather than a single field. CMMF **1.3.0-beta.1** adds optional model-level `validationHints` to describe that intent.
@@ -36,7 +36,7 @@ These project commands check model shape, hint declarations and model-set refere
 
 ## What changed from the RFC?
 
-[RFC #1](https://github.com/headless-company/content-model-master-format/issues/1) records the proposal. The [tagged beta implementation](https://github.com/headless-company/content-model-master-format/tree/v1.3.0-beta.1) resolves its open questions. The beta specification governs actual behaviour:
+[RFC #1](https://github.com/cmmf-project/content-model-master-format/issues/1) records the proposal. The [tagged beta implementation](https://github.com/cmmf-project/content-model-master-format/tree/v1.3.0-beta.1) resolves its open questions. The beta specification governs actual behaviour:
 
 | Topic | Implemented beta behaviour |
 | --- | --- |
@@ -54,7 +54,7 @@ Editors and other consumers need explicit version selection, the matching schema
 
 For every translated hint, record `mapped`, `degraded` or `unmapped`, with a reason identifying the model and hint. Preserving guidance without the checks is degraded. Never use a hint to weaken field-level requirements, and never treat `forbid` as permission to delete content.
 
-Report beta findings against the [upstream RFC](https://github.com/headless-company/content-model-master-format/issues/1). A later beta needs a new exact version; stable promotion is a separate release decision.
+Report beta findings against the [upstream RFC](https://github.com/cmmf-project/content-model-master-format/issues/1). A later beta needs a new exact version; stable promotion is a separate release decision.
 
 ## Skills compatibility
 

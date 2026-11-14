@@ -1,7 +1,7 @@
 ---
 title: Validate the model at the right level
 description: Separate schema checks, whole-model semantic checks and validation of actual authored content.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/guides/validation.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/guides/validation.md
 ---
 
 Validation answers different questions at different stages. Be explicit about which checks a tool performs.

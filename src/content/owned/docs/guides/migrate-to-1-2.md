@@ -1,7 +1,7 @@
 ---
 title: Migrate a model set to 1.2.0
 description: Replace legacy reference cardinality with field-level repeatability while preserving relationship intent.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/guides/migrate-to-1-2.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/guides/migrate-to-1-2.md
 ---
 
 CMMF 1.2.0 makes field-level `list` the canonical repeatability flag for every type, including references. It retains `relation.cardinality` as a compatibility alias on references. Migration should preserve the meaning of the model and make any implementation changes visible.

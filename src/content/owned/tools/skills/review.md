@@ -1,7 +1,7 @@
 ---
 title: "Review: assess architecture and editorial usability"
 description: "Assess architecture and editorial usability."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/review.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/review.md
 ---
 
 ## Use when

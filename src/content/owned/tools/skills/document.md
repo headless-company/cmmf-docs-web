@@ -1,7 +1,7 @@
 ---
 title: "Document: explain the actual model set"
 description: "Explain the actual model set."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/document.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/document.md
 ---
 
 ## Use when

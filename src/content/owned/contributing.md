@@ -1,7 +1,7 @@
 ---
 title: Contribute to CMMF
 description: Send changes to the repository that owns the format, documentation or tools.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/contributing.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/contributing.md
 ---
 
 Useful contributions include clearer explanations, reproducible validation failures and examples grounded in a real content need. Start by identifying who owns the change.
@@ -10,10 +10,10 @@ Useful contributions include clearer explanations, reproducible validation failu
 
 | Change | Repository |
 | --- | --- |
-| Format rules, canonical schema or translation contract | [Content Model Master Format](https://github.com/headless-company/content-model-master-format) |
-| Tutorials, this website, navigation or presentation | [Documentation website](https://github.com/headless-company/cmmf-docs-web) |
-| Canvas, inspectors or workspace behaviour | [CMMF Studio](https://github.com/headless-company/cmmf-visual-editor) |
-| Agent workflows or deterministic helper behaviour | [CMMF Skills](https://github.com/headless-company/cmmf-skills) |
+| Format rules, canonical schema or translation contract | [Content Model Master Format](https://github.com/cmmf-project/content-model-master-format) |
+| Tutorials, this website, navigation or presentation | [Documentation website](https://github.com/cmmf-project/cmmf-docs-web) |
+| Canvas, inspectors or workspace behaviour | [CMMF Studio](https://github.com/cmmf-project/cmmf-studio) |
+| Agent workflows or deterministic helper behaviour | [CMMF Skills](https://github.com/cmmf-project/cmmf-skills) |
 
 Each article's edit link points to its owner. Imported specifications retain a source link to the exact pinned revision. Website explanations interpret that source; they do not change its rules.
 

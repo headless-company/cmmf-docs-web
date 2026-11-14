@@ -1,7 +1,7 @@
 ---
 title: Model what needs localisation
 description: Identify which content varies by locale and keep fallback, publishing and storage choices explicit.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/guides/localisation.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/guides/localisation.md
 ---
 
 A customer story may need translated titles and narrative, while a customer's company name stays the same. A regional website address or approved quote may vary for reasons beyond language. Establish those differences with the content team first.

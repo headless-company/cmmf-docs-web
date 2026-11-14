@@ -1,5 +1,5 @@
 {
-  "repository": "https://github.com/headless-company/content-model-master-format.git",
+  "repository": "https://github.com/cmmf-project/content-model-master-format.git",
   "revision": "32604441aff09a6dbfe2361e97078af5263fd321",
   "specVersion": "1.2.0",
   "snapshotKind": "git-commit",

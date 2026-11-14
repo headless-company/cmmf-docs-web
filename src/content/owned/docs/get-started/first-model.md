@@ -1,7 +1,7 @@
 ---
 title: Create your first model set
 description: Turn a Customer Story content brief into three related CMMF models, validate the complete project and take it into Studio.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/get-started/first-model.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/get-started/first-model.md
 pagination:
   prev:
     label: Why CMMF

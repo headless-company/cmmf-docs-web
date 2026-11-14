@@ -1,7 +1,7 @@
 ---
 title: Content modelling glossary
 description: The terms used in CMMF, explained through a Customer Story and its reusable customer profile.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/learn/glossary.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/learn/glossary.md
 ---
 
 A customer story needs a title, an account of the outcome, a customer profile and sometimes a quote. These terms describe those pieces and the decisions behind them.

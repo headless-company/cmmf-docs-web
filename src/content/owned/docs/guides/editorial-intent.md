@@ -1,7 +1,7 @@
 ---
 title: Preserve editorial intent
 description: Add useful help text, labels, previews and ownership without confusing metadata with implementation rules.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/guides/editorial-intent.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/guides/editorial-intent.md
 ---
 
 Two fields can have the same type and very different jobs. A summary intended for search results needs different guidance from a summary intended to help an editor choose a story. Preserve that purpose alongside the structure.

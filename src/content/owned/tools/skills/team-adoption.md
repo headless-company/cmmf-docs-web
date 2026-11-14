@@ -1,7 +1,7 @@
 ---
 title: "Team adoption and assurance"
 description: "Assess fit, run bounded host trials and distinguish validation from architecture and migration safety."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/team-adoption.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/team-adoption.md
 ---
 
 ## Decide whether it fits
@@ -22,7 +22,7 @@ A team can run the helper checks independently of an agent. Staff members should
 
 ## Trial protocol
 
-Run in a disposable repository using one complete built package at a time, matching the [evaluation cases](https://github.com/headless-company/cmmf-skills/blob/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/evals/core-workflows.md). Record host product/surface/version, model/version, skill source SHA and manifest hashes, canonical source/version/hashes, prompt/inputs, artefacts, commands, diagnostics and verdict. Mark each intended host **not run**, **pass**, **fail** or **blocked** with reason; helper execution is not a substitute for host discovery.
+Run in a disposable repository using one complete built package at a time, matching the [evaluation cases](https://github.com/cmmf-project/cmmf-skills/blob/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/evals/core-workflows.md). Record host product/surface/version, model/version, skill source SHA and manifest hashes, canonical source/version/hashes, prompt/inputs, artefacts, commands, diagnostics and verdict. Mark each intended host **not run**, **pass**, **fail** or **blocked** with reason; helper execution is not a substitute for host discovery.
 
 | Evaluation | Observable pass criteria |
 | --- | --- |

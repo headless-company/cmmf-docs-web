@@ -1,7 +1,7 @@
 ---
 title: The Article model set
 description: Four complete models show reusable authors, embedded SEO metadata and ordered relationships between pages and articles.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/examples/article.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/examples/article.md
 ---
 
 An article links to a reusable Person and embeds SEO Metadata. A Page can link to an ordered list of related Articles. These are model definitions, rather than sample authored content.

@@ -1,7 +1,7 @@
 ---
 title: Inspect and edit a model in Studio
 description: Import the complete Customer Story set, inspect its relationships, make a change and save portable models and workspace backups.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/studio.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/studio.md
 pagination:
   prev:
     label: First-model tutorial
@@ -17,10 +17,10 @@ Use a desktop pointer device for the canvas. The documentation works on mobile; 
 
 ## Open Studio
 
-[Open Studio](https://studio.cmmf.dev). If that deployment is unavailable, run the editor locally from its [source repository](https://github.com/headless-company/cmmf-visual-editor):
+[Open Studio](https://studio.cmmf.dev). If that deployment is unavailable, run the editor locally from its [source repository](https://github.com/cmmf-project/cmmf-studio):
 
 ```sh
-git clone https://github.com/headless-company/cmmf-visual-editor.git
+git clone https://github.com/cmmf-project/cmmf-studio.git
 cd cmmf-visual-editor
 npm install
 npm run dev
@@ -104,4 +104,4 @@ Changes save in this browser's local storage. There is no account, remote storag
 
 Export regular workspace backups, and treat a storage error in the header as a reason to save one immediately. A workspace backup and a portable model project serve different purposes; retain both when you use both workflows.
 
-<div class="source-note">Guide checked against Studio source and documentation at <a href="https://github.com/headless-company/cmmf-visual-editor/tree/5cbbe0eb4f88db479c0d451c9ad77adff17172ff">5cbbe0eb</a>. It describes the documented implementation, not a verified hosted release.</div>
+<div class="source-note">Guide checked against Studio source and documentation at <a href="https://github.com/cmmf-project/cmmf-studio/tree/5cbbe0eb4f88db479c0d451c9ad77adff17172ff">5cbbe0eb</a>. It describes the documented implementation, not a verified hosted release.</div>

@@ -1,7 +1,7 @@
 ---
 title: "Evolve: plan or implement intentional change"
 description: "Plan or implement intentional change."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/evolve.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/evolve.md
 ---
 
 ## Use when

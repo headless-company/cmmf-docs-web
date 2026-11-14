@@ -8,7 +8,7 @@
       "role": "site-adaptation",
       "notes": "Replace the upstream index with the site navigation once implemented.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/index.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/index.md",
       "owner": "site",
       "status": "implemented-prototype",
       "siteSource": "src/content/owned/docs/index.md"
@@ -20,7 +20,7 @@
       "role": "site-adaptation",
       "notes": "Adapt to a plain-language site-owned introduction when ready.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/why-cmmf.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/why-cmmf.md",
       "owner": "site",
       "status": "implemented-prototype",
       "siteSource": "src/content/owned/learn/why-cmmf.md"
@@ -32,7 +32,7 @@
       "role": "site-adaptation",
       "notes": "Separate user model projects from the canonical format repository.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/repository-structure.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/repository-structure.md",
       "owner": "site",
       "status": "implemented-prototype",
       "siteSource": "src/content/owned/docs/get-started/project-structure.md"
@@ -44,7 +44,7 @@
       "role": "imported-explanation",
       "notes": "Add concrete decisions and examples.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/model-kinds.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/model-kinds.md",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -55,7 +55,7 @@
       "role": "site-adaptation",
       "notes": "Retain exact identifiers; add links to worked examples.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/canonical-types.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/canonical-types.md",
       "owner": "site",
       "status": "implemented-prototype",
       "siteSource": "src/content/owned/docs/reference/canonical-types.md"
@@ -67,7 +67,7 @@
       "role": "imported-explanation",
       "notes": "Show embedded versus linked and singular versus repeatable visually.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/relationships.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/relationships.md",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -78,7 +78,7 @@
       "role": "site-adaptation",
       "notes": "Distinguish model structure, graph semantics and content-instance validation.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/validations.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/validations.md",
       "owner": "site",
       "status": "implemented-prototype",
       "siteSource": "src/content/owned/docs/guides/validation.md"
@@ -90,7 +90,7 @@
       "role": "imported-explanation",
       "notes": "Add a decisions-log example; no invented CMS adapter support.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/translation-concepts.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/translation-concepts.md",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -101,7 +101,7 @@
       "role": "site-adaptation",
       "notes": "Replace future-editor language in a site-owned adaptation; Studio already exists.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/visualisation.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/docs/visualisation.md",
       "owner": "site",
       "status": "implemented-prototype",
       "siteSource": "src/content/owned/docs/guides/visualisation.mdx"
@@ -113,7 +113,7 @@
       "role": "normative",
       "notes": "Keep the source text authoritative.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/cmmf-v1.2.0.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/cmmf-v1.2.0.md",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -124,7 +124,7 @@
       "role": "normative",
       "notes": "Keep version paired with the format spec.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/translation-contract-v1.2.0.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/translation-contract-v1.2.0.md",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -135,7 +135,7 @@
       "role": "normative-archive",
       "notes": "Archive banner; exclude from default current-version search.",
       "sourceVersion": "1.1.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/cmmf-v1.1.0.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/cmmf-v1.1.0.md",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -146,7 +146,7 @@
       "role": "normative-archive",
       "notes": "Do not pair with the current schema for validation.",
       "sourceVersion": "1.1.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/translation-contract-v1.1.0.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/spec/translation-contract-v1.1.0.md",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -157,7 +157,7 @@
       "role": "machine-readable",
       "notes": "Serve the exact raw JSON; do not add a historical label.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/schemas/model.schema.json",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/schemas/model.schema.json",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -168,7 +168,7 @@
       "role": "upstream-history",
       "notes": "Render release changes and link to site-authored migration guidance.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/CHANGELOG.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/CHANGELOG.md",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -179,7 +179,7 @@
       "role": "upstream-licence",
       "notes": "Apache-2.0 applies to these upstream files, not all bundled materials.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/LICENSE.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/LICENSE.md",
       "owner": "upstream",
       "status": "implemented-prototype"
     },
@@ -190,7 +190,7 @@
       "role": "source-context",
       "notes": "Reference material; no duplicate website homepage.",
       "sourceVersion": "1.2.0",
-      "sourceUrl": "https://github.com/headless-company/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/README.md",
+      "sourceUrl": "https://github.com/cmmf-project/content-model-master-format/blob/32604441aff09a6dbfe2361e97078af5263fd321/README.md",
       "owner": "upstream",
       "status": "context-only"
     },

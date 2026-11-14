@@ -1,7 +1,7 @@
 ---
 title: "Local tool reference"
 description: "Run inspect, source, validate, document and diff with the correct flags and exit codes."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/local-tools.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/local-tools.md
 ---
 
 The helpers are noninteractive, provider-free commands. They read model inputs, and source retrieval maintains a separate cache. They neither invoke an LLM nor edit model YAML. The agent skills decide how to use the evidence and make authorised file edits.

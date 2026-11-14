@@ -1,7 +1,7 @@
 ---
 title: Article and Subscription model set
 description: A complete beta project demonstrating structured, prose and expression validation hints.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/beta/examples/article.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/beta/examples/article.md
 ---
 
 An external article needs a source URL, and search exclusion needs an explanation. A subscription's quarterly price may depend on its monthly price. The canonical **1.3.0-beta.1** set records these needs without pretending every CMS can enforce them.

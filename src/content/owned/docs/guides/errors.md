@@ -1,7 +1,7 @@
 ---
 title: Understand validation errors
 description: Repair common structure and whole-model failures using the portable example validator.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/guides/errors.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/guides/errors.md
 ---
 
 Start from a [complete example project](/examples/), install its locked dependencies with `npm ci`, then run `npm run validate`. Keep a working copy before experimenting. The messages below refer to the downloadable example validator; other tools may phrase them differently.

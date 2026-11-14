@@ -1,7 +1,7 @@
 ---
 title: "Migrate to CMMF Skills"
 description: "Replace standalone agent setup with host skills and explicit local tools."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/migration.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/migration.md
 ---
 
 The standalone CMMF Creation Agent has been replaced by six independently installable skills. Existing model YAML is not rewritten by this change. The normative format remains in its own repository.
@@ -18,10 +18,10 @@ The project no longer uses `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `CMMF_AGENT_PR
 
 ## Update repository links
 
-Active clone, issue, contribution and source links should use [headless-company/cmmf-skills](https://github.com/headless-company/cmmf-skills). In an existing Skills source checkout, update its remote deliberately:
+Active clone, issue, contribution and source links should use [cmmf-project/cmmf-skills](https://github.com/cmmf-project/cmmf-skills). In an existing Skills source checkout, update its remote deliberately:
 
 ```sh
-git remote set-url origin https://github.com/headless-company/cmmf-skills.git
+git remote set-url origin https://github.com/cmmf-project/cmmf-skills.git
 ```
 
 Existing local directory names may remain. Fresh clones use `cd cmmf-skills`. Do not run this remote command in a model project or in the documentation repository.
@@ -36,7 +36,7 @@ Build and install complete packages using [installation](/tools/skills/). There 
 
 The retired `runAgent`, provider factories/types, tool-call contracts, strict legacy model types, `loadRepoGraph`, renderers and old `resolveCmmfSource` interfaces are removed. There is no replacement provider-generation API.
 
-The current exports include `inspectRepository`, `acquireSource`, `readSource`, `validateRepository`, `semanticDiff`, `documentRepository` and `loadProjectInstructions`. Pass matching source evidence explicitly; validate both inputs before calling exported `semanticDiff`. The CLI performs that orchestration for you. See the [upstream migration reference](https://github.com/headless-company/cmmf-skills/blob/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/docs/migration.md) and exported TypeScript types. This is a private workspace, not an advertised npm package.
+The current exports include `inspectRepository`, `acquireSource`, `readSource`, `validateRepository`, `semanticDiff`, `documentRepository` and `loadProjectInstructions`. Pass matching source evidence explicitly; validate both inputs before calling exported `semanticDiff`. The CLI performs that orchestration for you. See the [upstream migration reference](https://github.com/cmmf-project/cmmf-skills/blob/68ec28d3993eb08298ebf9a896f6a9d51b425bf0/docs/migration.md) and exported TypeScript types. This is a private workspace, not an advertised npm package.
 
 
 ## Related guidance

@@ -1,7 +1,7 @@
 ---
 title: "Skills troubleshooting"
 description: "Diagnose installation, source, validation and semantic diff problems."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/troubleshooting.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/troubleshooting.md
 ---
 
 | Symptom | Likely cause and recovery |

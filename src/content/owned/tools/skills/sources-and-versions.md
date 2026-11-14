@@ -1,7 +1,7 @@
 ---
 title: "Sources and versions"
 description: "Choose matching canonical source, preserve manifest versions and report cache freshness."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/skills/sources-and-versions.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/skills/sources-and-versions.md
 ---
 
 :::caution[Supported helper versions]
@@ -34,7 +34,7 @@ Resolve once per modelling task. Read the normative spec and relevant docs from 
 
 ## Retrieval and provenance
 
-The canonical remote is `https://github.com/headless-company/content-model-master-format.git`. `source` prefers matching release tags; historical retrieval can inspect actual schema history where tags are absent. For `latest`, it selects the highest suitable numeric release tag or, if none qualifies, the version identified by canonical README/schema at remote HEAD. It does not mix an old spec file with a current schema.
+The canonical remote is `https://github.com/cmmf-project/content-model-master-format.git`. `source` prefers matching release tags; historical retrieval can inspect actual schema history where tags are absent. For `latest`, it selects the highest suitable numeric release tag or, if none qualifies, the version identified by canonical README/schema at remote HEAD. It does not mix an old spec file with a current schema.
 
 Choose a writable cache outside the target model directory. An exact-version request reuses an existing valid cached snapshot. A normal `latest` request refreshes upstream. `--offline` requires an existing pointer/snapshot and cannot establish current freshness of cached latest. Cache namespaces are separated by remote; snapshots are stored by revision. Cached schema/spec bytes are checked against recorded hashes; this is not a complete attestation of every docs file.
 

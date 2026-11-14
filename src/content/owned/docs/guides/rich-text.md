@@ -1,7 +1,7 @@
 ---
 title: Give rich text a clear job
 description: Describe the formatting and embeds an editor needs, then record how those capabilities translate to a CMS.
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/docs/guides/rich-text.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/docs/guides/rich-text.md
 ---
 
 A story needs paragraphs, headings and quotations. It may need emphasis and links. It rarely needs every capability an editor can offer. Define the editorial job before choosing the controls.

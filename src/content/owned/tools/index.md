@@ -1,7 +1,7 @@
 ---
 title: "Studio and CMMF Skills"
 description: "Work visually in Studio or use six CMMF Skills workflows with your coding agent."
-editUrl: https://github.com/headless-company/cmmf-docs-web/edit/main/src/content/owned/tools/index.md
+editUrl: https://github.com/cmmf-project/cmmf-docs-web/edit/main/src/content/owned/tools/index.md
 ---
 
 A customer can appear in several stories, while a quote may belong to just one. Those ownership decisions need to survive the move from workshop notes into model files and implementation.
@@ -33,8 +33,8 @@ Six packaged skills and deterministic helpers are implemented at suite baseline 
 
 ## Evidence and release status
 
-This guidance uses [CMMF Skills source at 68ec28d3](https://github.com/headless-company/cmmf-skills/tree/68ec28d3993eb08298ebf9a896f6a9d51b425bf0), workspace version 0.2.0, inspected on 20 October 2026. It is a pinned source baseline, not a claim of npm publication, a hosted binary release or host certification. The website bundles source evidence and byte hashes separately from its format snapshots.
+This guidance uses [CMMF Skills source at 68ec28d3](https://github.com/cmmf-project/cmmf-skills/tree/68ec28d3993eb08298ebf9a896f6a9d51b425bf0), workspace version 0.2.0, inspected on 20 October 2026. It is a pinned source baseline, not a claim of npm publication, a hosted binary release or host certification. The website bundles source evidence and byte hashes separately from its format snapshots.
 
 The source handover records a successful build, ten tests, dependency-policy checks and isolated execution of all six packages. Its run used existing dependencies with Node 22.7.0/npm 10.8.2; it did not establish a fresh install under the recommended npm pin. See [team adoption](/tools/skills/team-adoption/) for the evidence still needed in your environment.
 
-Source and issues: [headless-company/cmmf-skills](https://github.com/headless-company/cmmf-skills). Moving from the former standalone tool? Read [migration](/tools/skills/migration/).
+Source and issues: [cmmf-project/cmmf-skills](https://github.com/cmmf-project/cmmf-skills). Moving from the former standalone tool? Read [migration](/tools/skills/migration/).
